@@ -194,6 +194,55 @@ button {
   color: #1a1c1a;
 }
 
+.chip-lg {
+  min-height: 44px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  font-size: 0.9rem;
+  gap: 8px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.chip-count {
+  font-size: 0.75rem;
+  font-weight: 700;
+  opacity: 0.75;
+  font-variant-numeric: tabular-nums;
+}
+
+.chip.on .chip-count {
+  opacity: 0.9;
+}
+
+.filter-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-heading {
+  color: var(--ink-faint);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.filters-lg {
+  flex-wrap: wrap;
+  overflow: visible;
+  padding-bottom: 0;
+  row-gap: 8px;
+}
+
+.match-count {
+  margin: 0 0 12px;
+  color: var(--ink-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
 .workout-list {
   display: flex;
   flex-direction: column;

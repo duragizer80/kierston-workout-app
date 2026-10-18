@@ -8,8 +8,12 @@ import {
   type WorkoutRating,
 } from '../lib/storage'
 import {
+  BODY_TAGS,
   EQUIPMENT_TAGS,
   ERA_SECTIONS,
+  bodyChipLabel,
+  bodyTags,
+  buildTagCounts,
   cardSubtitle,
   cardTitle,
   equipmentSignature,
@@ -17,6 +21,7 @@ import {
   formatCardDate,
   sortByDateDesc,
   workoutEra,
+  type BodyTag,
   type EquipmentTag,
 } from '../lib/tags'
 import { workouts } from '../lib/workouts'
@@ -36,10 +41,10 @@ function matchesSearch(w: Workout, needle: string): boolean {
   return hay.includes(needle)
 }
 
-function matchesEquipment(w: Workout, selected: EquipmentTag[]): boolean {
-  if (!selected.length) return true
-  const tags = new Set(equipmentTags(w))
-  return selected.every((t) => tags.has(t))
+function hasAll<T extends string>(have: T[], need: T[]): boolean {
+  if (!need.length) return true
+  const set = new Set(have)
+  return need.every((t) => set.has(t))
 }
 
 function sortWorkouts(list: Workout[], mode: SortMode): Workout[] {
@@ -53,7 +58,6 @@ function sortWorkouts(list: Workout[], mode: SortMode): Workout[] {
       return cmp || sortByDateDesc(a, b)
     })
   }
-  // rating: highest first; unrated last; tie-break by date
   return copy.sort((a, b) => {
     const ra = getRating(a.id)
     const rb = getRating(b.id)
@@ -62,43 +66,53 @@ function sortWorkouts(list: Workout[], mode: SortMode): Workout[] {
   })
 }
 
+function toggleIn<T>(prev: T[], tag: T): T[] {
+  return prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag]
+}
+
 export function Library() {
   const [q, setQ] = useState('')
-  const [selected, setSelected] = useState<EquipmentTag[]>([])
+  const [bodySelected, setBodySelected] = useState<BodyTag[]>([])
+  const [equipSelected, setEquipSelected] = useState<EquipmentTag[]>([])
   const [favoritesOnly, setFavoritesOnly] = useState(false)
   const [sort, setSort] = useState<SortMode>('date')
   const [tick, setTick] = useState(0)
+
+  const libraryCounts = useMemo(() => buildTagCounts(workouts), [])
+
+  const bodyChips = useMemo(
+    () => BODY_TAGS.filter((t) => (libraryCounts.body[t] ?? 0) > 0),
+    [libraryCounts],
+  )
+  const equipChips = useMemo(
+    () => EQUIPMENT_TAGS.filter((t) => (libraryCounts.equipment[t] ?? 0) > 0),
+    [libraryCounts],
+  )
 
   const filtered = useMemo(() => {
     void tick
     const needle = q.trim().toLowerCase()
     const base = workouts.filter((w) => {
       if (favoritesOnly && !isFavorite(w.id)) return false
-      return matchesSearch(w, needle) && matchesEquipment(w, selected)
+      if (!matchesSearch(w, needle)) return false
+      if (!hasAll(bodyTags(w), bodySelected)) return false
+      if (!hasAll(equipmentTags(w), equipSelected)) return false
+      return true
     })
     return sortWorkouts(base, sort)
-  }, [q, selected, favoritesOnly, sort, tick])
+  }, [q, bodySelected, equipSelected, favoritesOnly, sort, tick])
 
   const byEra = useMemo(() => {
     const map = new Map<string, Workout[]>()
     for (const section of ERA_SECTIONS) map.set(section.id, [])
     for (const w of filtered) {
-      const id = workoutEra(w)
-      map.get(id)?.push(w)
+      map.get(workoutEra(w))?.push(w)
     }
-    // Re-sort within each era (map insertion already filtered-order for date/name;
-    // rating sort across eras still preserves era buckets)
     for (const [id, list] of map) {
       map.set(id, sortWorkouts(list, sort))
     }
     return map
   }, [filtered, sort])
-
-  function toggleChip(tag: EquipmentTag) {
-    setSelected((prev) =>
-      prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag],
-    )
-  }
 
   function onFavorite(e: MouseEvent, id: string) {
     e.preventDefault()
@@ -111,13 +125,14 @@ export function Library() {
     setTick((n) => n + 1)
   }
 
-  const hasFilters = selected.length > 0 || favoritesOnly
+  const hasFilters =
+    bodySelected.length > 0 || equipSelected.length > 0 || favoritesOnly
 
   return (
     <main>
       <h1 className="page-title">Library</h1>
       <p className="lede">
-        By trainer era — tag equipment, rate 1–5, heart favorites, sort how you browse.
+        Tap body + equipment chips to narrow — rate, heart favorites, sort by rating.
       </p>
 
       <div className="search-row">
@@ -148,9 +163,6 @@ export function Library() {
               {label}
             </button>
           ))}
-        </div>
-
-        <div className="filters" role="group" aria-label="Quick filters">
           <button
             type="button"
             className={`chip chip-fav${favoritesOnly ? ' on' : ''}`}
@@ -159,24 +171,59 @@ export function Library() {
           >
             ♥ Favorites
           </button>
-          {EQUIPMENT_TAGS.map((tag) => (
-            <button
-              key={tag}
-              type="button"
-              className={`chip${selected.includes(tag) ? ' on' : ''}`}
-              aria-pressed={selected.includes(tag)}
-              onClick={() => toggleChip(tag)}
-            >
-              {tag}
-            </button>
-          ))}
         </div>
+
+        <div className="filter-block">
+          <div className="filter-heading">Body</div>
+          <div className="filters filters-lg" role="group" aria-label="Body part filters">
+            {bodyChips.map((tag) => {
+              const count = libraryCounts.body[tag] ?? 0
+              const on = bodySelected.includes(tag)
+              return (
+                <button
+                  key={tag}
+                  type="button"
+                  className={`chip chip-lg${on ? ' on' : ''}`}
+                  aria-pressed={on}
+                  onClick={() => setBodySelected((p) => toggleIn(p, tag))}
+                >
+                  {bodyChipLabel(tag)}
+                  <span className="chip-count">{count}</span>
+                </button>
+              )
+            })}
+          </div>
+        </div>
+
+        <div className="filter-block">
+          <div className="filter-heading">Equipment</div>
+          <div className="filters filters-lg" role="group" aria-label="Equipment filters">
+            {equipChips.map((tag) => {
+              const count = libraryCounts.equipment[tag] ?? 0
+              const on = equipSelected.includes(tag)
+              return (
+                <button
+                  key={tag}
+                  type="button"
+                  className={`chip chip-lg${on ? ' on' : ''}`}
+                  aria-pressed={on}
+                  onClick={() => setEquipSelected((p) => toggleIn(p, tag))}
+                >
+                  {tag}
+                  <span className="chip-count">{count}</span>
+                </button>
+              )
+            })}
+          </div>
+        </div>
+
         {hasFilters ? (
           <button
             type="button"
             className="clear-filters"
             onClick={() => {
-              setSelected([])
+              setBodySelected([])
+              setEquipSelected([])
               setFavoritesOnly(false)
             }}
           >
@@ -185,8 +232,13 @@ export function Library() {
         ) : null}
       </div>
 
+      <p className="match-count" aria-live="polite">
+        {filtered.length} match{filtered.length === 1 ? '' : 'es'}
+        {hasFilters ? ' · filters on' : ''}
+      </p>
+
       {filtered.length === 0 ? (
-        <p className="empty">No workouts match.</p>
+        <p className="empty">No workouts match — clear a chip or search.</p>
       ) : (
         ERA_SECTIONS.map((section) => {
           const list = byEra.get(section.id) ?? []

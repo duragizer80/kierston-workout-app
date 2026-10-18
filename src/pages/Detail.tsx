@@ -8,7 +8,13 @@ import {
   toggleFavorite,
   type WorkoutRating,
 } from '../lib/storage'
-import { cardSubtitle, cardTitle, equipmentTags } from '../lib/tags'
+import {
+  bodyChipLabel,
+  bodyTags,
+  cardSubtitle,
+  cardTitle,
+  equipmentTags,
+} from '../lib/tags'
 import { formatWorkoutDate, getWorkout } from '../lib/workouts'
 import type { Exercise } from '../types'
 
@@ -52,7 +58,8 @@ export function Detail() {
   }
 
   const groups = groupByBlock(workout.exercises)
-  const tags = equipmentTags(workout)
+  const body = bodyTags(workout)
+  const equip = equipmentTags(workout)
 
   return (
     <main>
@@ -64,10 +71,15 @@ export function Detail() {
         <span>{formatWorkoutDate(workout)}</span>
         <span>{cardSubtitle(workout)}</span>
       </div>
-      {tags.length ? (
-        <div className="tag-row" aria-label="Equipment">
-          {tags.map((t) => (
-            <span key={t} className="tag-pill">
+      {body.length || equip.length ? (
+        <div className="tag-row" aria-label="Tags">
+          {body.map((t) => (
+            <span key={`b-${t}`} className="tag-pill">
+              {bodyChipLabel(t)}
+            </span>
+          ))}
+          {equip.map((t) => (
+            <span key={`e-${t}`} className="tag-pill">
               {t}
             </span>
           ))}

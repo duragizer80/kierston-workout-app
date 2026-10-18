@@ -29,18 +29,27 @@ npm run preview
 
 ## Deploy
 
-Pushes to `main` run `.github/workflows/deploy-pages.yml` (GitHub Actions → Pages).
+Built files are on the **`gh-pages`** branch (site root). Prefer this if Pages Source has no “GitHub Actions” option.
 
-### One-time owner setup (required)
+### Enable Pages (branch deploy) — do this once
 
-The deploy workflow builds successfully; Pages must be turned on by a repo admin (API tokens from this agent cannot enable it):
+1. Make the repo **Public** (Settings → General → Danger zone) so the site opens without a GitHub login.
+2. Open **https://github.com/duragizer80/kierston-workout-app/settings/pages**
+3. Under **Build and deployment**:
+   - **Source:** Deploy from a branch
+   - **Branch:** `gh-pages`
+   - **Folder:** `/ (root)`
+4. Click **Save**. Wait ~1 minute, then open:  
+   **https://duragizer80.github.io/kierston-workout-app/**
 
-1. Open **https://github.com/duragizer80/kierston-workout-app/settings/pages**
-2. Under **Build and deployment → Source**, choose **GitHub Actions**
-3. Prefer making the repo **Public** (Settings → General → Danger Zone) so Kierston can open the site without a GitHub login (private Pages needs GitHub Pro)
-4. Re-run the failed **Deploy GitHub Pages** workflow: Actions → latest run → **Re-run jobs**
+### Refresh the published site after code changes
 
-Live URL after that: **https://duragizer80.github.io/kierston-workout-app/**
+```bash
+npm run build
+# then publish dist/ to gh-pages (orphan/root), or ask the agent to re-push gh-pages
+```
+
+Optional: `.github/workflows/deploy-pages.yml` still supports Actions-based Pages if that Source option appears later.
 
 ## Invite collaborator (Kierston)
 

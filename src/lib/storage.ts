@@ -1,7 +1,23 @@
-import type { LastPerf, SessionRecord } from '../types'
+import type { ExerciseLog, LastPerf, SessionRecord } from '../types'
 
 const HISTORY_KEY = 'kierston.history.v1'
 const LAST_PERF_KEY = 'kierston.lastPerf.v1'
+const FAVORITES_KEY = 'kierston.favorites.v1'
+const RATINGS_KEY = 'kierston.ratings.v1'
+const LAST_STARTED_KEY = 'kierston.lastStarted.v1'
+const ACTIVE_KEY = 'kierston.activeSession.v1'
+
+/** User rating 1–5; 0 means unrated. */
+export type WorkoutRating = 0 | 1 | 2 | 3 | 4 | 5
+
+export type ActiveSession = {
+  workoutId: string
+  workoutName: string
+  step: number
+  logs: ExerciseLog[]
+  startedAt: string
+  updatedAt: string
+}
 
 function readJson<T>(key: string, fallback: T): T {
   try {
@@ -33,6 +49,7 @@ export function saveSession(record: SessionRecord): void {
     }
   }
   localStorage.setItem(LAST_PERF_KEY, JSON.stringify(last))
+  clearActiveSession()
 }
 
 export function getLastPerfMap(): Record<string, LastPerf> {
@@ -41,4 +58,59 @@ export function getLastPerfMap(): Record<string, LastPerf> {
 
 export function getLastPerf(exerciseName: string): LastPerf | null {
   return getLastPerfMap()[exerciseName] ?? null
+}
+
+export function getFavorites(): string[] {
+  return readJson<string[]>(FAVORITES_KEY, [])
+}
+
+export function isFavorite(workoutId: string): boolean {
+  return getFavorites().includes(workoutId)
+}
+
+export function toggleFavorite(workoutId: string): boolean {
+  const set = new Set(getFavorites())
+  if (set.has(workoutId)) set.delete(workoutId)
+  else set.add(workoutId)
+  const next = Array.from(set)
+  localStorage.setItem(FAVORITES_KEY, JSON.stringify(next))
+  return set.has(workoutId)
+}
+
+export function getRatings(): Record<string, WorkoutRating> {
+  return readJson<Record<string, WorkoutRating>>(RATINGS_KEY, {})
+}
+
+export function getRating(workoutId: string): WorkoutRating {
+  const n = getRatings()[workoutId]
+  if (n === 1 || n === 2 || n === 3 || n === 4 || n === 5) return n
+  return 0
+}
+
+export function setRating(workoutId: string, rating: WorkoutRating): void {
+  const next = { ...getRatings() }
+  if (!rating) delete next[workoutId]
+  else next[workoutId] = rating
+  localStorage.setItem(RATINGS_KEY, JSON.stringify(next))
+}
+
+export function getLastStartedId(): string | null {
+  return readJson<string | null>(LAST_STARTED_KEY, null)
+}
+
+export function setLastStarted(workoutId: string): void {
+  localStorage.setItem(LAST_STARTED_KEY, JSON.stringify(workoutId))
+}
+
+export function getActiveSession(): ActiveSession | null {
+  return readJson<ActiveSession | null>(ACTIVE_KEY, null)
+}
+
+export function saveActiveSession(session: ActiveSession): void {
+  localStorage.setItem(ACTIVE_KEY, JSON.stringify(session))
+  setLastStarted(session.workoutId)
+}
+
+export function clearActiveSession(): void {
+  localStorage.removeItem(ACTIVE_KEY)
 }

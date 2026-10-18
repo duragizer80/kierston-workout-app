@@ -1,7 +1,14 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { RestTimer } from '../components/RestTimer'
-import { getLastPerf, saveSession } from '../lib/storage'
+import {
+  getActiveSession,
+  getLastPerf,
+  saveActiveSession,
+  saveSession,
+  setLastStarted,
+  type ActiveSession,
+} from '../lib/storage'
 import {
   getWorkout,
   parseRestSeconds,
@@ -27,23 +34,83 @@ function buildLogs(workout: Workout): ExerciseLog[] {
   })
 }
 
+function loadSessionState(workout: Workout): {
+  step: number
+  logs: ExerciseLog[]
+  startedAt: string
+} {
+  const existing = getActiveSession()
+  if (
+    existing &&
+    existing.workoutId === workout.id &&
+    existing.logs.length === workout.exercises.length
+  ) {
+    return {
+      step: Math.min(existing.step, workout.exercises.length - 1),
+      logs: existing.logs,
+      startedAt: existing.startedAt,
+    }
+  }
+  return {
+    step: 0,
+    logs: buildLogs(workout),
+    startedAt: new Date().toISOString(),
+  }
+}
+
 export function Session() {
   const { id = '' } = useParams()
   const navigate = useNavigate()
   const workout = getWorkout(id)
 
   const [step, setStep] = useState(0)
-  const [logs, setLogs] = useState<ExerciseLog[]>(() =>
-    workout ? buildLogs(workout) : [],
-  )
+  const [logs, setLogs] = useState<ExerciseLog[]>([])
+  const [startedAt, setStartedAt] = useState('')
+  const [ready, setReady] = useState(false)
+
+  useEffect(() => {
+    if (!workout) {
+      setReady(false)
+      return
+    }
+    const state = loadSessionState(workout)
+    setStep(state.step)
+    setLogs(state.logs)
+    setStartedAt(state.startedAt)
+    setLastStarted(workout.id)
+    setReady(true)
+    // Re-init only when the workout id changes
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [id])
+
+  useEffect(() => {
+    if (!workout || !ready) return
+    const payload: ActiveSession = {
+      workoutId: workout.id,
+      workoutName: workout.name,
+      step,
+      logs,
+      startedAt: startedAt || new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
+    }
+    saveActiveSession(payload)
+  }, [workout, step, logs, startedAt, ready])
 
   if (!workout) {
     return (
       <main>
-        <Link to="/" className="back-link">
-          ← Browse
+        <Link to="/library" className="back-link">
+          ← Library
         </Link>
         <p className="empty">Workout not found.</p>
+      </main>
+    )
+  }
+
+  if (!ready || !logs[step]) {
+    return (
+      <main>
+        <p className="empty">Loading session…</p>
       </main>
     )
   }
@@ -69,10 +136,11 @@ export function Session() {
   }
 
   function finish() {
+    if (!workout) return
     saveSession({
-      id: `${workout!.id}-${Date.now()}`,
-      workoutId: workout!.id,
-      workoutName: workout!.name,
+      id: `${workout.id}-${Date.now()}`,
+      workoutId: workout.id,
+      workoutName: workout.name,
       completedAt: new Date().toISOString(),
       exercises: logs,
     })

@@ -6,12 +6,13 @@ Phone-first workout companion for Kierston’s trainer email library.
 
 ## Features
 
-- Browse / search / year filter across 63 transcribed workouts
+- **Home** — continue active session, last started, favorites
+- **Library** — era sections (2020–21 / Gmail / iCloud peak / undated), equipment chips, search by exercise
+- **1–5 star ratings** + **♥ favorites** (localStorage); sort by rating, date, or name/signature
 - Workout detail with blocks, prescriptions, and **unclear** markers preserved
-- Guided session with weight/reps logging and last performance recall
-- Rest timer
+- Guided session with weight/reps logging, rest timer, resume
 - On-device session history (localStorage)
-- Installable PWA
+- Installable PWA (HashRouter for GitHub Pages)
 
 ## Develop
 

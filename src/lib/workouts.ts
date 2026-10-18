@@ -1,4 +1,5 @@
 import raw from '../data/workouts.json'
+import { cardSubtitle, cardTitle, formatCardDate } from './tags'
 import type { Workout } from '../types'
 
 export const workouts = raw as Workout[]
@@ -9,22 +10,14 @@ export function workoutYear(w: Workout): string {
 }
 
 export function formatWorkoutDate(w: Workout): string {
-  if (w.date) {
-    const [y, m, day] = w.date.split('-')
-    return `${Number(m)}/${Number(day)}/${y}`
-  }
-  if (w.email_date) return `Email ${w.email_date}`
-  return 'Undated'
+  return formatCardDate(w)
 }
 
 export function exerciseSummary(w: Workout): string {
-  const n = w.exercises.length
-  const blocks = new Set(w.exercises.map((e) => e.block).filter(Boolean))
-  const bits = [`${n} exercise${n === 1 ? '' : 's'}`]
-  if (blocks.size) bits.push(`${blocks.size} block${blocks.size === 1 ? '' : 's'}`)
-  if (w.focus) bits.push(w.focus)
-  return bits.join(' · ')
+  return cardSubtitle(w)
 }
+
+export { cardTitle, cardSubtitle }
 
 export function parseSetCount(sets: string | null): number {
   if (!sets) return 1

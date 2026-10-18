@@ -31,6 +31,17 @@ npm run preview
 
 Pushes to `main` run `.github/workflows/deploy-pages.yml` (GitHub Actions → Pages).
 
+### One-time owner setup (required)
+
+The deploy workflow builds successfully; Pages must be turned on by a repo admin (API tokens from this agent cannot enable it):
+
+1. Open **https://github.com/duragizer80/kierston-workout-app/settings/pages**
+2. Under **Build and deployment → Source**, choose **GitHub Actions**
+3. Prefer making the repo **Public** (Settings → General → Danger Zone) so Kierston can open the site without a GitHub login (private Pages needs GitHub Pro)
+4. Re-run the failed **Deploy GitHub Pages** workflow: Actions → latest run → **Re-run jobs**
+
+Live URL after that: **https://duragizer80.github.io/kierston-workout-app/**
+
 ## Invite collaborator (Kierston)
 
 1. Open https://github.com/duragizer80/kierston-workout-app/settings/access

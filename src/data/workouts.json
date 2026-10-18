@@ -1,0 +1,4657 @@
+[
+  {
+    "id": "2017-06-21-6-21-workout",
+    "date": "2017-06-21",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-06-21",
+    "name": "6.21 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": "The same email also prescribes a Thursday rowing session (see related rowing record).",
+    "exercises": [
+      {
+        "name": "Walking Lunges",
+        "block": "Block 1",
+        "sets": "4",
+        "reps": "100 ft.",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Caterpillars",
+        "block": "Block 1",
+        "sets": "4",
+        "reps": "12x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "TRX Rows into Archer Presses",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "15x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Sumo Squats w/ 30lb kettlebell",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "25",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "30lb kettlebell",
+        "unclear": []
+      },
+      {
+        "name": "Rope Pull-Overs",
+        "block": "Block 3",
+        "sets": null,
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "17.5lbs",
+        "unclear": [
+          "sets: none given"
+        ]
+      },
+      {
+        "name": "Step-ups into Overhead presses",
+        "block": "Block 3",
+        "sets": null,
+        "reps": "10/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "12\" setting — 10lb dumbbells",
+        "unclear": [
+          "sets: none given"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2017-06-21-rowing-thursday",
+    "date": null,
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-06-21",
+    "name": "Rowing (from 6.21 Workout email)",
+    "focus": null,
+    "notes": "The email says only \"Thursday\" and gives no calendar date. Number of pattern repeats: unclear.",
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Rowing",
+        "block": null,
+        "sets": null,
+        "reps": "30 minutes",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "pattern: 60s moderate / 30s sprint / 30s moderate / 15s sprint",
+        "unclear": [
+          "workout date: email says only Thursday",
+          "number of pattern repeats: unclear"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2017-06-23-6-23-workout",
+    "date": "2017-06-23",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-06-28",
+    "name": "6.23 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Stair Climbs",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "3x per side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "every other step going up, w/ 10lb dumbbells",
+        "unclear": []
+      },
+      {
+        "name": "Stair Push-ups",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "2x/step",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Cable Torso Twists",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "15/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "15lbs",
+        "unclear": []
+      },
+      {
+        "name": "Goblet Squats",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "20",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "20lbs",
+        "unclear": []
+      },
+      {
+        "name": "TRX Rows w/ Archer Presses",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "15x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Side Plank Weaves",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "15/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-06-26-6-26-workout",
+    "date": "2017-06-26",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-06-28",
+    "name": "6.26 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Stairs",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "2x/ per side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "every other step with the same foot going up — 10lb dumbbells",
+        "unclear": []
+      },
+      {
+        "name": "Walking lunges w/ 10lb dumbbells",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "80 ft.",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "10lb dumbbells",
+        "unclear": []
+      },
+      {
+        "name": "Hammer Curls w/ Overhead presses",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "12",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "12.5lbs",
+        "unclear": []
+      },
+      {
+        "name": "Renegade Rows",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "12/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "12.5lbs",
+        "unclear": []
+      },
+      {
+        "name": "Roman Chair Knee Tucks",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "20x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "20lb ball slams",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "20x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "20lb",
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-06-28-6-28-workout",
+    "date": "2017-06-28",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-06-28",
+    "name": "6/28 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": "Friday: 6.23 · Saturday: Fucking Running",
+    "exercises": [
+      {
+        "name": "Side Walking Sumo Squats",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "100 ft.",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "30lbs",
+        "unclear": []
+      },
+      {
+        "name": "Russian Twists",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "60 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Single Legged Deadlifts",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "12/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "10lbs dumbbells",
+        "unclear": []
+      },
+      {
+        "name": "BOSU Side to sides",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "60 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "TRX single Armed Rows",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "15/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Pull-Downs",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "55lbs",
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-07-03-7-3-workout",
+    "date": "2017-07-03",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-07-05",
+    "name": "7.3 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Every other step stair climbs",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "2/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "one side per flight",
+        "unclear": []
+      },
+      {
+        "name": "Renegade Rows into Side Plank Presses",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "12/side alternating",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "10lbs",
+        "unclear": []
+      },
+      {
+        "name": "Sykos — BOSU",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "12x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Lunges",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "100 ft.",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-07-06-7-6-workout",
+    "date": "2017-07-06",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-07-06",
+    "name": "7.6 WOrkout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": "1) 40 minutes Rowing · 2) 6.23 with 4 sets · 3) 7.6. The 40-minute row is a separate record. The 6.23 repeat refers to the 6.23 Workout, done with 4 sets. Which days these fall on: unclear.",
+    "exercises": [
+      {
+        "name": "Step-ups w/ Reverse Lunges",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "15/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "18\"",
+        "unclear": []
+      },
+      {
+        "name": "TRX Push-Ups",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "15x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "KB Swings",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "30",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "25lbs",
+        "unclear": []
+      },
+      {
+        "name": "Roman Chair Knee Tucks",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "20",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Cable Rows",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "37.5lbs",
+        "unclear": []
+      },
+      {
+        "name": "Rope Tricep Extensions",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "17.5lbs",
+        "unclear": []
+      },
+      {
+        "name": "Walking Lunges",
+        "block": "Block 4",
+        "sets": "2",
+        "reps": "around the entire gym",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-07-06-rowing",
+    "date": null,
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-07-06",
+    "name": "Rowing (from 7.6 WOrkout email)",
+    "focus": null,
+    "notes": "No pattern or intensity given.",
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Rowing",
+        "block": null,
+        "sets": null,
+        "reps": "40 minutes",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": [
+          "workout date: unclear",
+          "no pattern or intensity given"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2017-07-10-7-10-workout",
+    "date": "2017-07-10",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-07-10",
+    "name": "7.10 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Dual Rope Slams",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "30x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "High Plank",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "60 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Rope Flutters — In a squat",
+        "block": "Block 2",
+        "sets": "2",
+        "reps": "20 seconds on / 10 seconds off for 6 rounds",
+        "rest": null,
+        "tempo": "Tabata style",
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Walking Lunges w/ 12lb ball slams",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "120 ft.",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "Right foot leading, slam ball to right — 12lb",
+        "unclear": []
+      },
+      {
+        "name": "Face Pulls",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "27.5lbs",
+        "unclear": []
+      },
+      {
+        "name": "Single Armed TRX Rows",
+        "block": "Block 4",
+        "sets": "3",
+        "reps": "15/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Mountain Climbers",
+        "block": "Block 4",
+        "sets": "3",
+        "reps": "60 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-07-12-7-12-workout",
+    "date": "2017-07-12",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-07-13",
+    "name": "7.12 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "TRX Rows w/ squats",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "20",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Rip trainer lacrosse throws",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "20/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "BOSU Side to side w/ 8lb dumbbells",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "45 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "8lb dumbbells",
+        "unclear": []
+      },
+      {
+        "name": "bentover dumbbell flys",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "8lbs",
+        "unclear": []
+      },
+      {
+        "name": "Reverse Lunges w/ 8lb ball slams",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "80 ft.",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "8lb",
+        "unclear": []
+      },
+      {
+        "name": "BOSU plank side to sides",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "30 total",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Downward stair ladder squats",
+        "block": "Block 4",
+        "sets": "2",
+        "reps": null,
+        "rest": null,
+        "tempo": null,
+        "load_notes": "add a squat to each step coming down",
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-07-19-7-19-workout",
+    "date": "2017-07-19",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-07-26",
+    "name": "7.19 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Lateral lunged cable torso twists",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "15/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "15lbs",
+        "unclear": []
+      },
+      {
+        "name": "Ice skater lunges",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "30x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Pullovers",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "15x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "20lbs",
+        "unclear": []
+      },
+      {
+        "name": "caterpillars w/ pushups",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "12x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "HS single armed side pulldowns",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "12/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "25lbs",
+        "unclear": []
+      },
+      {
+        "name": "stair sprints",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "3x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-07-22-7-22-workout",
+    "date": "2017-07-22",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-07-24",
+    "name": "7.22 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "18\" stepups w/ reverse lunges",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "15/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "T-bar Deadlifts into curls w/ overhead presses",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "12/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "5lbs",
+        "unclear": []
+      },
+      {
+        "name": "Renegade Rows w/ side plank presses",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "10/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "10lbs",
+        "unclear": []
+      },
+      {
+        "name": "Decline bench sit-ups",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "15x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-07-24-7-24-workout",
+    "date": "2017-07-24",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-07-24",
+    "name": "7.24 Workout",
+    "focus": null,
+    "notes": "Your own forward of this email (not from the trainer) describes Andrzej Specials as a squat with a one-arm dumbbell lift, jump back into a plank, then turn and lift the weight with that same arm.",
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Andrzej Specials",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "8/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "10lbs",
+        "unclear": []
+      },
+      {
+        "name": "5 stair sprints",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "5",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "w/ 10lb dumbbells",
+        "unclear": []
+      },
+      {
+        "name": "Forward/Backward/Forward Lunges w/ 10lb dumbbells",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "40 ft.",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "10lb dumbbells",
+        "unclear": []
+      },
+      {
+        "name": "Planks w/ overhead reaches",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "12/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "TRX Single Armed Rows",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "15/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Elf Jacks",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "45 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-07-27-7-27-workout",
+    "date": "2017-07-27",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-08-10",
+    "name": "7.27 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": "10 minute row cool down",
+    "exercises": [
+      {
+        "name": "Goblet squats",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "30",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "20lbs",
+        "unclear": []
+      },
+      {
+        "name": "bentover dumbbell rows",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "15/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "20lbs",
+        "unclear": []
+      },
+      {
+        "name": "Rope fluttered lunges",
+        "block": "Block 2",
+        "sets": "2",
+        "reps": "30 sec/10 sec x 5",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "BOSY side to sides",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "60 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": [
+          "\"BOSY\" as written; likely BOSU"
+        ]
+      },
+      {
+        "name": "roller knee tucks",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "20x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-07-31-7-31-workout",
+    "date": "2017-07-31",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-08-07",
+    "name": "7.31 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "TRX single armed rows w/ twist reaches",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "15/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "walking lunges",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "120\"",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": [
+          "unit as written (120\"); unclear"
+        ]
+      },
+      {
+        "name": "BOSU high planks w/ side to side leg swings",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "12/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Sumo squat hops",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "25x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Barbell deadlifts w/ curls into overhead press",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "30lbs",
+        "unclear": []
+      },
+      {
+        "name": "Stair sprints",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "3x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-08-02-8-2-workout",
+    "date": "2017-08-02",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-08-07",
+    "name": "8.2 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Farmer Squats",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "25",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "30lbs",
+        "unclear": []
+      },
+      {
+        "name": "Renegade Rows w/ Side plank press",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "12/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "10lbs",
+        "unclear": []
+      },
+      {
+        "name": "LF chest fly iso 12s",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "10/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "40lbs",
+        "unclear": []
+      },
+      {
+        "name": "Single Legged Walking Lunges",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "40ft. per leg",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "KB swings",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "30",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "25lbs",
+        "unclear": []
+      },
+      {
+        "name": "Mountain Climbers",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "45 second",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-08-07-8-7-workout",
+    "date": "2017-08-07",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-08-10",
+    "name": "8.7 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Farmer Squats",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "25",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "30lbs",
+        "unclear": []
+      },
+      {
+        "name": "Bench Push-ups",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "15x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Uneven stair climb w/ lateral leg swings",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "1 flight per side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "walking forward/backward/forward lunges",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "80f ft.",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": [
+          "\"80f\" as written; unclear"
+        ]
+      },
+      {
+        "name": "Wood chops",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "20/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "15lb KB",
+        "unclear": []
+      },
+      {
+        "name": "Elf jacks",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "60 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-08-09-8-9-workout",
+    "date": "2017-08-09",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-08-10",
+    "name": "8.9 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "BOSU Bulgarian split squats",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "20/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "KB swings",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "30",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "25lbs",
+        "unclear": []
+      },
+      {
+        "name": "single armed cable chest press punches",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "15/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "17.5lbs",
+        "unclear": []
+      },
+      {
+        "name": "roller knee tucks",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "30",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "stair climbs",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "2x per foot",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "same foot every other step — 30lbs",
+        "unclear": []
+      },
+      {
+        "name": "stair sprints",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "5x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-08-26-8-26-workout",
+    "date": "2017-08-26",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-09-11",
+    "name": "8.26 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Dual rope slams",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "30x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "30 second squat hold",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "30 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Suicides w/ 3 stations",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": null,
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Rope Russian Twists",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "90 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "walking lunges",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "80'",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "TRX Push-ups",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "20",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Mt Climbers",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "90 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-09-01-9-1-workout",
+    "date": "2017-09-01",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-09-04",
+    "name": "9.1 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "reverse grip pulldowns",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "65lbs",
+        "unclear": []
+      },
+      {
+        "name": "caterpillars",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "12x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "24\" stepups",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "18/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "elf jacks",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "45 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "15lb ball slams into thrust backs",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "20x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "15lb",
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-09-11-9-11-workout",
+    "date": "2017-09-11",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-09-18",
+    "name": "9.11 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Dumbbell presses w/ leg extensions",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "15lbs",
+        "unclear": []
+      },
+      {
+        "name": "farmer squats",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "25",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "30lbs",
+        "unclear": []
+      },
+      {
+        "name": "LF reverse flys",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "40lbs",
+        "unclear": []
+      },
+      {
+        "name": "Forward/backward/forward lunges",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "60'",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "narrow grip pulldowns",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "70lbs",
+        "unclear": []
+      },
+      {
+        "name": "leg press",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "25",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "50lbs",
+        "unclear": []
+      },
+      {
+        "name": "elf jacks",
+        "block": "Block 4",
+        "sets": "5 rounds",
+        "reps": "15x",
+        "rest": "10 sec between rounds",
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-09-14-9-14-workout",
+    "date": "2017-09-14",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-09-18",
+    "name": "9.14 workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Cable chest flys",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "10lbs",
+        "unclear": []
+      },
+      {
+        "name": "squat hops",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "30 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "single armed cable rows w/ twists",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "12/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "40lbs",
+        "unclear": []
+      },
+      {
+        "name": "plank scissor kicks",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "45 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Bulgarian split squats",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "15/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "20lbs",
+        "unclear": []
+      },
+      {
+        "name": "renegade rows",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "12/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "17.5 lbs",
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-09-16-9-16-workout",
+    "date": "2017-09-16",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-09-18",
+    "name": "9.16 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "pulldowns",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "70lbs",
+        "unclear": []
+      },
+      {
+        "name": "double down ice skaters",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "20x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "LF chest flys",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "55lbs",
+        "unclear": []
+      },
+      {
+        "name": "lateral walking sumo squats",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "80'",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-09-23-9-23-workout",
+    "date": "2017-09-23",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-09-25",
+    "name": "9.23 Workout",
+    "focus": null,
+    "notes": "Block 2 gives \"first round\" and \"second round\" reps but 3 sets. How rounds relate to sets: unclear.",
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Dual rope slams",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "40x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Squat thrusts",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "15x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "10lb ball slams / 15lb KB swings / Prisoner Squats / Pushups",
+        "block": "Block 2 — Circuit Suicides",
+        "sets": "3",
+        "reps": "5x first round and 10x second round",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": [
+          "how rounds relate to 3 sets: unclear"
+        ]
+      },
+      {
+        "name": "18\" powerups",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "20/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-09-25-9-25-workout",
+    "date": "2017-09-25",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-09-25",
+    "name": "9.25 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "KS swings",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "30",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "20lbs",
+        "unclear": [
+          "\"KS\" as written; likely KB"
+        ]
+      },
+      {
+        "name": "60 second side to sides",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "60 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "60 seconds plank reaches",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "60 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Side rope slams",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "30/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "lateral lunged cable torso twists",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "40",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "17.5lbs",
+        "unclear": []
+      },
+      {
+        "name": "15 burpees",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-09-27-9-27-workout",
+    "date": "2017-09-27",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-09-27",
+    "name": "9.27 Workout",
+    "focus": null,
+    "notes": "Block 3 says both \"for 7 sets\" and \"3 sets\". How these combine: unclear.",
+    "warm_up": null,
+    "general_instructions": "Thursday: 9.25 · Friday: 9.27 · Saturday: 9.25",
+    "exercises": [
+      {
+        "name": "Dual Rope Slams w/ burpees",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "25x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Laps around the gym w/ stairs",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "3x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Rope flutters",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "60 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Walking lunges",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "80 ft.",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Rope Russian twists",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "50x for 7 sets",
+        "rest": "10 seconds between",
+        "tempo": null,
+        "load_notes": null,
+        "unclear": [
+          "says both \"for 7 sets\" and block \"3 sets\"; how these combine: unclear"
+        ]
+      },
+      {
+        "name": "Stair squat hops",
+        "block": "Block 4",
+        "sets": "3",
+        "reps": "2 flights",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-10-02-10-2-workout",
+    "date": "2017-10-02",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-10-03",
+    "name": "10.2 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Cable chest press w/ lunges",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "16",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "12.5lbs",
+        "unclear": []
+      },
+      {
+        "name": "10lb ball slams",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "20x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "10lb",
+        "unclear": []
+      },
+      {
+        "name": "lateral lunged cable torso twists",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "30",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "17.5lbs",
+        "unclear": []
+      },
+      {
+        "name": "walking lunges",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "100 ft.",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "burpees",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "10x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Andrzej specials",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "7/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "12.5lbs",
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-10-06-10-6-workout",
+    "date": "2017-10-06",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-10-10",
+    "name": "10/6 workiout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "every other step stair climbs",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "3",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "25lbs",
+        "unclear": []
+      },
+      {
+        "name": "stair pushups",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "1 flight up",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "archer TRX pushups",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "16x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "squats thrusts",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "20x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "T-bar squats w/ alt. overhead presses",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "30",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "12.5lbs",
+        "unclear": []
+      },
+      {
+        "name": "stair sprints",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "3x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-10-10-10-10-workout",
+    "date": "2017-10-10",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-10-14",
+    "name": "10.10 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "lunges cable chest flys",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "16",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "12.5lbs",
+        "unclear": []
+      },
+      {
+        "name": "walking lunges w/ alt ball slams",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "100 ft.",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "plank scissors",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "50x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "TRX Pushups",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "15x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "single legged deadlifts",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "15/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "20lbs",
+        "unclear": []
+      },
+      {
+        "name": "elf jacks",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "45x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Side to side station runs w/ ball slams",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "20",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "15lbs",
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-10-11-10-11-workout",
+    "date": "2017-10-11",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-10-14",
+    "name": "10.11 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "T-bar squats into overhead presses",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "15/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "15lbs",
+        "unclear": []
+      },
+      {
+        "name": "plank overhead reaches",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "30x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "single legged deadlifts",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "15/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "209lbs",
+        "unclear": [
+          "209lbs as written; probably a typo"
+        ]
+      },
+      {
+        "name": "burpees",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "20x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "t-plank",
+        "block": "Block 4",
+        "sets": "3",
+        "reps": "45 seconds/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-10-14-10-14-workout",
+    "date": "2017-10-14",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-10-16",
+    "name": "10.14 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Farmer Squats",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "25",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "50lbs",
+        "unclear": []
+      },
+      {
+        "name": "Calf raises",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "20",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "50lbs",
+        "unclear": []
+      },
+      {
+        "name": "Split Squats",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "15/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "30lbs",
+        "unclear": []
+      },
+      {
+        "name": "Leg extensions 777's",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": null,
+        "rest": null,
+        "tempo": null,
+        "load_notes": "65lbs",
+        "unclear": [
+          "777's scheme details not expanded"
+        ]
+      },
+      {
+        "name": "Single Legged Bridge Raises",
+        "block": "Block 4",
+        "sets": "3",
+        "reps": "15/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Stair Squat Hops",
+        "block": "Block 5",
+        "sets": "5",
+        "reps": "1 flight up",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-10-18-10-18-workout",
+    "date": "2017-10-18",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-10-24",
+    "name": "10.18 Workout",
+    "focus": null,
+    "notes": "In the 2017-11-28 re-forward, the trainer says he \"meant 10.18 not 11.18.\" The workout content is unchanged. Also noted as re-forwarded 2017-11-28.",
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "18\" stepups w/ reverse lunges",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "20/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Pushups",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "15x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Pullups into squat thrusts",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "15x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "TRX rows w/ archer presses",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "20x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "side plank weaves",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "20/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Alt. kettlebell swings",
+        "block": "Block 4",
+        "sets": "3",
+        "reps": "40",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "30lbs",
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-10-25-10-25-workout",
+    "date": "2017-10-25",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-10-27",
+    "name": "10.25 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Ball Slams",
+        "block": "Block 1 — Suicide circuits",
+        "sets": "2",
+        "reps": "15/10/10",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Renegade Rows",
+        "block": "Block 1 — Suicide circuits",
+        "sets": "2",
+        "reps": "16/12/12",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Squats w/ front raises",
+        "block": "Block 1 — Suicide circuits",
+        "sets": "2",
+        "reps": "15/10/10",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "jumping jacks",
+        "block": "Block 1 — Suicide circuits",
+        "sets": "2",
+        "reps": "15/10/10",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Rope Flutter Tabata",
+        "block": "Block 2",
+        "sets": null,
+        "reps": "20/10 x 8",
+        "rest": null,
+        "tempo": "Tabata",
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-11-02-11-2-workout",
+    "date": "2017-11-02",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-11-06",
+    "name": "11.2 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Dumbbell presses w/ leg extensions",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "15lbs",
+        "unclear": []
+      },
+      {
+        "name": "Renegade Rows",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "12/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "15lbs",
+        "unclear": []
+      },
+      {
+        "name": "squat hops",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "25x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "lunged cable chest flys",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "16",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "10lbs",
+        "unclear": []
+      },
+      {
+        "name": "pulldwns",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "70lbs",
+        "unclear": []
+      },
+      {
+        "name": "goblet squats",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "20",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "25lbs",
+        "unclear": []
+      },
+      {
+        "name": "Granny lunges",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "40ft each way",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "30lbs",
+        "unclear": []
+      },
+      {
+        "name": "stair sprints",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "5x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "every other step",
+        "unclear": []
+      },
+      {
+        "name": "Behind the head ball throws",
+        "block": "Block 4",
+        "sets": "3",
+        "reps": "20",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "10lbs",
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-11-06-11-6-workout",
+    "date": "2017-11-06",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-11-06",
+    "name": "11.6 workout",
+    "focus": null,
+    "notes": "Block 3 written as \"3 stes\" in source.",
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "upward cable torso twists",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "30",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "20lbs",
+        "unclear": []
+      },
+      {
+        "name": "burpees",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "12x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "pulldowns",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "20",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "60lbs",
+        "unclear": []
+      },
+      {
+        "name": "ice skaters w/ 30 lbs",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "30",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "30 lbs",
+        "unclear": []
+      },
+      {
+        "name": "pullovers",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "20",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "20lbs",
+        "unclear": []
+      },
+      {
+        "name": "LF flys",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "20",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "45lbs",
+        "unclear": []
+      },
+      {
+        "name": "kettlebell swings",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "30",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "25lbs",
+        "unclear": []
+      },
+      {
+        "name": "rope fluttered squats",
+        "block": "Block 4",
+        "sets": "3",
+        "reps": "20x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-11-13-11-13-workout",
+    "date": "2017-11-13",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-11-15",
+    "name": "11.13 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Rope Flutters",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "60 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Forward/backward/forward lunges",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "100 ft.",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "BOSU psychos",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "15x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Roman chair leg raises",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "20x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Seated bicep curls",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "10lbs",
+        "unclear": []
+      },
+      {
+        "name": "pulldowns — reverse grip",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "70lbs",
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-11-15-11-15-workout",
+    "date": "2017-11-15",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2017-11-15",
+    "name": "11.15 Workout",
+    "focus": null,
+    "notes": "You replied that he forgot \"the tbar thing and mountain climbers.\" Your own follow-up note (not from the trainer) reads: \"7.5lbs deadlift that with bicep curl 15xside · 60 sec mountain climbers.\" Where these fit in the blocks: unclear.",
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Lunged Cable Chest Flys",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "20",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "10lbs",
+        "unclear": []
+      },
+      {
+        "name": "squat hops",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "40x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Single legged deadlifts",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "15/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "20lbs",
+        "unclear": []
+      },
+      {
+        "name": "pull-downs",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "12",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "80lbs",
+        "unclear": []
+      },
+      {
+        "name": "reverse flys — LF machine",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "20",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "35lbs",
+        "unclear": []
+      },
+      {
+        "name": "backward lunges",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "100 ft.",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-12-11-12-11-workout",
+    "date": "2017-12-11",
+    "source_email": "ajkfitnesstrainer@gmail.com",
+    "email_date": "2017-12-12",
+    "name": "12.11 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "30cx dual rope slams",
+        "block": "Block 1",
+        "sets": "4",
+        "reps": "30cx",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": [
+          "\"30cx\" as written; likely 30x"
+        ]
+      },
+      {
+        "name": "TRX archer rows",
+        "block": "Block 1",
+        "sets": "4",
+        "reps": "15x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "15lb ball slams",
+        "block": "Block 1",
+        "sets": "4",
+        "reps": "20x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "15lb",
+        "unclear": []
+      },
+      {
+        "name": "walking lunges w/ 50 lbs",
+        "block": "Block 1",
+        "sets": "4",
+        "reps": "100 ft.",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "50 lbs",
+        "unclear": []
+      },
+      {
+        "name": "Pulldowns",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "12",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "75lbs/80/80",
+        "unclear": []
+      },
+      {
+        "name": "paloff presses",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "12/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "20lbs",
+        "unclear": []
+      },
+      {
+        "name": "pullups into burpees",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "8x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Stair squat hops",
+        "block": "Block 3",
+        "sets": "2",
+        "reps": "2 flights",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "5x stair sprints",
+        "block": "Block 3",
+        "sets": "2",
+        "reps": "5x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-12-13-12-13-workout",
+    "date": "2017-12-13",
+    "source_email": "ajkfitnesstrainer@gmail.com",
+    "email_date": "2017-12-14",
+    "name": "12.13 WOrkout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Dual rope slams",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "30x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "wall balls",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "20",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "10lbs",
+        "unclear": []
+      },
+      {
+        "name": "Bar pullovers",
+        "block": "Block 2",
+        "sets": "5",
+        "reps": "12",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "27.5lbs",
+        "unclear": []
+      },
+      {
+        "name": "Incline pushups",
+        "block": "Block 2",
+        "sets": "5",
+        "reps": "12x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "TRX rows",
+        "block": "Block 2",
+        "sets": "5",
+        "reps": "12x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "decline cable flys",
+        "block": "Block 2",
+        "sets": "5",
+        "reps": "12",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "12.5lbs",
+        "unclear": []
+      },
+      {
+        "name": "facepulls",
+        "block": "Block 2",
+        "sets": "5",
+        "reps": "12",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "22.5lbs",
+        "unclear": []
+      },
+      {
+        "name": "walking lunges",
+        "block": "Block 2",
+        "sets": "5",
+        "reps": "80 ft.",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-12-27-12-27-workout",
+    "date": "2017-12-27",
+    "source_email": "ajkfitnesstrainer@gmail.com",
+    "email_date": "2017-12-28",
+    "name": "12.27 WOrkout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "L circuit: 5x 15lb ball slams into lateral run, 1 burpee, forward run into 5x 30lb KB squats, run back, do burpee at mid point and start all over",
+        "block": "Block 1 — L circuit",
+        "sets": "10 rounds",
+        "reps": null,
+        "rest": null,
+        "tempo": null,
+        "load_notes": "15lb ball / 30lb KB",
+        "unclear": []
+      },
+      {
+        "name": "Reverse jack slams",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "20x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "BOSU side to sides",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "60 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Rope flutters",
+        "block": "Block 3",
+        "sets": null,
+        "reps": "20/10 split for 8 rounds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Stair hop ups into thrust backs",
+        "block": "Block 4",
+        "sets": "2",
+        "reps": "30x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2017-12-30-12-30-workout",
+    "date": "2017-12-30",
+    "source_email": "ajkfitnesstrainer@gmail.com",
+    "email_date": "2018-01-02",
+    "name": "12.30 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "2 Iceskaters into burpees",
+        "block": "Block 1",
+        "sets": "4",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "40lbs",
+        "unclear": []
+      },
+      {
+        "name": "pulldowns",
+        "block": "Block 1",
+        "sets": "4",
+        "reps": "12",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "75lbs",
+        "unclear": []
+      },
+      {
+        "name": "Leg press",
+        "block": "Block 2 — descending",
+        "sets": null,
+        "reps": "12 reps down to 1 rep",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "45lbs; do single stair run in between each set",
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2018-01-03-1-3-workout",
+    "date": "2018-01-03",
+    "source_email": "ajkfitnesstrainer@gmail.com",
+    "email_date": "2018-01-03",
+    "name": "1.3 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "PUllovers",
+        "block": "Block 1",
+        "sets": "5",
+        "reps": "12",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "27.5lbs",
+        "unclear": []
+      },
+      {
+        "name": "Pushups",
+        "block": "Block 1",
+        "sets": "5",
+        "reps": "12x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "walking lunges",
+        "block": "Block 1",
+        "sets": "5",
+        "reps": "100 ft.",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "TRX rows",
+        "block": "Block 1",
+        "sets": "5",
+        "reps": "12z",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": [
+          "\"12z\" as written; likely 12x"
+        ]
+      },
+      {
+        "name": "cable decline flys",
+        "block": "Block 1",
+        "sets": "5",
+        "reps": "12",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "12.5lbs",
+        "unclear": []
+      },
+      {
+        "name": "sumo squats",
+        "block": "Block 1",
+        "sets": "5",
+        "reps": "12x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "25lbs",
+        "unclear": []
+      },
+      {
+        "name": "10x stair sprints",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "10x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2018-01-05-1-5-workout",
+    "date": "2018-01-05",
+    "source_email": "ajkfitnesstrainer@gmail.com",
+    "email_date": "2018-10-24",
+    "name": "1.5 Workout",
+    "focus": null,
+    "notes": "Original sent 2018-01-05; original isn't in inbox. Record taken from forward dated 2018-10-24.",
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Dual Rope Slams",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "30x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Forward/Backward/Forward Lunges",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "100 ft.",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "20lbs",
+        "unclear": []
+      },
+      {
+        "name": "Reverse Jack Slams",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "25x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Squatted Cable Rows",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "20",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "42.5lbs",
+        "unclear": []
+      },
+      {
+        "name": "Incline Pushups",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "20x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Planks w/ pulls",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "15/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "15lbs",
+        "unclear": []
+      },
+      {
+        "name": "Dumbbell Front Raises",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "10lbs",
+        "unclear": []
+      },
+      {
+        "name": "Decline Bench Reach-ups",
+        "block": "Block 4",
+        "sets": "3",
+        "reps": "20x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Bentover Reverse Flys",
+        "block": "Block 4",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "10lbs",
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2018-01-19-1-19-workout",
+    "date": "2018-01-19",
+    "source_email": "ajkfitnesstrainer@gmail.com",
+    "email_date": "2018-01-19",
+    "name": "1.19 Workotu",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "dual rope slams",
+        "block": "Block 1",
+        "sets": "6",
+        "reps": "25x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "pull-overs",
+        "block": "Block 1",
+        "sets": "6",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "27.5lbs",
+        "unclear": []
+      },
+      {
+        "name": "cable chest press",
+        "block": "Block 1",
+        "sets": "6",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "17.5lbs",
+        "unclear": []
+      },
+      {
+        "name": "elf jacks",
+        "block": "Block 1",
+        "sets": "6",
+        "reps": "45x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "walking lunges",
+        "block": "Block 1",
+        "sets": "6",
+        "reps": "100 ft.",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Stair squat hops",
+        "block": "Block 2",
+        "sets": null,
+        "reps": "3x total",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2018-01-22-1-22-workout",
+    "date": "2018-01-22",
+    "source_email": "ajkfitnesstrainer@gmail.com",
+    "email_date": "2018-01-23",
+    "name": "1.22 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Squats into overhead snatches",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "15/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "15lbs",
+        "unclear": []
+      },
+      {
+        "name": "Pulldowns",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "8",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "90lbs",
+        "unclear": []
+      },
+      {
+        "name": "plank",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "60 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Leg press",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "90lbs",
+        "unclear": []
+      },
+      {
+        "name": "bentover rows",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "50lbs",
+        "unclear": []
+      },
+      {
+        "name": "walking lunges",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "150 ft.",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Dual rope slams",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "30x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "suicides",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "3 stations",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2018-01-26-1-26-workout",
+    "date": "2018-01-26",
+    "source_email": "ajkfitnesstrainer@gmail.com",
+    "email_date": "2018-01-27",
+    "name": "1.26 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Pulldowns",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "12",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "75/85/90",
+        "unclear": []
+      },
+      {
+        "name": "cable chest flys",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "12",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "10lbs",
+        "unclear": []
+      },
+      {
+        "name": "squats into arnold presses",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "15lbs",
+        "unclear": []
+      },
+      {
+        "name": "Seated cable rows — narrow",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "12",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "70lbs",
+        "unclear": []
+      },
+      {
+        "name": "incline cable flys",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "12",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "5lbs",
+        "unclear": []
+      },
+      {
+        "name": "decline reachups",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "smith machine hanging rows",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "12",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "HS high rows",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "12",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "90lbs",
+        "unclear": []
+      },
+      {
+        "name": "stair tricep pushups",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "12x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2018-01-29-1-29-workout",
+    "date": "2018-01-29",
+    "source_email": "ajkfitnesstrainer@gmail.com",
+    "email_date": "2018-02-05",
+    "name": "1.29 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Flat bench chest press w/ leg extensions",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "15lbs",
+        "unclear": []
+      },
+      {
+        "name": "Renegade Rows w/ t plank presses",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "10/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "15lbs",
+        "unclear": []
+      },
+      {
+        "name": "in and out squat hops",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "25x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "INcline HS press iso 12s",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "12/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "10lbs",
+        "unclear": []
+      },
+      {
+        "name": "Decline bench reachups into russian twists",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "5 reachups / 10 twists x 5",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2018-01-31-1-31-workout",
+    "date": "2018-01-31",
+    "source_email": "ajkfitnesstrainer@gmail.com",
+    "email_date": "2018-02-07",
+    "name": "1.31 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": "Do 1.31 on Friday, 10.14 Saturday, and 1.5 on Sunday (10.14 and 1.5 are earlier records).",
+    "exercises": [
+      {
+        "name": "Lateral lunges with rope slams",
+        "block": "Block 1",
+        "sets": "5",
+        "reps": "15/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Single armed dumbbell snatch into single armed burpees",
+        "block": "Block 1",
+        "sets": "5",
+        "reps": "10/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "20lbs",
+        "unclear": []
+      },
+      {
+        "name": "Lateral Squat hops w/ ball slams",
+        "block": "Block 1",
+        "sets": "5",
+        "reps": "20x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Single legged deadlifts",
+        "block": "Block 1",
+        "sets": "5",
+        "reps": "12/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "15lb dumbbells",
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2018-02-05-2-5-workout",
+    "date": "2018-02-05",
+    "source_email": "ajkfitnesstrainer@gmail.com",
+    "email_date": "2018-02-05",
+    "name": "2.5 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Rope fluttered lunges",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "20x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "pullups into pushups",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "8/each",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "KB swings, lateral shuffle into ball slams",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "5 each for 10 rounds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "walking lunges — w/ weaves",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "150ft.",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "stair sprints",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "5x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2018-02-07-2-7-workout",
+    "date": "2018-02-07",
+    "source_email": "ajkfitnesstrainer@gmail.com",
+    "email_date": "2018-02-10",
+    "name": "2.7 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Rope Slams",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "30x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Pullups into Pushups",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "10x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Cable Chest Flys",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "16",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "12.5lbs",
+        "unclear": []
+      },
+      {
+        "name": "Squat Hop 180's",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "30x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Reverse Lunges into Arnold Presses into Burpees",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "20",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "12.5lbs",
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2018-03-14-3-14-workout",
+    "date": "2018-03-14",
+    "source_email": "ajkfitnesstrainer@gmail.com",
+    "email_date": "2018-03-14",
+    "name": "3.14 workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Pull downs",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "80 (no unit given)",
+        "unclear": []
+      },
+      {
+        "name": "Burpees",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "10",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Seated rows",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "60 (no unit given)",
+        "unclear": []
+      },
+      {
+        "name": "Plank jacks",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "45 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Cable shotgun rows",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "15/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "25 (no unit given)",
+        "unclear": []
+      },
+      {
+        "name": "Stair squat hops",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": null,
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": [
+          "reps: unclear"
+        ]
+      },
+      {
+        "name": "Pullovers",
+        "block": "Block 4",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "30 (no unit given)",
+        "unclear": []
+      },
+      {
+        "name": "Hanging knee tucks",
+        "block": "Block 4",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2018-04-18-4-18-workout",
+    "date": "2018-04-18",
+    "source_email": "ajkfitnesstrainer@gmail.com",
+    "email_date": "2018-04-18",
+    "name": "4.18 workout",
+    "focus": null,
+    "notes": "The email also contains non-workout notes: \"No melons and bananas\" and \"Wants a cheat meal hahahahaha.\"",
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Forward backward forward lunges with 10lb plates",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "40ft forward 40ft backward",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "10lb plates",
+        "unclear": []
+      },
+      {
+        "name": "In and out squat hops",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "40x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Single legged deadlifts",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "12/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "50lbs",
+        "unclear": []
+      },
+      {
+        "name": "Sumo squats",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "25",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "40lvs",
+        "unclear": [
+          "\"lvs\" as written"
+        ]
+      },
+      {
+        "name": "Leg press",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "135lbs",
+        "unclear": []
+      },
+      {
+        "name": "Stair sprints",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": null,
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": [
+          "reps: unclear"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2018-07-05-7-5-workout",
+    "date": "2018-07-05",
+    "source_email": "ajkfitnesstrainer@gmail.com",
+    "email_date": "2018-07-05",
+    "name": "7.5 workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "TBar squats into overhead presses",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "15/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "15lbs",
+        "unclear": []
+      },
+      {
+        "name": "Walking lunges",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "80ft",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Kettlebell swings",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "25",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "25lbs",
+        "unclear": []
+      },
+      {
+        "name": "Bent over single armed TBar rows",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "15/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "15lbs",
+        "unclear": []
+      },
+      {
+        "name": "Double down sumo goblet squats",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "20",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "20lbs",
+        "unclear": []
+      },
+      {
+        "name": "Pushups",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "12",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Trx rows with archer presses",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "18x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Roman chair leg raises",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "40",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2018-07-09-7-9-workout",
+    "date": "2018-07-09",
+    "source_email": "ajkfitnesstrainer@gmail.com",
+    "email_date": "2018-07-09",
+    "name": "7.9 workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Step ups into reverse lunges",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "12/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Roller knee tucks into pushups",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Wall sit",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "45 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "KB double down sumo squats",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "20",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "30lbs",
+        "unclear": []
+      },
+      {
+        "name": "BOSU psychos",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "12",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "5 stair sprints",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "5",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Squats into wall balls",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "25",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "8lbs",
+        "unclear": []
+      },
+      {
+        "name": "Plank",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "90 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2018-07-31-7-31-workout",
+    "date": "2018-07-31",
+    "source_email": "ajkfitnesstrainer@gmail.com",
+    "email_date": "2018-08-02",
+    "name": "7.31 workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Andrzej specials",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "10/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "17.5lbs c",
+        "unclear": [
+          "\"c\" as written; unclear"
+        ]
+      },
+      {
+        "name": "Stair sprints",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "5x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Lunged cable chest presses",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "16",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "15lbs",
+        "unclear": []
+      },
+      {
+        "name": "Goblet squat hops",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "2",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "20lbs",
+        "unclear": [
+          "\"x 2\" as written; unclear"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2018-08-23-8-23-workout",
+    "date": "2018-08-23",
+    "source_email": "ajkfitnesstrainer@gmail.com",
+    "email_date": "2018-08-23",
+    "name": "8.23 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "HS high rows",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "70lbs, then 2 sets of stairs",
+        "unclear": []
+      },
+      {
+        "name": "HS incline chest press",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "40lbs, then 2 sets of stairs",
+        "unclear": []
+      },
+      {
+        "name": "HS bicep curls",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "25lbs, then 2 sets of stairs",
+        "unclear": []
+      },
+      {
+        "name": "Triep press downs",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "30lbs, then 2 sets of stairs",
+        "unclear": [
+          "\"Triep\" as written"
+        ]
+      },
+      {
+        "name": "Andrzej specials",
+        "block": "Block 2",
+        "sets": "2",
+        "reps": "12/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "15lbs",
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2018-08-28-8-28-workout",
+    "date": "2018-08-28",
+    "source_email": "ajkfitnesstrainer@gmail.com",
+    "email_date": "2018-08-28",
+    "name": "8.28 Workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Pulldowns",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "90lbs",
+        "unclear": []
+      },
+      {
+        "name": "Squat Hops",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "30x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Plank",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "60 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "stair sprints",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "5x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "20lb dumbbells",
+        "unclear": []
+      },
+      {
+        "name": "3 Dual Rope Slams into 1 burpee",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "10x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2018-09-10-9-10-workout",
+    "date": "2018-09-10",
+    "source_email": "ajkfitnesstrainer@gmail.com",
+    "email_date": "2019-06-05",
+    "name": "9.10 workout",
+    "focus": null,
+    "notes": "Original sent 2018-09-10. Record taken from trainer's re-forward dated 2019-06-05.",
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "18\" step ups with 20lb kettlebells",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "12/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "20lb kettlebells",
+        "unclear": []
+      },
+      {
+        "name": "Dual rope slams",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "30",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Kettlebell swings",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "30",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "25lbs",
+        "unclear": []
+      },
+      {
+        "name": "BOSU side to sides",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "30 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Rope flutters",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "30 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Stair squat hops into pushups",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "1 flight",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2020-12-12-workout-12-12",
+    "date": "2020-12-12",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2020-12-13",
+    "name": "Workout 12/12",
+    "focus": null,
+    "notes": "Original sent 2020-12-13. Trainer re-forwarded on 2020-12-22.",
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Caterpillars with two pushups",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "12x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Jumping jacks",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "30 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Sumo squats with 10lbkettlebell",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "15x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "10lbkettlebell",
+        "unclear": []
+      },
+      {
+        "name": "Plank",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "30 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Reverse standing lunges",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "10/side alternating",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Renegade rows with to T-plank presses",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "10/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "5lb",
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2020-12-26-workout-12-26",
+    "date": "2020-12-26",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2020-12-26",
+    "name": "Workout 12/26",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": "Your own forward (not from the trainer): \"M do 12/12 · T do 12/26 · Th do 12/12 · F 11am\"",
+    "exercises": [
+      {
+        "name": "Reverse double down lunges",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "12/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "10lb dumbbells",
+        "unclear": []
+      },
+      {
+        "name": "Plank with overhead stretch reaches",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "15/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Sumosquats with woodchops",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "12/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "10lb weight",
+        "unclear": []
+      },
+      {
+        "name": "jumping jacks",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "45x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Tricep dips with pointed toe kicks",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "16x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Caterpillars",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "15x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Bent over dumbbell rows w elbows out",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "12lbs",
+        "unclear": []
+      },
+      {
+        "name": "Bicep curls",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "12x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "10lbs",
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2021-01-31-1-31-workout",
+    "date": "2021-01-31",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2021-01-31",
+    "name": "1/31 workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Forward backward lunges",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "6 per side alt",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "12lb DBs.",
+        "unclear": []
+      },
+      {
+        "name": "Mountain climbers",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "45 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Sumo squats with front DB raised",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "15",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "10lbs",
+        "unclear": []
+      },
+      {
+        "name": "Jumping jacks",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "45 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Incline push-ups",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "10-12x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Vent over single armed reverse DB fly",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "12/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "5lbs",
+        "unclear": [
+          "\"Vent\" as written; likely \"Bent\""
+        ]
+      },
+      {
+        "name": "Psychos",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "8x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2021-02-05-workout-12-12-updated",
+    "date": null,
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2021-02-05",
+    "name": "Workout 12/12 updated",
+    "focus": null,
+    "notes": "Labelled 12/12 in source; date unclear. Progressed version of 2020 Workout 12/12 with heavier loads and longer holds. Email body starts mid-quote, so top of Block 1 may be cut off. Completeness: unclear.",
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "pushups",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "12x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Jumping jacks",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "45 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Deadlifts with 40lb kettlebell",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "15x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "40lb kettlebell",
+        "unclear": []
+      },
+      {
+        "name": "Sumo squats with 30lb kettlebell",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "18x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "30lb kettlebell",
+        "unclear": []
+      },
+      {
+        "name": "Plank",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "60 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Reverse standing lunges",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "10/side alternating",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Renegade rows with to T-plank presses",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "10/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "5lb",
+        "unclear": []
+      }
+    ]
+  },
+  {
+    "id": "2021-02-13-2-13-workout",
+    "date": "2021-02-13",
+    "source_email": "drzejk@icloud.com",
+    "email_date": "2021-02-13",
+    "name": "2/13 workout",
+    "focus": null,
+    "notes": null,
+    "warm_up": null,
+    "general_instructions": null,
+    "exercises": [
+      {
+        "name": "Forward Lunges with bicep curls at the bottom of the lunge",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "10/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "12lb",
+        "unclear": []
+      },
+      {
+        "name": "Plano jacks",
+        "block": "Block 1",
+        "sets": "3",
+        "reps": "45x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": [
+          "\"Plano\" as written; likely plank jacks"
+        ]
+      },
+      {
+        "name": "Side sumo squats with ball torso twists",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "12/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "Single legged deadlifts",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "15/side",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "20lbs KB",
+        "unclear": []
+      },
+      {
+        "name": "Plank",
+        "block": "Block 2",
+        "sets": "3",
+        "reps": "60 seconds",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      },
+      {
+        "name": "KB swings",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "25x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": "30lbs",
+        "unclear": []
+      },
+      {
+        "name": "Push-ups",
+        "block": "Block 3",
+        "sets": "3",
+        "reps": "12x",
+        "rest": null,
+        "tempo": null,
+        "load_notes": null,
+        "unclear": []
+      }
+    ]
+  }
+]

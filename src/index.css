@@ -812,16 +812,16 @@ button {
 }
 
 .body-map-silhouette {
-  fill: #323632;
-  stroke: #f2f0ea42;
-  stroke-width: 1.75;
+  fill: #3a403a;
+  stroke: #c4a35a55;
+  stroke-width: 1.8;
   stroke-linejoin: round;
   pointer-events: none;
 }
 
 .body-map-guide {
   fill: none;
-  stroke: #f2f0ea12;
+  stroke: #f2f0ea18;
   stroke-width: 1;
   stroke-linecap: round;
   pointer-events: none;
@@ -829,7 +829,7 @@ button {
 
 /* Soft fills — silhouette outline carries the human shape */
 .body-map-region {
-  fill: #c4a35a30;
+  fill: #c4a35a38;
   stroke: transparent;
   stroke-width: 0;
   cursor: pointer;
@@ -838,14 +838,14 @@ button {
 
 .body-map-region:hover,
 .body-map-region:focus {
-  fill: #c4a35a55;
+  fill: #c4a35a66;
   outline: none;
 }
 
 .body-map-region.on {
-  fill: #c4a35ae0;
-  stroke: #e0c67a;
-  stroke-width: 1.2;
+  fill: #c4a35aee;
+  stroke: #e8d49a;
+  stroke-width: 1.35;
   stroke-linejoin: round;
 }
 

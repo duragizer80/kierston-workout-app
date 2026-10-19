@@ -827,26 +827,26 @@ button {
   pointer-events: none;
 }
 
-/* Soft fills — silhouette outline carries the human shape */
+/* Soft fills inside silhouette — idle still readable as tap zones */
 .body-map-region {
-  fill: #c4a35a38;
-  stroke: transparent;
-  stroke-width: 0;
+  fill: #c4a35a4d;
+  stroke: #c4a35a66;
+  stroke-width: 0.9;
+  stroke-linejoin: round;
   cursor: pointer;
   transition: fill 0.18s ease, stroke 0.18s ease;
 }
 
 .body-map-region:hover,
 .body-map-region:focus {
-  fill: #c4a35a66;
+  fill: #c4a35a7a;
   outline: none;
 }
 
 .body-map-region.on {
   fill: #c4a35aee;
   stroke: #e8d49a;
-  stroke-width: 1.35;
-  stroke-linejoin: round;
+  stroke-width: 1.4;
 }
 
 .body-map-caption {

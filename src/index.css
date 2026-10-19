@@ -806,47 +806,53 @@ button {
 
 .body-map-svg {
   display: block;
-  max-width: 300px;
+  max-width: 320px;
   margin: 0 auto;
   touch-action: manipulation;
 }
 
+/* Fitbod-like base: dark figure under solid muscle fills */
 .body-map-silhouette {
-  fill: #3a403a;
-  stroke: #c4a35a55;
-  stroke-width: 1.8;
+  fill: #2c302c;
+  stroke: #8a908855;
+  stroke-width: 1.4;
   stroke-linejoin: round;
   pointer-events: none;
 }
 
 .body-map-guide {
   fill: none;
-  stroke: #f2f0ea18;
-  stroke-width: 1;
+  stroke: #f2f0ea12;
+  stroke-width: 0.75;
   stroke-linecap: round;
   pointer-events: none;
 }
 
-/* Soft fills inside silhouette — idle still readable as tap zones */
+/*
+ * Fitbod-style muscle fills: solid anatomical patches with clear seams.
+ * Idle = muted gold (still readable as separate muscles).
+ * Selected = bright saturated fill (heat-map “active” cue).
+ */
 .body-map-region {
-  fill: #c4a35a4d;
-  stroke: #c4a35a66;
-  stroke-width: 0.9;
+  fill: #9a855266;
+  stroke: #1a1c1ae6;
+  stroke-width: 1.05;
   stroke-linejoin: round;
   cursor: pointer;
-  transition: fill 0.18s ease, stroke 0.18s ease;
+  transition: fill 0.16s ease, stroke 0.16s ease;
 }
 
 .body-map-region:hover,
 .body-map-region:focus {
-  fill: #c4a35a7a;
+  fill: #c4a35a99;
+  stroke: #c4a35acc;
   outline: none;
 }
 
 .body-map-region.on {
-  fill: #c4a35aee;
-  stroke: #e8d49a;
-  stroke-width: 1.4;
+  fill: #e8c96af5;
+  stroke: #fff3c8;
+  stroke-width: 1.55;
 }
 
 .body-map-caption {
@@ -860,10 +866,31 @@ button {
 
 .body-map-legend {
   display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.body-map-legend-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.body-map-legend-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  text-align: center;
+}
+
+.body-map-legend-chips {
+  display: flex;
   flex-wrap: wrap;
   gap: 6px;
   justify-content: center;
-  margin-top: 8px;
 }
 
 .body-map-chip {

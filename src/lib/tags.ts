@@ -4,17 +4,46 @@ import {
 } from './exerciseMap'
 import type { Workout } from '../types'
 
+/** Fine-grained body filters (MuscleWiki-style). Cardio is chip-only, not on the map. */
 export const BODY_TAGS = [
-  'Arms',
-  'Legs',
-  'Back',
   'Chest',
   'Shoulders',
+  'Biceps',
+  'Triceps',
   'Core',
+  'Upper back',
+  'Lower back',
+  'Quads',
+  'Hamstrings',
+  'Glutes',
+  'Calves',
   'Cardio',
 ] as const
 
 export type BodyTag = (typeof BODY_TAGS)[number]
+
+/** Legend / chip grouping for the body map UI. */
+export const BODY_TAG_GROUPS: {
+  label: string
+  tags: BodyTag[]
+}[] = [
+  {
+    label: 'Upper body',
+    tags: [
+      'Chest',
+      'Shoulders',
+      'Biceps',
+      'Triceps',
+      'Core',
+      'Upper back',
+      'Lower back',
+    ],
+  },
+  {
+    label: 'Lower body',
+    tags: ['Quads', 'Hamstrings', 'Glutes', 'Calves'],
+  },
+]
 
 export const EQUIPMENT_TAGS = [
   'Kettlebell',
@@ -33,24 +62,59 @@ export const EQUIPMENT_TAGS = [
 
 export type EquipmentTag = (typeof EQUIPMENT_TAGS)[number]
 
-/** Body-part cues from exercise name / load_notes only — prefer recall. */
+/**
+ * Best-effort cues from exercise name / load_notes.
+ * Gaps: few explicit hamstring/glute/calf/lower-back strings in the library;
+ * compounds often under-tag secondary muscles.
+ */
 const BODY_RULES: { tag: BodyTag; test: (hay: string) => boolean }[] = [
   {
-    tag: 'Arms',
+    tag: 'Biceps',
     test: (hay) =>
-      /curl|tricep|press[- ]?down|bicep|hammer curl|skull\s*crush/i.test(hay),
+      (/bicep|hammer curl|\bcurls?\b/i.test(hay) && !/leg curl/i.test(hay)),
   },
   {
-    tag: 'Legs',
+    tag: 'Triceps',
     test: (hay) =>
-      /squat|lunge|deadlift|step[- ]?up|stair|leg press|glute|hamstring|calf|hip thrust|\brdl\b|bulgarian|sumo|wall sit|leg extension|\bswings?\b|ice\s*skater/i.test(
+      /tricep|triep|skull\s*crush|press[- ]?down|pushdown|\bdips?\b/i.test(hay) ||
+      (/push[- ]?ups?/i.test(hay) && !/pull[- ]?ups?/i.test(hay)),
+  },
+  {
+    tag: 'Quads',
+    test: (hay) =>
+      /squat|lunge|leg press|leg extension|step[- ]?up|wall sit|bulgarian|powerup|granny lunge|farmer squat|prisoner squat/i.test(
         hay,
       ),
   },
   {
-    tag: 'Back',
+    tag: 'Hamstrings',
     test: (hay) =>
-      /\brows?\b|pulldown|pull[- ]?downs?|pull[- ]?ups?|chin[- ]?ups?|lat\b|renegade|face pull/i.test(
+      /hamstring|rdl|romanian|deadlift|good morning|leg curl|nordic|single[- ]?leg(?:ged)?\s*dead/i.test(
+        hay,
+      ),
+  },
+  {
+    tag: 'Glutes',
+    test: (hay) =>
+      /glute|hip thrust|bridge|kickback|abduction|sumo|\bswings?\b|thrust back/i.test(
+        hay,
+      ),
+  },
+  {
+    tag: 'Calves',
+    test: (hay) => /calf|calves/i.test(hay),
+  },
+  {
+    tag: 'Upper back',
+    test: (hay) =>
+      /\brows?\b|pulldown|pull[- ]?downs?|pull[- ]?ups?|chin[- ]?ups?|lat\b|renegade|face\s*pull|pullover|t[- ]?bar|shotgun|shrug/i.test(
+        hay,
+      ),
+  },
+  {
+    tag: 'Lower back',
+    test: (hay) =>
+      /hyperextension|back extension|good morning|superman|deadlift|romanian|\brdl\b/i.test(
         hay,
       ),
   },
@@ -61,7 +125,6 @@ const BODY_RULES: { tag: BodyTag; test: (hay: string) => boolean }[] = [
         /push[- ]?ups?|chest|\bbench\b|\bflys?\b|\bflies\b|\bpecs?\b/i.test(hay)
       )
         return true
-      // bare "press" only when not clearly shoulders / arms / legs
       return (
         /\bpress(es|ing)?\b/i.test(hay) &&
         !/overhead|shoulder|military|\bohp\b|leg press|press[- ]?down|archer|tricep/i.test(
@@ -73,21 +136,21 @@ const BODY_RULES: { tag: BodyTag; test: (hay: string) => boolean }[] = [
   {
     tag: 'Shoulders',
     test: (hay) =>
-      /overhead|lateral raise|archer|shoulder|military press|\bohp\b|delt|y[- ]raise/i.test(
+      /overhead|lateral raise|front raise|archer|shoulder|military press|\bohp\b|delt|y[- ]raise|snatch|clean/i.test(
         hay,
       ),
   },
   {
     tag: 'Core',
     test: (hay) =>
-      /plank|twist|tuck|crunch|\bab\b|abs\b|core|hollow|dead bug|pallof|v[- ]up|sit[- ]?up|wood\s*chops?|wall sit/i.test(
+      /plank|twist|tuck|crunch|\bab\b|abs\b|core|hollow|dead bug|pallof|v[- ]up|sit[- ]?up|wood\s*chops?|torso|reach[- ]?up|wall sit|leg raise/i.test(
         hay,
       ),
   },
   {
     tag: 'Cardio',
     test: (hay) =>
-      /stair|rowing|rower|burpee|jacks|sprint|cardio|jumping jack|elf jack|flutter|slam|psycho|syko|mt\.?\s*climber|mountain climber|ice\s*skater|caterpillar/i.test(
+      /stair|rowing|rower|burpee|jacks|sprint|cardio|jumping jack|elf jack|flutter|slam|psycho|syko|mt\.?\s*climber|mountain climber|ice\s*skater|caterpillar|suicide/i.test(
         hay,
       ),
   },

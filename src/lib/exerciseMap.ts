@@ -22,6 +22,36 @@ type ExerciseMapFile = {
 
 const data = raw as ExerciseMapFile
 
+/** Inline sets avoid circular import with tags.ts (which imports this module). */
+const VALID_BODY = new Set<string>([
+  'Chest',
+  'Shoulders',
+  'Biceps',
+  'Triceps',
+  'Core',
+  'Upper back',
+  'Lower back',
+  'Quads',
+  'Hamstrings',
+  'Glutes',
+  'Calves',
+  'Cardio',
+])
+const VALID_EQUIP = new Set<string>([
+  'Kettlebell',
+  'Barbell',
+  'Dumbbell',
+  'TRX',
+  'Cable',
+  'Machine',
+  'Stairs',
+  'Rope',
+  'BOSU',
+  'Med ball',
+  'Rowing',
+  'Bodyweight',
+])
+
 export const exerciseMapMeta = data._meta
 
 export function lookupExercise(name: string): ExerciseMapEntry | null {
@@ -29,11 +59,15 @@ export function lookupExercise(name: string): ExerciseMapEntry | null {
 }
 
 export function exerciseBodyTags(name: string): BodyTag[] {
-  return (lookupExercise(name)?.body ?? []) as BodyTag[]
+  return (lookupExercise(name)?.body ?? []).filter((t): t is BodyTag =>
+    VALID_BODY.has(t),
+  )
 }
 
 export function exerciseEquipmentTags(name: string): EquipmentTag[] {
-  return (lookupExercise(name)?.equipment ?? []) as EquipmentTag[]
+  return (lookupExercise(name)?.equipment ?? []).filter((t): t is EquipmentTag =>
+    VALID_EQUIP.has(t),
+  )
 }
 
 export function exerciseStandardName(name: string): string | null {

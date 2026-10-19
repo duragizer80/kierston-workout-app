@@ -1,4 +1,4 @@
-import type { BodyTag } from '../lib/tags'
+import { BODY_TAG_GROUPS, type BodyTag } from '../lib/tags'
 
 type Props = {
   selected: BodyTag[]
@@ -14,266 +14,252 @@ type Hit = {
 }
 
 /**
- * Anatomical front/back body map for library filters.
+ * Fitbod-inspired body map (original SVG — not Fitbod assets).
  *
- * ~8-head proportions, continuous silhouette outline, soft regional fills.
- * Original hand-authored geometry — not copied from proprietary/AGPL UIs.
+ * Research notes (Fitbod recovery avatar / pick-muscle UI):
+ * - Front + back anatomical figure with discrete filled muscle patches
+ * - Muscles tile the silhouette (solid fills, not big region blobs)
+ * - Taps expose: chest, shoulders, biceps, triceps, abs/core, upper back,
+ *   lower back, quads, hamstrings, glutes, calves (Fitbod also has traps etc.)
+ * - Idle = muted fill; active/fatigued = saturated fill (we use gold select)
  *
- * Front @ x=70, back @ x=210. ViewBox 0 0 280 250.
+ * Layout: front @ cx=70, back @ cx=210. ViewBox 0 0 280 250.
  */
 
-/** Continuous silhouette from key anatomical landmarks (one closed path). */
 function silhouette(cx: number): string {
-  // Point helpers relative to centerline
   const x = (dx: number) => cx + dx
   return [
-    // Head (oval)
-    `M${x(0)} 10`,
-    `C${x(11)} 10 ${x(18)} 18 ${x(18)} 28`,
-    `C${x(18)} 36 ${x(12)} 42 ${x(5)} 44`,
-    // Neck → right shoulder
-    `L${x(5)} 48`,
-    `C${x(14)} 49 ${x(24)} 52 ${x(28)} 58`,
-    // Right arm outer → hand → inner
-    `C${x(34)} 72 ${x(36)} 90 ${x(35)} 108`,
-    `C${x(35)} 116 ${x(32)} 122 ${x(27)} 124`,
-    `C${x(24)} 125 ${x(21)} 123 ${x(21)} 119`,
-    `C${x(21)} 102 ${x(20)} 86 ${x(18)} 74`,
-    `C${x(17)} 66 ${x(14)} 60 ${x(10)} 58`,
-    // Right torso side → hip
-    `C${x(12)} 72 ${x(13)} 88 ${x(12)} 104`,
-    `C${x(11)} 112 ${x(12)} 118 ${x(14)} 122`,
-    // Right leg outer → foot → inner
-    `C${x(16)} 145 ${x(15)} 168 ${x(14)} 190`,
-    `C${x(14)} 200 ${x(15)} 208 ${x(17)} 214`,
-    `C${x(18)} 218 ${x(16)} 222 ${x(11)} 222`,
-    `L${x(4)} 222`,
-    `C${x(1)} 222 ${x(0)} 218 ${x(1)} 214`,
-    `C${x(2)} 200 ${x(3)} 180 ${x(3)} 160`,
-    `C${x(3)} 142 ${x(2)} 130 ${x(1)} 124`,
-    // Crotch
-    `L${x(0)} 124`,
-    // Left leg (mirror)
-    `L${x(-1)} 124`,
-    `C${x(-2)} 130 ${x(-3)} 142 ${x(-3)} 160`,
-    `C${x(-3)} 180 ${x(-2)} 200 ${x(-1)} 214`,
-    `C${x(0)} 218 ${x(-1)} 222 ${x(-4)} 222`,
-    `L${x(-11)} 222`,
-    `C${x(-16)} 222 ${x(-18)} 218 ${x(-17)} 214`,
-    `C${x(-15)} 208 ${x(-14)} 200 ${x(-14)} 190`,
-    `C${x(-15)} 168 ${x(-16)} 145 ${x(-14)} 122`,
-    // Left hip → torso
-    `C${x(-12)} 118 ${x(-11)} 112 ${x(-12)} 104`,
-    `C${x(-13)} 88 ${x(-12)} 72 ${x(-10)} 58`,
-    // Left arm inner → hand → outer
-    `C${x(-14)} 60 ${x(-17)} 66 ${x(-18)} 74`,
-    `C${x(-20)} 86 ${x(-21)} 102 ${x(-21)} 119`,
-    `C${x(-21)} 123 ${x(-24)} 125 ${x(-27)} 124`,
-    `C${x(-32)} 122 ${x(-35)} 116 ${x(-35)} 108`,
-    `C${x(-36)} 90 ${x(-34)} 72 ${x(-28)} 58`,
-    // Left shoulder → neck → head
-    `C${x(-24)} 52 ${x(-14)} 49 ${x(-5)} 48`,
-    `L${x(-5)} 44`,
-    `C${x(-12)} 42 ${x(-18)} 36 ${x(-18)} 28`,
-    `C${x(-18)} 18 ${x(-11)} 10 ${x(0)} 10`,
+    `M${x(0)} 8`,
+    `C${x(12)} 8 ${x(19)} 17 ${x(19)} 27`,
+    `C${x(19)} 36 ${x(13)} 42 ${x(6)} 44`,
+    `L${x(6)} 47`,
+    `C${x(16)} 48 ${x(26)} 51 ${x(30)} 58`,
+    `C${x(36)} 72 ${x(38)} 92 ${x(37)} 110`,
+    `C${x(37)} 118 ${x(33)} 124 ${x(28)} 125`,
+    `C${x(25)} 126 ${x(22)} 124 ${x(22)} 120`,
+    `C${x(22)} 102 ${x(21)} 84 ${x(19)} 72`,
+    `C${x(17)} 64 ${x(14)} 58 ${x(10)} 56`,
+    `C${x(13)} 74 ${x(14)} 92 ${x(13)} 108`,
+    `C${x(12)} 116 ${x(13)} 122 ${x(15)} 126`,
+    `C${x(17)} 150 ${x(16)} 174 ${x(15)} 194`,
+    `C${x(15)} 204 ${x(16)} 212 ${x(18)} 216`,
+    `C${x(19)} 220 ${x(17)} 224 ${x(12)} 224`,
+    `L${x(4)} 224`,
+    `C${x(1)} 224 ${x(0)} 220 ${x(1)} 216`,
+    `C${x(2)} 200 ${x(3)} 178 ${x(3)} 158`,
+    `C${x(3)} 140 ${x(2)} 128 ${x(1)} 126`,
+    `L${x(0)} 126`,
+    `L${x(-1)} 126`,
+    `C${x(-2)} 128 ${x(-3)} 140 ${x(-3)} 158`,
+    `C${x(-3)} 178 ${x(-2)} 200 ${x(-1)} 216`,
+    `C${x(0)} 220 ${x(-1)} 224 ${x(-4)} 224`,
+    `L${x(-12)} 224`,
+    `C${x(-17)} 224 ${x(-19)} 220 ${x(-18)} 216`,
+    `C${x(-16)} 212 ${x(-15)} 204 ${x(-15)} 194`,
+    `C${x(-16)} 174 ${x(-17)} 150 ${x(-15)} 126`,
+    `C${x(-13)} 122 ${x(-12)} 116 ${x(-13)} 108`,
+    `C${x(-14)} 92 ${x(-13)} 74 ${x(-10)} 56`,
+    `C${x(-14)} 58 ${x(-17)} 64 ${x(-19)} 72`,
+    `C${x(-21)} 84 ${x(-22)} 102 ${x(-22)} 120`,
+    `C${x(-22)} 124 ${x(-25)} 126 ${x(-28)} 125`,
+    `C${x(-33)} 124 ${x(-37)} 118 ${x(-37)} 110`,
+    `C${x(-38)} 92 ${x(-36)} 72 ${x(-30)} 58`,
+    `C${x(-26)} 51 ${x(-16)} 48 ${x(-6)} 47`,
+    `L${x(-6)} 44`,
+    `C${x(-13)} 42 ${x(-19)} 36 ${x(-19)} 27`,
+    `C${x(-19)} 17 ${x(-12)} 8 ${x(0)} 8`,
     'Z',
   ].join(' ')
 }
 
-const FRONT_CX = 70
-const BACK_CX = 210
-const SIL_FRONT = silhouette(FRONT_CX)
-const SIL_BACK = silhouette(BACK_CX)
+const F = 70
+const B = 210
+const SIL_FRONT = silhouette(F)
+const SIL_BACK = silhouette(B)
 
-/** Hits hug silhouette; large enough for thumbs. */
+/** side: -1 viewer-left, +1 viewer-right */
+function pec(cx: number, side: number): string {
+  const s = side
+  return [
+    `M${cx + s * 1} 54`,
+    `C${cx + s * 8} 50 ${cx + s * 16} 52 ${cx + s * 18} 60`,
+    `C${cx + s * 19} 70 ${cx + s * 17} 80 ${cx + s * 12} 86`,
+    `C${cx + s * 7} 90 ${cx + s * 2} 88 ${cx + s * 1} 82`,
+    `C${cx + s * 0} 72 ${cx + s * 0} 60 ${cx + s * 1} 54`,
+    'Z',
+  ].join(' ')
+}
+
+function deltFront(cx: number, side: number): string {
+  const s = side
+  return [
+    `M${cx + s * 8} 46`,
+    `C${cx + s * 16} 44 ${cx + s * 24} 48 ${cx + s * 28} 56`,
+    `C${cx + s * 26} 64 ${cx + s * 18} 66 ${cx + s * 11} 62`,
+    `C${cx + s * 8} 56 ${cx + s * 7} 50 ${cx + s * 8} 46`,
+    'Z',
+  ].join(' ')
+}
+
+function deltBack(cx: number, side: number): string {
+  const s = side
+  return [
+    `M${cx + s * 7} 46`,
+    `C${cx + s * 16} 44 ${cx + s * 24} 48 ${cx + s * 28} 56`,
+    `C${cx + s * 24} 64 ${cx + s * 16} 66 ${cx + s * 9} 60`,
+    `C${cx + s * 6} 54 ${cx + s * 6} 48 ${cx + s * 7} 46`,
+    'Z',
+  ].join(' ')
+}
+
+function biceps(cx: number, side: number): string {
+  const s = side
+  return [
+    `M${cx + s * 12} 58`,
+    `C${cx + s * 18} 60 ${cx + s * 24} 68 ${cx + s * 26} 80`,
+    `C${cx + s * 27} 90 ${cx + s * 25} 98 ${cx + s * 22} 102`,
+    `C${cx + s * 18} 104 ${cx + s * 15} 98 ${cx + s * 15} 90`,
+    `C${cx + s * 15} 78 ${cx + s * 14} 66 ${cx + s * 12} 58`,
+    'Z',
+  ].join(' ')
+}
+
+function triceps(cx: number, side: number): string {
+  const s = side
+  return [
+    `M${cx + s * 13} 58`,
+    `C${cx + s * 20} 62 ${cx + s * 28} 74 ${cx + s * 30} 90`,
+    `C${cx + s * 31} 102 ${cx + s * 28} 112 ${cx + s * 24} 116`,
+    `C${cx + s * 20} 114 ${cx + s * 17} 106 ${cx + s * 17} 96`,
+    `C${cx + s * 17} 82 ${cx + s * 15} 68 ${cx + s * 13} 58`,
+    'Z',
+  ].join(' ')
+}
+
+function quad(cx: number, side: number): string {
+  const s = side
+  return [
+    `M${cx + s * 2} 126`,
+    `C${cx + s * 8} 128 ${cx + s * 14} 134 ${cx + s * 15} 148`,
+    `C${cx + s * 16} 160 ${cx + s * 15} 172 ${cx + s * 13} 180`,
+    `C${cx + s * 10} 182 ${cx + s * 5} 180 ${cx + s * 3} 172`,
+    `C${cx + s * 2} 156 ${cx + s * 1} 138 ${cx + s * 2} 126`,
+    'Z',
+  ].join(' ')
+}
+
+function ham(cx: number, side: number): string {
+  const s = side
+  return [
+    `M${cx + s * 3} 150`,
+    `C${cx + s * 9} 152 ${cx + s * 14} 160 ${cx + s * 15} 172`,
+    `C${cx + s * 15} 182 ${cx + s * 14} 190 ${cx + s * 12} 194`,
+    `C${cx + s * 8} 194 ${cx + s * 4} 190 ${cx + s * 3} 182`,
+    `C${cx + s * 2} 168 ${cx + s * 2} 156 ${cx + s * 3} 150`,
+    'Z',
+  ].join(' ')
+}
+
+function calfF(cx: number, side: number): string {
+  const s = side
+  return [
+    `M${cx + s * 4} 182`,
+    `C${cx + s * 10} 184 ${cx + s * 13} 194 ${cx + s * 13} 204`,
+    `C${cx + s * 13} 214 ${cx + s * 11} 220 ${cx + s * 8} 222`,
+    `C${cx + s * 5} 222 ${cx + s * 3} 216 ${cx + s * 3} 208`,
+    `C${cx + s * 3} 196 ${cx + s * 3} 186 ${cx + s * 4} 182`,
+    'Z',
+  ].join(' ')
+}
+
+function calfB(cx: number, side: number): string {
+  const s = side
+  return [
+    `M${cx + s * 4} 196`,
+    `C${cx + s * 11} 198 ${cx + s * 14} 206 ${cx + s * 14} 214`,
+    `C${cx + s * 14} 220 ${cx + s * 11} 222 ${cx + s * 7} 222`,
+    `C${cx + s * 4} 222 ${cx + s * 3} 216 ${cx + s * 3} 210`,
+    `C${cx + s * 3} 202 ${cx + s * 3} 198 ${cx + s * 4} 196`,
+    'Z',
+  ].join(' ')
+}
+
+function glute(cx: number, side: number): string {
+  const s = side
+  return [
+    `M${cx + s * 1} 122`,
+    `C${cx + s * 8} 118 ${cx + s * 14} 122 ${cx + s * 15} 132`,
+    `C${cx + s * 15} 142 ${cx + s * 12} 148 ${cx + s * 6} 148`,
+    `C${cx + s * 2} 148 ${cx + s * 0} 140 ${cx + s * 1} 132`,
+    `C${cx + s * 1} 126 ${cx + s * 1} 122 ${cx + s * 1} 122`,
+    'Z',
+  ].join(' ')
+}
+
 const HITS: Hit[] = [
+  // —— Front (Fitbod-style tiling) ——
+  { key: 'delt-f-l', id: 'Shoulders', label: 'Shoulders', d: deltFront(F, -1) },
+  { key: 'delt-f-r', id: 'Shoulders', label: 'Shoulders', d: deltFront(F, 1) },
+  { key: 'pec-l', id: 'Chest', label: 'Chest', d: pec(F, -1) },
+  { key: 'pec-r', id: 'Chest', label: 'Chest', d: pec(F, 1) },
+  { key: 'bi-l', id: 'Biceps', label: 'Biceps', d: biceps(F, -1) },
+  { key: 'bi-r', id: 'Biceps', label: 'Biceps', d: biceps(F, 1) },
   {
-    key: 'shoulders-front',
-    id: 'Shoulders',
-    label: 'Shoulders',
-    d: [
-      `M${FRONT_CX - 26} 50`,
-      `C${FRONT_CX - 18} 44 ${FRONT_CX - 8} 42 ${FRONT_CX} 42`,
-      `C${FRONT_CX + 8} 42 ${FRONT_CX + 18} 44 ${FRONT_CX + 26} 50`,
-      `C${FRONT_CX + 22} 58 ${FRONT_CX + 12} 62 ${FRONT_CX} 62`,
-      `C${FRONT_CX - 12} 62 ${FRONT_CX - 22} 58 ${FRONT_CX - 26} 50`,
-      'Z',
-    ].join(' '),
-  },
-  {
-    key: 'chest-front',
-    id: 'Chest',
-    label: 'Chest',
-    d: [
-      `M${FRONT_CX - 16} 58`,
-      `C${FRONT_CX - 6} 52 ${FRONT_CX + 6} 52 ${FRONT_CX + 16} 58`,
-      `C${FRONT_CX + 17} 70 ${FRONT_CX + 15} 82 ${FRONT_CX + 12} 90`,
-      `C${FRONT_CX + 6} 94 ${FRONT_CX - 6} 94 ${FRONT_CX - 12} 90`,
-      `C${FRONT_CX - 15} 82 ${FRONT_CX - 17} 70 ${FRONT_CX - 16} 58`,
-      'Z',
-    ].join(' '),
-  },
-  {
-    key: 'arms-front-l',
-    id: 'Arms',
-    label: 'Arms',
-    d: [
-      `M${FRONT_CX - 12} 56`,
-      `C${FRONT_CX - 20} 60 ${FRONT_CX - 28} 72 ${FRONT_CX - 30} 90`,
-      `C${FRONT_CX - 31} 104 ${FRONT_CX - 29} 116 ${FRONT_CX - 26} 122`,
-      `L${FRONT_CX - 20} 120`,
-      `C${FRONT_CX - 22} 108 ${FRONT_CX - 22} 94 ${FRONT_CX - 20} 80`,
-      `C${FRONT_CX - 18} 68 ${FRONT_CX - 14} 60 ${FRONT_CX - 12} 56`,
-      'Z',
-    ].join(' '),
-  },
-  {
-    key: 'arms-front-r',
-    id: 'Arms',
-    label: 'Arms',
-    d: [
-      `M${FRONT_CX + 12} 56`,
-      `C${FRONT_CX + 20} 60 ${FRONT_CX + 28} 72 ${FRONT_CX + 30} 90`,
-      `C${FRONT_CX + 31} 104 ${FRONT_CX + 29} 116 ${FRONT_CX + 26} 122`,
-      `L${FRONT_CX + 20} 120`,
-      `C${FRONT_CX + 22} 108 ${FRONT_CX + 22} 94 ${FRONT_CX + 20} 80`,
-      `C${FRONT_CX + 18} 68 ${FRONT_CX + 14} 60 ${FRONT_CX + 12} 56`,
-      'Z',
-    ].join(' '),
-  },
-  {
-    key: 'core-front',
+    key: 'abs',
     id: 'Core',
     label: 'Core',
     d: [
-      `M${FRONT_CX - 11} 90`,
-      `L${FRONT_CX + 11} 90`,
-      `C${FRONT_CX + 12} 102 ${FRONT_CX + 11} 114 ${FRONT_CX + 9} 122`,
-      `C${FRONT_CX + 5} 126 ${FRONT_CX - 5} 126 ${FRONT_CX - 9} 122`,
-      `C${FRONT_CX - 11} 114 ${FRONT_CX - 12} 102 ${FRONT_CX - 11} 90`,
+      `M${F - 9} 88`,
+      `L${F + 9} 88`,
+      `C${F + 10} 102 ${F + 9} 114 ${F + 7} 122`,
+      `C${F + 3} 126 ${F - 3} 126 ${F - 7} 122`,
+      `C${F - 9} 114 ${F - 10} 102 ${F - 9} 88`,
       'Z',
     ].join(' '),
   },
-  {
-    key: 'legs-front-l',
-    id: 'Legs',
-    label: 'Legs',
-    d: [
-      `M${FRONT_CX - 13} 124`,
-      `C${FRONT_CX - 15} 145 ${FRONT_CX - 14} 168 ${FRONT_CX - 13} 190`,
-      `C${FRONT_CX - 13} 202 ${FRONT_CX - 14} 212 ${FRONT_CX - 12} 220`,
-      `L${FRONT_CX - 3} 220`,
-      `C${FRONT_CX - 2} 205 ${FRONT_CX - 2} 175 ${FRONT_CX - 2} 150`,
-      `C${FRONT_CX - 2} 135 ${FRONT_CX - 3} 128 ${FRONT_CX - 1} 124`,
-      'Z',
-    ].join(' '),
-  },
-  {
-    key: 'legs-front-r',
-    id: 'Legs',
-    label: 'Legs',
-    d: [
-      `M${FRONT_CX + 13} 124`,
-      `C${FRONT_CX + 15} 145 ${FRONT_CX + 14} 168 ${FRONT_CX + 13} 190`,
-      `C${FRONT_CX + 13} 202 ${FRONT_CX + 14} 212 ${FRONT_CX + 12} 220`,
-      `L${FRONT_CX + 3} 220`,
-      `C${FRONT_CX + 2} 205 ${FRONT_CX + 2} 175 ${FRONT_CX + 2} 150`,
-      `C${FRONT_CX + 2} 135 ${FRONT_CX + 3} 128 ${FRONT_CX + 1} 124`,
-      'Z',
-    ].join(' '),
-  },
+  { key: 'quad-l', id: 'Quads', label: 'Quads', d: quad(F, -1) },
+  { key: 'quad-r', id: 'Quads', label: 'Quads', d: quad(F, 1) },
+  { key: 'calf-f-l', id: 'Calves', label: 'Calves', d: calfF(F, -1) },
+  { key: 'calf-f-r', id: 'Calves', label: 'Calves', d: calfF(F, 1) },
 
+  // —— Back ——
+  { key: 'delt-b-l', id: 'Shoulders', label: 'Shoulders', d: deltBack(B, -1) },
+  { key: 'delt-b-r', id: 'Shoulders', label: 'Shoulders', d: deltBack(B, 1) },
   {
-    key: 'shoulders-back',
-    id: 'Shoulders',
-    label: 'Shoulders',
+    key: 'upper-back',
+    id: 'Upper back',
+    label: 'Upper back',
     d: [
-      `M${BACK_CX - 26} 50`,
-      `C${BACK_CX - 18} 44 ${BACK_CX - 8} 42 ${BACK_CX} 42`,
-      `C${BACK_CX + 8} 42 ${BACK_CX + 18} 44 ${BACK_CX + 26} 50`,
-      `C${BACK_CX + 22} 58 ${BACK_CX + 12} 62 ${BACK_CX} 62`,
-      `C${BACK_CX - 12} 62 ${BACK_CX - 22} 58 ${BACK_CX - 26} 50`,
+      // V-taper lats + mid-back (one tap group, Fitbod “upper back”)
+      `M${B - 16} 52`,
+      `C${B - 6} 46 ${B + 6} 46 ${B + 16} 52`,
+      `C${B + 18} 68 ${B + 16} 84 ${B + 12} 96`,
+      `C${B + 6} 102 ${B - 6} 102 ${B - 12} 96`,
+      `C${B - 16} 84 ${B - 18} 68 ${B - 16} 52`,
       'Z',
     ].join(' '),
   },
   {
-    key: 'back-torso',
-    id: 'Back',
-    label: 'Back',
+    key: 'lower-back',
+    id: 'Lower back',
+    label: 'Lower back',
     d: [
-      `M${BACK_CX - 16} 58`,
-      `C${BACK_CX - 6} 52 ${BACK_CX + 6} 52 ${BACK_CX + 16} 58`,
-      `C${BACK_CX + 17} 78 ${BACK_CX + 14} 100 ${BACK_CX + 10} 116`,
-      `C${BACK_CX + 5} 122 ${BACK_CX - 5} 122 ${BACK_CX - 10} 116`,
-      `C${BACK_CX - 14} 100 ${BACK_CX - 17} 78 ${BACK_CX - 16} 58`,
+      `M${B - 9} 100`,
+      `L${B + 9} 100`,
+      `C${B + 9} 110 ${B + 7} 118 ${B + 5} 122`,
+      `C${B + 2} 126 ${B - 2} 126 ${B - 5} 122`,
+      `C${B - 7} 118 ${B - 9} 110 ${B - 9} 100`,
       'Z',
     ].join(' '),
   },
-  {
-    key: 'arms-back-l',
-    id: 'Arms',
-    label: 'Arms',
-    d: [
-      `M${BACK_CX - 12} 56`,
-      `C${BACK_CX - 20} 60 ${BACK_CX - 28} 72 ${BACK_CX - 30} 90`,
-      `C${BACK_CX - 31} 104 ${BACK_CX - 29} 116 ${BACK_CX - 26} 122`,
-      `L${BACK_CX - 20} 120`,
-      `C${BACK_CX - 22} 108 ${BACK_CX - 22} 94 ${BACK_CX - 20} 80`,
-      `C${BACK_CX - 18} 68 ${BACK_CX - 14} 60 ${BACK_CX - 12} 56`,
-      'Z',
-    ].join(' '),
-  },
-  {
-    key: 'arms-back-r',
-    id: 'Arms',
-    label: 'Arms',
-    d: [
-      `M${BACK_CX + 12} 56`,
-      `C${BACK_CX + 20} 60 ${BACK_CX + 28} 72 ${BACK_CX + 30} 90`,
-      `C${BACK_CX + 31} 104 ${BACK_CX + 29} 116 ${BACK_CX + 26} 122`,
-      `L${BACK_CX + 20} 120`,
-      `C${BACK_CX + 22} 108 ${BACK_CX + 22} 94 ${BACK_CX + 20} 80`,
-      `C${BACK_CX + 18} 68 ${BACK_CX + 14} 60 ${BACK_CX + 12} 56`,
-      'Z',
-    ].join(' '),
-  },
-  {
-    key: 'legs-back-l',
-    id: 'Legs',
-    label: 'Legs',
-    d: [
-      `M${BACK_CX - 13} 124`,
-      `C${BACK_CX - 15} 145 ${BACK_CX - 14} 168 ${BACK_CX - 13} 190`,
-      `C${BACK_CX - 13} 202 ${BACK_CX - 14} 212 ${BACK_CX - 12} 220`,
-      `L${BACK_CX - 3} 220`,
-      `C${BACK_CX - 2} 205 ${BACK_CX - 2} 175 ${BACK_CX - 2} 150`,
-      `C${BACK_CX - 2} 135 ${BACK_CX - 3} 128 ${BACK_CX - 1} 124`,
-      'Z',
-    ].join(' '),
-  },
-  {
-    key: 'legs-back-r',
-    id: 'Legs',
-    label: 'Legs',
-    d: [
-      `M${BACK_CX + 13} 124`,
-      `C${BACK_CX + 15} 145 ${BACK_CX + 14} 168 ${BACK_CX + 13} 190`,
-      `C${BACK_CX + 13} 202 ${BACK_CX + 14} 212 ${BACK_CX + 12} 220`,
-      `L${BACK_CX + 3} 220`,
-      `C${BACK_CX + 2} 205 ${BACK_CX + 2} 175 ${BACK_CX + 2} 150`,
-      `C${BACK_CX + 2} 135 ${BACK_CX + 3} 128 ${BACK_CX + 1} 124`,
-      'Z',
-    ].join(' '),
-  },
-]
-
-const LEGEND: { id: BodyTag; label: string }[] = [
-  { id: 'Shoulders', label: 'Shoulders' },
-  { id: 'Chest', label: 'Chest' },
-  { id: 'Arms', label: 'Arms' },
-  { id: 'Core', label: 'Core' },
-  { id: 'Legs', label: 'Legs' },
-  { id: 'Back', label: 'Back' },
+  { key: 'tri-l', id: 'Triceps', label: 'Triceps', d: triceps(B, -1) },
+  { key: 'tri-r', id: 'Triceps', label: 'Triceps', d: triceps(B, 1) },
+  { key: 'glute-l', id: 'Glutes', label: 'Glutes', d: glute(B, -1) },
+  { key: 'glute-r', id: 'Glutes', label: 'Glutes', d: glute(B, 1) },
+  { key: 'ham-l', id: 'Hamstrings', label: 'Hamstrings', d: ham(B, -1) },
+  { key: 'ham-r', id: 'Hamstrings', label: 'Hamstrings', d: ham(B, 1) },
+  { key: 'calf-b-l', id: 'Calves', label: 'Calves', d: calfB(B, -1) },
+  { key: 'calf-b-r', id: 'Calves', label: 'Calves', d: calfB(B, 1) },
 ]
 
 export function BodyMap({ selected, onToggle, available }: Props) {
@@ -288,24 +274,21 @@ export function BodyMap({ selected, onToggle, available }: Props) {
         height="auto"
         aria-labelledby="body-map-title"
       >
-        <title id="body-map-title">Tap a body region to filter workouts</title>
+        <title id="body-map-title">Tap a muscle to filter workouts</title>
 
         <path className="body-map-silhouette" d={SIL_FRONT} />
         <path className="body-map-silhouette" d={SIL_BACK} />
 
+        {/* Abs segmentation + midline — Fitbod-like muscle definition cues */}
         <path
           className="body-map-guide"
-          d={`M${FRONT_CX} 56v62 M${FRONT_CX - 7} 72h14 M${FRONT_CX - 7} 90h14 M${FRONT_CX - 7} 108h14`}
-        />
-        <path
-          className="body-map-guide"
-          d={`M${BACK_CX} 56v58 M${BACK_CX - 7} 78h14 M${BACK_CX - 7} 100h14`}
+          d={`M${F} 56v66 M${F - 7} 100h14 M${F - 7} 112h14 M${B} 54v46`}
         />
 
-        <text x={FRONT_CX} y="242" className="body-map-caption">
+        <text x={F} y="242" className="body-map-caption">
           Front
         </text>
-        <text x={BACK_CX} y="242" className="body-map-caption">
+        <text x={B} y="242" className="body-map-caption">
           Back
         </text>
 
@@ -332,24 +315,37 @@ export function BodyMap({ selected, onToggle, available }: Props) {
           )
         })}
       </svg>
+
       <div className="body-map-legend">
-        {LEGEND.map((r) => {
-          if (allowed && !allowed.has(r.id)) return null
-          const on = selected.includes(r.id)
+        {BODY_TAG_GROUPS.map((group) => {
+          const chips = group.tags.filter((t) => !allowed || allowed.has(t))
+          if (!chips.length) return null
           return (
-            <button
-              key={r.id}
-              type="button"
-              className={`body-map-chip${on ? ' on' : ''}`}
-              aria-pressed={on}
-              onClick={() => onToggle(r.id)}
-            >
-              {r.label}
-            </button>
+            <div key={group.label} className="body-map-legend-group">
+              <span className="body-map-legend-label">{group.label}</span>
+              <div className="body-map-legend-chips">
+                {chips.map((id) => {
+                  const on = selected.includes(id)
+                  return (
+                    <button
+                      key={id}
+                      type="button"
+                      className={`body-map-chip${on ? ' on' : ''}`}
+                      aria-pressed={on}
+                      onClick={() => onToggle(id)}
+                    >
+                      {id}
+                    </button>
+                  )
+                })}
+              </div>
+            </div>
           )
         })}
       </div>
-      <p className="body-map-hint">Tap a region — same filters as the body chips</p>
+      <p className="body-map-hint">
+        Tap muscles — multi-select OK · same filters as body chips
+      </p>
     </div>
   )
 }

@@ -9,6 +9,10 @@ import {
   type WorkoutRating,
 } from '../lib/storage'
 import {
+  exerciseBodyTags,
+  exerciseStandardName,
+} from '../lib/exerciseMap'
+import {
   bodyChipLabel,
   bodyTags,
   cardSubtitle,
@@ -108,22 +112,41 @@ export function Detail() {
       {groups.map((g) => (
         <section key={g.label} className="block">
           <h3>{g.label}</h3>
-          {g.items.map((e, idx) => (
-            <div key={`${e.name}-${idx}`} className="ex-item">
-              <strong>
-                {e.name}
-                {e.unclear?.length ? <span className="unclear-tag">unclear</span> : null}
-              </strong>
-              <div className="rx">{rxLine(e)}</div>
-              <ul className="details">
-                {e.tempo ? <li>Tempo: {e.tempo}</li> : null}
-                {e.load_notes ? <li>Load: {e.load_notes}</li> : null}
-                {e.unclear?.map((u) => (
-                  <li key={u}>Unclear — {u}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          {g.items.map((e, idx) => {
+            const std = exerciseStandardName(e.name)
+            const exBody = exerciseBodyTags(e.name)
+            return (
+              <div key={`${e.name}-${idx}`} className="ex-item">
+                <strong>
+                  {e.name}
+                  {e.unclear?.length ? (
+                    <span className="unclear-tag">unclear</span>
+                  ) : null}
+                </strong>
+                {std || exBody.length ? (
+                  <div className="ex-catalogue">
+                    {std && std.toLowerCase() !== e.name.toLowerCase()
+                      ? `≈ ${std}`
+                      : null}
+                    {std &&
+                    std.toLowerCase() !== e.name.toLowerCase() &&
+                    exBody.length
+                      ? ' · '
+                      : null}
+                    {exBody.map(bodyChipLabel).join(' · ')}
+                  </div>
+                ) : null}
+                <div className="rx">{rxLine(e)}</div>
+                <ul className="details">
+                  {e.tempo ? <li>Tempo: {e.tempo}</li> : null}
+                  {e.load_notes ? <li>Load: {e.load_notes}</li> : null}
+                  {e.unclear?.map((u) => (
+                    <li key={u}>Unclear — {u}</li>
+                  ))}
+                </ul>
+              </div>
+            )
+          })}
         </section>
       ))}
 

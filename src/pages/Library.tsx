@@ -1,5 +1,6 @@
 import { useMemo, useState, type MouseEvent } from 'react'
 import { Link } from 'react-router-dom'
+import { BodyMap } from '../components/BodyMap'
 import { StarRating } from '../components/StarRating'
 import {
   getRating,
@@ -132,7 +133,7 @@ export function Library() {
     <main>
       <h1 className="page-title">Library</h1>
       <p className="lede">
-        Tap body + equipment chips to narrow — rate, heart favorites, sort by rating.
+        Tap the body map or chips to narrow — rate, heart favorites, sort by rating.
       </p>
 
       <div className="search-row">
@@ -171,6 +172,15 @@ export function Library() {
           >
             ♥ Favorites
           </button>
+        </div>
+
+        <div className="filter-block">
+          <div className="filter-heading">Body map</div>
+          <BodyMap
+            selected={bodySelected}
+            onToggle={(tag) => setBodySelected((p) => toggleIn(p, tag))}
+            available={bodyChips.filter((t) => t !== 'Cardio')}
+          />
         </div>
 
         <div className="filter-block">

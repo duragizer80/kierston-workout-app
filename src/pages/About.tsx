@@ -10,11 +10,15 @@ export function About() {
       </p>
       <p className="note">
         Library groups sessions by trainer era (2020–21 return, 2017–18 Gmail, 2017 iCloud
-        peak, undated). Equipment chips come from exercise names and load notes only.
+        peak, undated). Body map + chips share the same filters. Tags come from exercise
+        names, load notes, and a derived catalogue map (text metadata only — no third-party
+        exercise animations).
       </p>
       <p className="note">
-        Logs, favorites, and in-progress sessions stay in this browser / home-screen app.
-        Clearing site data removes them.
+        In a session, checking a set starts a rest timer (skip / +15s / +30s). Weight and
+        reps show ghost values from your last log (or a best-effort parse of the
+        prescription). Logs, favorites, and in-progress sessions stay in this browser /
+        home-screen app. Clearing site data removes them.
       </p>
       <p className="note">
         Add to Home Screen on iPhone (Share → Add to Home Screen) or Chromebook (install /

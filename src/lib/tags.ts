@@ -1,3 +1,7 @@
+import {
+  exerciseBodyTags,
+  exerciseEquipmentTags,
+} from './exerciseMap'
 import type { Workout } from '../types'
 
 export const BODY_TAGS = [
@@ -39,7 +43,7 @@ const BODY_RULES: { tag: BodyTag; test: (hay: string) => boolean }[] = [
   {
     tag: 'Legs',
     test: (hay) =>
-      /squat|lunge|deadlift|step[- ]?up|stair|leg press|glute|hamstring|calf|hip thrust|\brdl\b|bulgarian|sumo/i.test(
+      /squat|lunge|deadlift|step[- ]?up|stair|leg press|glute|hamstring|calf|hip thrust|\brdl\b|bulgarian|sumo|wall sit|leg extension|\bswings?\b|ice\s*skater/i.test(
         hay,
       ),
   },
@@ -53,7 +57,10 @@ const BODY_RULES: { tag: BodyTag; test: (hay: string) => boolean }[] = [
   {
     tag: 'Chest',
     test: (hay) => {
-      if (/push[- ]?ups?|chest|bench|fly|flies|pec/i.test(hay)) return true
+      if (
+        /push[- ]?ups?|chest|\bbench\b|\bflys?\b|\bflies\b|\bpecs?\b/i.test(hay)
+      )
+        return true
       // bare "press" only when not clearly shoulders / arms / legs
       return (
         /\bpress(es|ing)?\b/i.test(hay) &&
@@ -73,29 +80,29 @@ const BODY_RULES: { tag: BodyTag; test: (hay: string) => boolean }[] = [
   {
     tag: 'Core',
     test: (hay) =>
-      /plank|twist|tuck|crunch|\bab\b|abs\b|core|hollow|dead bug|pallof|v[- ]up|sit[- ]?up/i.test(
+      /plank|twist|tuck|crunch|\bab\b|abs\b|core|hollow|dead bug|pallof|v[- ]up|sit[- ]?up|wood\s*chops?|wall sit/i.test(
         hay,
       ),
   },
   {
     tag: 'Cardio',
     test: (hay) =>
-      /stair|rowing|rower|burpee|jacks|sprint|cardio|jumping jack|elf jack|flutter|slam/i.test(
+      /stair|rowing|rower|burpee|jacks|sprint|cardio|jumping jack|elf jack|flutter|slam|psycho|syko|mt\.?\s*climber|mountain climber|ice\s*skater|caterpillar/i.test(
         hay,
       ),
   },
 ]
 
 const EQUIPMENT_RULES: { tag: EquipmentTag; test: (hay: string) => boolean }[] = [
-  { tag: 'Kettlebell', test: (hay) => /kettlebell|\bkb\b/i.test(hay) },
+  { tag: 'Kettlebell', test: (hay) => /kettlebell|\bkb\b|\bks\b/i.test(hay) },
   { tag: 'Barbell', test: (hay) => /barbell|\bbb\b/i.test(hay) },
   { tag: 'Dumbbell', test: (hay) => /dumbbell|\bdbs?\b/i.test(hay) },
-  { tag: 'TRX', test: (hay) => /\btrx\b/i.test(hay) },
+  { tag: 'TRX', test: (hay) => /\btrx\b|rip trainer/i.test(hay) },
   { tag: 'Cable', test: (hay) => /cable/i.test(hay) },
   {
     tag: 'Machine',
     test: (hay) =>
-      /machine|pulldown|pull[- ]?down|leg press|smith|hack squat|seated row/i.test(
+      /machine|pulldown|pull[- ]?down|leg press|smith|hack squat|seated row|leg extension/i.test(
         hay,
       ),
   },
@@ -104,13 +111,14 @@ const EQUIPMENT_RULES: { tag: EquipmentTag; test: (hay: string) => boolean }[] =
   { tag: 'BOSU', test: (hay) => /bosu|bosy/i.test(hay) },
   {
     tag: 'Med ball',
-    test: (hay) => /med(?:icine)?\s*ball|ball slam|medball/i.test(hay),
+    test: (hay) =>
+      /med(?:icine)?\s*ball|ball slam|medball|wall ball|lacrosse/i.test(hay),
   },
   { tag: 'Rowing', test: (hay) => /rowing|rower/i.test(hay) },
   {
     tag: 'Bodyweight',
     test: (hay) =>
-      /bodyweight|\bbw\b|push[- ]?ups?|pull[- ]?ups?|chin[- ]?ups?|plank|burpee|jacks|walking lunges?|caterpillar|elf jack/i.test(
+      /bodyweight|\bbw\b|push[- ]?ups?|pull[- ]?ups?|chin[- ]?ups?|plank|burpee|jacks|walking lunges?|caterpillar|elf jack|wall sit|mt\.?\s*climber|mountain climber|psycho|syko|ice\s*skater/i.test(
         hay,
       ),
   },
@@ -162,13 +170,25 @@ function workoutHaystack(w: Workout): string {
 
 export function bodyTags(w: Workout): BodyTag[] {
   const hay = workoutHaystack(w)
-  return BODY_RULES.filter(({ test }) => test(hay)).map(({ tag }) => tag)
+  const fromRules = BODY_RULES.filter(({ test }) => test(hay)).map(({ tag }) => tag)
+  const fromMap = new Set<BodyTag>()
+  for (const e of w.exercises) {
+    for (const t of exerciseBodyTags(e.name)) fromMap.add(t)
+  }
+  return Array.from(new Set([...fromRules, ...fromMap]))
 }
 
-/** Equipment tags derived only from exercise names + load_notes (+ workout name). */
+/** Equipment tags from exercise names + load_notes (+ workout name) and catalogue map. */
 export function equipmentTags(w: Workout): EquipmentTag[] {
   const hay = workoutHaystack(w)
-  return EQUIPMENT_RULES.filter(({ test }) => test(hay)).map(({ tag }) => tag)
+  const fromRules = EQUIPMENT_RULES.filter(({ test }) => test(hay)).map(
+    ({ tag }) => tag,
+  )
+  const fromMap = new Set<EquipmentTag>()
+  for (const e of w.exercises) {
+    for (const t of exerciseEquipmentTags(e.name)) fromMap.add(t)
+  }
+  return Array.from(new Set([...fromRules, ...fromMap]))
 }
 
 export function workoutEra(w: Workout): EraId {

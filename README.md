@@ -7,12 +7,30 @@ Phone-first workout companion for Kierston’s trainer email library.
 ## Features
 
 - **Home** — continue active session, last started, favorites
-- **Library** — era sections (2020–21 / Gmail / iCloud peak / undated), equipment chips, search by exercise
+- **Library** — era sections (2020–21 / Gmail / iCloud peak / undated), interactive **body map**, equipment chips, search by exercise
 - **1–5 star ratings** + **♥ favorites** (localStorage); sort by rating, date, or name/signature
-- Workout detail with blocks, prescriptions, and **unclear** markers preserved
-- Guided session with weight/reps logging, rest timer, resume
+- Workout detail with blocks, prescriptions, unclear markers, and catalogue hints (standard name / body parts)
+- Guided session with **ghost last-weight prefill**, auto **rest timer** after sets, resume
 - On-device session history (localStorage)
 - Installable PWA (HashRouter for GitHub Pages)
+
+## Exercise catalogue mapping
+
+Unique trainer exercise strings (299 in the current library) are mapped in
+`src/data/exercise-map.json` for body / equipment tags and optional “standard name”
+labels. Rebuild with:
+
+```bash
+node scripts/build-exercise-map.mjs
+```
+
+**Source & license:** This is a **small derived mapping** for our strings only — heuristics
+plus a short ExerciseDB-style seed list of common exercise vocabulary (names, body parts,
+equipment). It is **not** a wholesale dump of [ExerciseDB](https://github.com/yuhonas/free-exercise-db)
+or of [openGym](https://github.com/DuarteSantos8/openGym) catalogue JSON.
+
+**Not included:** openGym is AGPL-3.0; their exercise **media** (animations / Gym visual)
+is separately licensed and **not** reused here. No GIFs or demo videos are vendored.
 
 ## Develop
 
@@ -46,8 +64,7 @@ Built files are on the **`gh-pages`** branch (site root). Prefer this if Pages S
 ### Refresh the published site after code changes
 
 ```bash
-npm run build
-# then publish dist/ to gh-pages (orphan/root), or ask the agent to re-push gh-pages
+npm run publish:gh-pages
 ```
 
 Optional: `.github/workflows/deploy-pages.yml` still supports Actions-based Pages if that Source option appears later.

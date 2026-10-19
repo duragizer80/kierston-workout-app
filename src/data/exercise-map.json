@@ -1,0 +1,3540 @@
+{
+  "_meta": {
+    "source": "Derived mapping for Kierston trainer exercise strings. Seed names/body/equipment inspired by public ExerciseDB-style catalogue metadata (text only). Not a wholesale ExerciseDB dump. No openGym / Gym visual media.",
+    "licenseNote": "This file is original derived data for this app. Seed labels are common exercise vocabulary; do not treat as a copy of AGPL openGym catalogue JSON or licensed animations.",
+    "generatedAt": "2026-10-19",
+    "uniqueNames": 299,
+    "seedMatched": 182
+  },
+  "exercises": {
+    "10lb ball slams": {
+      "standardName": "Ball Slam",
+      "body": [
+        "Cardio",
+        "Core"
+      ],
+      "equipment": [
+        "Med ball"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "10lb ball slams / 15lb KB swings / Prisoner Squats / Pushups": {
+      "standardName": "Kb Swing",
+      "body": [
+        "Legs",
+        "Core",
+        "Chest",
+        "Cardio"
+      ],
+      "equipment": [
+        "Kettlebell",
+        "Med ball",
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "10x stair sprints": {
+      "standardName": null,
+      "body": [
+        "Legs",
+        "Cardio"
+      ],
+      "equipment": [
+        "Stairs"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "15 burpees": {
+      "standardName": "Burpee",
+      "body": [
+        "Cardio",
+        "Legs"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "15lb ball slams": {
+      "standardName": "Ball Slam",
+      "body": [
+        "Cardio",
+        "Core"
+      ],
+      "equipment": [
+        "Med ball"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "15lb ball slams into thrust backs": {
+      "standardName": "Ball Slam",
+      "body": [
+        "Cardio",
+        "Core"
+      ],
+      "equipment": [
+        "Med ball"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "18\" powerups": {
+      "standardName": null,
+      "body": [
+        "Legs"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "18\" step ups with 20lb kettlebells": {
+      "standardName": "Step Up",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Kettlebell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "18\" stepups w/ reverse lunges": {
+      "standardName": "Reverse Lunge",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "2 Iceskaters into burpees": {
+      "standardName": "Burpee",
+      "body": [
+        "Cardio",
+        "Legs"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "20lb ball slams": {
+      "standardName": "Ball Slam",
+      "body": [
+        "Cardio",
+        "Core"
+      ],
+      "equipment": [
+        "Med ball"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "24\" stepups": {
+      "standardName": null,
+      "body": [
+        "Legs"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "3 Dual Rope Slams into 1 burpee": {
+      "standardName": "Burpee",
+      "body": [
+        "Cardio",
+        "Legs"
+      ],
+      "equipment": [
+        "Bodyweight",
+        "Rope"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "30 second squat hold": {
+      "standardName": null,
+      "body": [
+        "Legs"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "30cx dual rope slams": {
+      "standardName": null,
+      "body": [
+        "Cardio"
+      ],
+      "equipment": [
+        "Rope"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "5 stair sprints": {
+      "standardName": null,
+      "body": [
+        "Legs",
+        "Cardio"
+      ],
+      "equipment": [
+        "Stairs"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "5x stair sprints": {
+      "standardName": null,
+      "body": [
+        "Legs",
+        "Cardio"
+      ],
+      "equipment": [
+        "Stairs"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "60 second side to sides": {
+      "standardName": null,
+      "body": [
+        "Core"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "60 seconds plank reaches": {
+      "standardName": "Plank",
+      "body": [
+        "Core"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Alt. kettlebell swings": {
+      "standardName": "Kettlebell Swing",
+      "body": [
+        "Legs",
+        "Core"
+      ],
+      "equipment": [
+        "Kettlebell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Andrzej Specials": {
+      "standardName": null,
+      "body": [
+        "Cardio",
+        "Legs"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "manual",
+      "score": 1
+    },
+    "Andrzej specials": {
+      "standardName": null,
+      "body": [
+        "Cardio",
+        "Legs"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "manual",
+      "score": 1
+    },
+    "BOSU Bulgarian split squats": {
+      "standardName": "Bulgarian Split Squat",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "BOSU"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "BOSU Side to side w/ 8lb dumbbells": {
+      "standardName": null,
+      "body": [
+        "Core"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "BOSU"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "BOSU Side to sides": {
+      "standardName": null,
+      "body": [
+        "Core"
+      ],
+      "equipment": [
+        "BOSU"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "BOSU high planks w/ side to side leg swings": {
+      "standardName": "Plank",
+      "body": [
+        "Core",
+        "Legs"
+      ],
+      "equipment": [
+        "Bodyweight",
+        "BOSU"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "BOSU plank side to sides": {
+      "standardName": "Plank",
+      "body": [
+        "Core"
+      ],
+      "equipment": [
+        "Bodyweight",
+        "BOSU"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "BOSU psychos": {
+      "standardName": null,
+      "body": [
+        "Cardio"
+      ],
+      "equipment": [
+        "BOSU",
+        "Bodyweight"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "BOSU side to sides": {
+      "standardName": null,
+      "body": [
+        "Core"
+      ],
+      "equipment": [
+        "BOSU"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "BOSY side to sides": {
+      "standardName": null,
+      "body": [
+        "Core"
+      ],
+      "equipment": [
+        "BOSU"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Ball Slams": {
+      "standardName": "Ball Slam",
+      "body": [
+        "Cardio",
+        "Core"
+      ],
+      "equipment": [
+        "Med ball"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Bar pullovers": {
+      "standardName": "Pullover",
+      "body": [
+        "Back",
+        "Chest"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Barbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Barbell deadlifts w/ curls into overhead press": {
+      "standardName": "Deadlift",
+      "body": [
+        "Legs",
+        "Back",
+        "Arms",
+        "Shoulders"
+      ],
+      "equipment": [
+        "Barbell",
+        "Kettlebell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Behind the head ball throws": {
+      "standardName": "Ball Throw",
+      "body": [
+        "Shoulders",
+        "Core"
+      ],
+      "equipment": [
+        "Med ball"
+      ],
+      "match": "manual",
+      "score": 1
+    },
+    "Bench Push-ups": {
+      "standardName": "Push Up",
+      "body": [
+        "Chest",
+        "Arms"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Bent over dumbbell rows w elbows out": {
+      "standardName": "Bent Over Row",
+      "body": [
+        "Back"
+      ],
+      "equipment": [
+        "Dumbbell"
+      ],
+      "match": "fuzzy",
+      "score": 0.6
+    },
+    "Bent over single armed TBar rows": {
+      "standardName": "Bent Over Row",
+      "body": [
+        "Back"
+      ],
+      "equipment": [],
+      "match": "fuzzy",
+      "score": 0.6
+    },
+    "Bentover Reverse Flys": {
+      "standardName": "Reverse Fly",
+      "body": [
+        "Back",
+        "Shoulders",
+        "Chest"
+      ],
+      "equipment": [
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Bicep curls": {
+      "standardName": "Bicep Curl",
+      "body": [
+        "Arms"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Barbell",
+        "Cable"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Bulgarian split squats": {
+      "standardName": "Bulgarian Split Squat",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Burpees": {
+      "standardName": "Burpee",
+      "body": [
+        "Cardio",
+        "Legs"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Cable Chest Flys": {
+      "standardName": "Chest Fly",
+      "body": [
+        "Chest"
+      ],
+      "equipment": [
+        "Cable",
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Cable Rows": {
+      "standardName": null,
+      "body": [
+        "Back"
+      ],
+      "equipment": [
+        "Cable"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Cable Torso Twists": {
+      "standardName": null,
+      "body": [
+        "Core"
+      ],
+      "equipment": [
+        "Cable"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Cable chest flys": {
+      "standardName": "Chest Fly",
+      "body": [
+        "Chest"
+      ],
+      "equipment": [
+        "Cable",
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Cable chest press w/ lunges": {
+      "standardName": "Chest Press",
+      "body": [
+        "Chest",
+        "Legs"
+      ],
+      "equipment": [
+        "Machine",
+        "Dumbbell",
+        "Cable"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Cable shotgun rows": {
+      "standardName": null,
+      "body": [
+        "Back"
+      ],
+      "equipment": [
+        "Cable"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Calf raises": {
+      "standardName": "Calf Raise",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Machine",
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Caterpillars": {
+      "standardName": "Caterpillar",
+      "body": [
+        "Core",
+        "Arms",
+        "Cardio"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Caterpillars with two pushups": {
+      "standardName": "Caterpillar",
+      "body": [
+        "Core",
+        "Arms",
+        "Chest",
+        "Cardio"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Deadlifts with 40lb kettlebell": {
+      "standardName": "Deadlift",
+      "body": [
+        "Legs",
+        "Back"
+      ],
+      "equipment": [
+        "Barbell",
+        "Kettlebell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Decline Bench Reach-ups": {
+      "standardName": null,
+      "body": [
+        "Chest",
+        "Core"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Decline bench reachups into russian twists": {
+      "standardName": "Russian Twist",
+      "body": [
+        "Core",
+        "Chest"
+      ],
+      "equipment": [
+        "Bodyweight",
+        "Med ball"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Decline bench sit-ups": {
+      "standardName": "Sit Up",
+      "body": [
+        "Core",
+        "Chest"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Double down sumo goblet squats": {
+      "standardName": "Goblet Squat",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Kettlebell",
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Downward stair ladder squats": {
+      "standardName": null,
+      "body": [
+        "Legs",
+        "Cardio"
+      ],
+      "equipment": [
+        "Stairs"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Dual Rope Slams": {
+      "standardName": null,
+      "body": [
+        "Cardio"
+      ],
+      "equipment": [
+        "Rope"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Dual Rope Slams w/ burpees": {
+      "standardName": "Burpee",
+      "body": [
+        "Cardio",
+        "Legs"
+      ],
+      "equipment": [
+        "Bodyweight",
+        "Rope"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Dual rope slams": {
+      "standardName": null,
+      "body": [
+        "Cardio"
+      ],
+      "equipment": [
+        "Rope"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Dumbbell Front Raises": {
+      "standardName": "Front Raise",
+      "body": [
+        "Shoulders"
+      ],
+      "equipment": [
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Dumbbell presses w/ leg extensions": {
+      "standardName": "Leg Extension",
+      "body": [
+        "Legs",
+        "Chest"
+      ],
+      "equipment": [
+        "Machine",
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Elf Jacks": {
+      "standardName": null,
+      "body": [
+        "Cardio"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Elf jacks": {
+      "standardName": null,
+      "body": [
+        "Cardio"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Every other step stair climbs": {
+      "standardName": "Stair Climb",
+      "body": [
+        "Cardio",
+        "Legs"
+      ],
+      "equipment": [
+        "Stairs"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Face Pulls": {
+      "standardName": "Face Pull",
+      "body": [
+        "Shoulders",
+        "Back"
+      ],
+      "equipment": [
+        "Cable"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Farmer Squats": {
+      "standardName": null,
+      "body": [
+        "Legs"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Flat bench chest press w/ leg extensions": {
+      "standardName": "Leg Press",
+      "body": [
+        "Legs",
+        "Back",
+        "Chest"
+      ],
+      "equipment": [
+        "Machine"
+      ],
+      "match": "exactish",
+      "score": 0.9
+    },
+    "Forward Lunges with bicep curls at the bottom of the lunge": {
+      "standardName": "Forward Lunge",
+      "body": [
+        "Legs",
+        "Arms"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Forward backward forward lunges with 10lb plates": {
+      "standardName": "Forward Lunge",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Forward backward lunges": {
+      "standardName": null,
+      "body": [
+        "Legs"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Forward/Backward/Forward Lunges": {
+      "standardName": "Forward Lunge",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Forward/Backward/Forward Lunges w/ 10lb dumbbells": {
+      "standardName": "Forward Lunge",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Forward/backward/forward lunges": {
+      "standardName": "Forward Lunge",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Goblet Squats": {
+      "standardName": "Goblet Squat",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Kettlebell",
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Goblet squat hops": {
+      "standardName": "Goblet Squat",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Kettlebell",
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Goblet squats": {
+      "standardName": "Goblet Squat",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Kettlebell",
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Granny lunges": {
+      "standardName": null,
+      "body": [
+        "Legs"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "HS bicep curls": {
+      "standardName": "Bicep Curl",
+      "body": [
+        "Arms"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Barbell",
+        "Cable",
+        "Machine"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "HS high rows": {
+      "standardName": null,
+      "body": [
+        "Back"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Machine"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "HS incline chest press": {
+      "standardName": "Chest Press",
+      "body": [
+        "Chest"
+      ],
+      "equipment": [
+        "Machine",
+        "Dumbbell",
+        "Cable"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "HS single armed side pulldowns": {
+      "standardName": "Pulldown",
+      "body": [
+        "Back"
+      ],
+      "equipment": [
+        "Cable",
+        "Machine",
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Hammer Curls w/ Overhead presses": {
+      "standardName": "Overhead Press",
+      "body": [
+        "Shoulders",
+        "Arms"
+      ],
+      "equipment": [
+        "Barbell",
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Hanging knee tucks": {
+      "standardName": null,
+      "body": [
+        "Core"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "High Plank": {
+      "standardName": "Plank",
+      "body": [
+        "Core"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "INcline HS press iso 12s": {
+      "standardName": null,
+      "body": [
+        "Chest"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Machine"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Ice skater lunges": {
+      "standardName": "Ice Skater",
+      "body": [
+        "Legs",
+        "Cardio"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "In and out squat hops": {
+      "standardName": null,
+      "body": [
+        "Legs"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Incline Pushups": {
+      "standardName": null,
+      "body": [
+        "Chest"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Incline push-ups": {
+      "standardName": "Push Up",
+      "body": [
+        "Chest",
+        "Arms"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Incline pushups": {
+      "standardName": null,
+      "body": [
+        "Chest"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Jumping jacks": {
+      "standardName": "Jumping Jack",
+      "body": [
+        "Cardio"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "KB Swings": {
+      "standardName": "Kb Swing",
+      "body": [
+        "Legs",
+        "Core"
+      ],
+      "equipment": [
+        "Kettlebell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "KB double down sumo squats": {
+      "standardName": "Sumo Squat",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Kettlebell",
+        "Barbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "KB swings": {
+      "standardName": "Kb Swing",
+      "body": [
+        "Legs",
+        "Core"
+      ],
+      "equipment": [
+        "Kettlebell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "KB swings, lateral shuffle into ball slams": {
+      "standardName": "Kb Swing",
+      "body": [
+        "Legs",
+        "Core",
+        "Cardio"
+      ],
+      "equipment": [
+        "Kettlebell",
+        "Med ball"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "KS swings": {
+      "standardName": null,
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Kettlebell"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Kettlebell swings": {
+      "standardName": "Kettlebell Swing",
+      "body": [
+        "Legs",
+        "Core"
+      ],
+      "equipment": [
+        "Kettlebell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "L circuit: 5x 15lb ball slams into lateral run, 1 burpee, forward run into 5x 30lb KB squats, run back, do burpee at mid point and start all over": {
+      "standardName": "Burpee",
+      "body": [
+        "Cardio",
+        "Legs"
+      ],
+      "equipment": [
+        "Bodyweight",
+        "Kettlebell",
+        "Med ball"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "LF chest fly iso 12s": {
+      "standardName": "Chest Fly",
+      "body": [
+        "Chest"
+      ],
+      "equipment": [
+        "Cable",
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "LF chest flys": {
+      "standardName": "Chest Fly",
+      "body": [
+        "Chest"
+      ],
+      "equipment": [
+        "Cable",
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "LF flys": {
+      "standardName": null,
+      "body": [
+        "Chest"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "LF reverse flys": {
+      "standardName": "Reverse Fly",
+      "body": [
+        "Back",
+        "Shoulders",
+        "Chest"
+      ],
+      "equipment": [
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Laps around the gym w/ stairs": {
+      "standardName": null,
+      "body": [
+        "Legs",
+        "Cardio"
+      ],
+      "equipment": [
+        "Stairs"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Lateral Squat hops w/ ball slams": {
+      "standardName": "Ball Slam",
+      "body": [
+        "Cardio",
+        "Core",
+        "Legs"
+      ],
+      "equipment": [
+        "Med ball"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Lateral lunged cable torso twists": {
+      "standardName": null,
+      "body": [
+        "Legs",
+        "Core"
+      ],
+      "equipment": [
+        "Cable"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Lateral lunges with rope slams": {
+      "standardName": null,
+      "body": [
+        "Legs",
+        "Cardio"
+      ],
+      "equipment": [
+        "Rope"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Leg extensions 777's": {
+      "standardName": "Leg Extension",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Machine"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Leg press": {
+      "standardName": "Leg Press",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Machine"
+      ],
+      "match": "exactish",
+      "score": 1
+    },
+    "Lunged Cable Chest Flys": {
+      "standardName": "Chest Fly",
+      "body": [
+        "Chest",
+        "Legs"
+      ],
+      "equipment": [
+        "Cable",
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Lunged cable chest presses": {
+      "standardName": "Chest Press",
+      "body": [
+        "Chest",
+        "Legs"
+      ],
+      "equipment": [
+        "Machine",
+        "Dumbbell",
+        "Cable"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Lunges": {
+      "standardName": null,
+      "body": [
+        "Legs"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Mountain Climbers": {
+      "standardName": "Mountain Climber",
+      "body": [
+        "Core",
+        "Cardio"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Mountain climbers": {
+      "standardName": "Mountain Climber",
+      "body": [
+        "Core",
+        "Cardio"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Mt Climbers": {
+      "standardName": null,
+      "body": [
+        "Cardio"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "PUllovers": {
+      "standardName": "Pullover",
+      "body": [
+        "Back",
+        "Chest"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Barbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Plank": {
+      "standardName": "Plank",
+      "body": [
+        "Core"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 1
+    },
+    "Plank jacks": {
+      "standardName": "Plank",
+      "body": [
+        "Core",
+        "Cardio"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Plank with overhead stretch reaches": {
+      "standardName": "Plank",
+      "body": [
+        "Core",
+        "Shoulders"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Planks w/ overhead reaches": {
+      "standardName": "Plank",
+      "body": [
+        "Core",
+        "Shoulders"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Planks w/ pulls": {
+      "standardName": "Plank",
+      "body": [
+        "Core"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Plano jacks": {
+      "standardName": null,
+      "body": [
+        "Cardio"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Psychos": {
+      "standardName": null,
+      "body": [
+        "Cardio"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Pull downs": {
+      "standardName": null,
+      "body": [
+        "Back"
+      ],
+      "equipment": [
+        "Machine"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Pull-Downs": {
+      "standardName": null,
+      "body": [
+        "Back"
+      ],
+      "equipment": [
+        "Machine"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Pulldowns": {
+      "standardName": "Pulldown",
+      "body": [
+        "Back"
+      ],
+      "equipment": [
+        "Cable",
+        "Machine"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Pullovers": {
+      "standardName": "Pullover",
+      "body": [
+        "Back",
+        "Chest"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Barbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Pullups into Pushups": {
+      "standardName": null,
+      "body": [
+        "Back",
+        "Chest"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Pullups into squat thrusts": {
+      "standardName": null,
+      "body": [
+        "Legs",
+        "Back"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Push-ups": {
+      "standardName": "Push Up",
+      "body": [
+        "Chest",
+        "Arms"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Pushups": {
+      "standardName": null,
+      "body": [
+        "Chest"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Renegade Rows": {
+      "standardName": "Renegade Row",
+      "body": [
+        "Back",
+        "Core"
+      ],
+      "equipment": [
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Renegade Rows into Side Plank Presses": {
+      "standardName": "Plank",
+      "body": [
+        "Core",
+        "Back",
+        "Chest"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Renegade Rows w/ Side plank press": {
+      "standardName": "Plank",
+      "body": [
+        "Core",
+        "Back",
+        "Chest"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Renegade Rows w/ side plank presses": {
+      "standardName": "Plank",
+      "body": [
+        "Core",
+        "Back",
+        "Chest"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Renegade Rows w/ t plank presses": {
+      "standardName": "Plank",
+      "body": [
+        "Core",
+        "Back",
+        "Chest"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Renegade rows with to T-plank presses": {
+      "standardName": "Plank",
+      "body": [
+        "Core",
+        "Back",
+        "Chest"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Reverse Jack Slams": {
+      "standardName": null,
+      "body": [
+        "Cardio"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Reverse Lunges into Arnold Presses into Burpees": {
+      "standardName": "Reverse Lunge",
+      "body": [
+        "Legs",
+        "Chest",
+        "Cardio"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Reverse Lunges w/ 8lb ball slams": {
+      "standardName": "Reverse Lunge",
+      "body": [
+        "Legs",
+        "Cardio"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Bodyweight",
+        "Med ball"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Reverse double down lunges": {
+      "standardName": null,
+      "body": [
+        "Legs"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Reverse jack slams": {
+      "standardName": null,
+      "body": [
+        "Cardio"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Reverse standing lunges": {
+      "standardName": null,
+      "body": [
+        "Legs"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Rip trainer lacrosse throws": {
+      "standardName": null,
+      "body": [
+        "Shoulders",
+        "Core"
+      ],
+      "equipment": [
+        "TRX",
+        "Med ball"
+      ],
+      "match": "manual",
+      "score": 1
+    },
+    "Roller knee tucks into pushups": {
+      "standardName": null,
+      "body": [
+        "Chest",
+        "Core"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Roman Chair Knee Tucks": {
+      "standardName": null,
+      "body": [
+        "Core"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Roman chair leg raises": {
+      "standardName": "Leg Raise",
+      "body": [
+        "Core",
+        "Legs"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "manual",
+      "score": 1
+    },
+    "Rope Flutter Tabata": {
+      "standardName": null,
+      "body": [
+        "Cardio"
+      ],
+      "equipment": [
+        "Rope"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Rope Flutters": {
+      "standardName": null,
+      "body": [
+        "Cardio"
+      ],
+      "equipment": [
+        "Rope"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Rope Flutters — In a squat": {
+      "standardName": null,
+      "body": [
+        "Legs",
+        "Cardio"
+      ],
+      "equipment": [
+        "Rope"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Rope Pull-Overs": {
+      "standardName": null,
+      "body": [
+        "Cardio"
+      ],
+      "equipment": [
+        "Rope"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Rope Russian Twists": {
+      "standardName": "Russian Twist",
+      "body": [
+        "Core",
+        "Cardio"
+      ],
+      "equipment": [
+        "Bodyweight",
+        "Med ball",
+        "Rope"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Rope Russian twists": {
+      "standardName": "Russian Twist",
+      "body": [
+        "Core",
+        "Cardio"
+      ],
+      "equipment": [
+        "Bodyweight",
+        "Med ball",
+        "Rope"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Rope Slams": {
+      "standardName": null,
+      "body": [
+        "Cardio"
+      ],
+      "equipment": [
+        "Rope"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Rope Tricep Extensions": {
+      "standardName": "Tricep Extension",
+      "body": [
+        "Arms",
+        "Cardio"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Cable",
+        "Rope"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Rope fluttered lunges": {
+      "standardName": null,
+      "body": [
+        "Legs",
+        "Cardio"
+      ],
+      "equipment": [
+        "Rope"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Rope flutters": {
+      "standardName": null,
+      "body": [
+        "Cardio"
+      ],
+      "equipment": [
+        "Rope"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Rowing": {
+      "standardName": null,
+      "body": [
+        "Cardio"
+      ],
+      "equipment": [
+        "Rowing"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Russian Twists": {
+      "standardName": "Russian Twist",
+      "body": [
+        "Core"
+      ],
+      "equipment": [
+        "Bodyweight",
+        "Med ball"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Seated bicep curls": {
+      "standardName": "Bicep Curl",
+      "body": [
+        "Arms"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Barbell",
+        "Cable"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Seated cable rows — narrow": {
+      "standardName": null,
+      "body": [
+        "Back"
+      ],
+      "equipment": [
+        "Cable"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Seated rows": {
+      "standardName": "Seated Row",
+      "body": [
+        "Back"
+      ],
+      "equipment": [
+        "Cable",
+        "Machine"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Side Plank Weaves": {
+      "standardName": "Plank",
+      "body": [
+        "Core"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Side Walking Sumo Squats": {
+      "standardName": "Sumo Squat",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Kettlebell",
+        "Barbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Side rope slams": {
+      "standardName": null,
+      "body": [
+        "Cardio"
+      ],
+      "equipment": [
+        "Rope"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Side sumo squats with ball torso twists": {
+      "standardName": "Sumo Squat",
+      "body": [
+        "Legs",
+        "Core"
+      ],
+      "equipment": [
+        "Kettlebell",
+        "Barbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Side to side station runs w/ ball slams": {
+      "standardName": "Ball Slam",
+      "body": [
+        "Cardio",
+        "Core"
+      ],
+      "equipment": [
+        "Med ball"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Single Armed TRX Rows": {
+      "standardName": "Trx Row",
+      "body": [
+        "Back"
+      ],
+      "equipment": [
+        "TRX"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Single Legged Bridge Raises": {
+      "standardName": "Glute Bridge",
+      "body": [
+        "Legs",
+        "Core"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "manual",
+      "score": 1
+    },
+    "Single Legged Deadlifts": {
+      "standardName": "Deadlift",
+      "body": [
+        "Legs",
+        "Back"
+      ],
+      "equipment": [
+        "Barbell",
+        "Kettlebell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Single Legged Walking Lunges": {
+      "standardName": "Walking Lunge",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Single armed dumbbell snatch into single armed burpees": {
+      "standardName": "Burpee",
+      "body": [
+        "Cardio",
+        "Legs"
+      ],
+      "equipment": [
+        "Bodyweight",
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Single legged deadlifts": {
+      "standardName": "Deadlift",
+      "body": [
+        "Legs",
+        "Back"
+      ],
+      "equipment": [
+        "Barbell",
+        "Kettlebell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Split Squats": {
+      "standardName": null,
+      "body": [
+        "Legs"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Squat Hop 180's": {
+      "standardName": null,
+      "body": [
+        "Legs"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Squat Hops": {
+      "standardName": null,
+      "body": [
+        "Legs"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Squat thrusts": {
+      "standardName": null,
+      "body": [
+        "Legs"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Squats into overhead snatches": {
+      "standardName": "Snatch",
+      "body": [
+        "Legs",
+        "Shoulders"
+      ],
+      "equipment": [
+        "Kettlebell",
+        "Barbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Squats into wall balls": {
+      "standardName": "Wall Ball",
+      "body": [
+        "Legs",
+        "Shoulders"
+      ],
+      "equipment": [
+        "Med ball"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Squats w/ front raises": {
+      "standardName": "Front Raise",
+      "body": [
+        "Shoulders",
+        "Legs"
+      ],
+      "equipment": [
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Squatted Cable Rows": {
+      "standardName": null,
+      "body": [
+        "Legs",
+        "Back"
+      ],
+      "equipment": [
+        "Cable"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Stair Climbs": {
+      "standardName": "Stair Climb",
+      "body": [
+        "Cardio",
+        "Legs"
+      ],
+      "equipment": [
+        "Stairs"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Stair Push-ups": {
+      "standardName": "Push Up",
+      "body": [
+        "Chest",
+        "Arms",
+        "Legs",
+        "Cardio"
+      ],
+      "equipment": [
+        "Bodyweight",
+        "Stairs"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Stair Squat Hops": {
+      "standardName": null,
+      "body": [
+        "Legs",
+        "Cardio"
+      ],
+      "equipment": [
+        "Stairs"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Stair hop ups into thrust backs": {
+      "standardName": null,
+      "body": [
+        "Legs",
+        "Cardio"
+      ],
+      "equipment": [
+        "Stairs"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Stair sprints": {
+      "standardName": null,
+      "body": [
+        "Legs",
+        "Cardio"
+      ],
+      "equipment": [
+        "Stairs"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Stair squat hops": {
+      "standardName": null,
+      "body": [
+        "Legs",
+        "Cardio"
+      ],
+      "equipment": [
+        "Stairs"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Stair squat hops into pushups": {
+      "standardName": null,
+      "body": [
+        "Legs",
+        "Chest",
+        "Cardio"
+      ],
+      "equipment": [
+        "Stairs",
+        "Bodyweight"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Stairs": {
+      "standardName": null,
+      "body": [
+        "Legs",
+        "Cardio"
+      ],
+      "equipment": [
+        "Stairs"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Step ups into reverse lunges": {
+      "standardName": "Reverse Lunge",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Step-ups into Overhead presses": {
+      "standardName": "Step Up",
+      "body": [
+        "Legs",
+        "Shoulders"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Kettlebell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Step-ups w/ Reverse Lunges": {
+      "standardName": "Reverse Lunge",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Suicides w/ 3 stations": {
+      "standardName": "Suicide",
+      "body": [
+        "Cardio",
+        "Legs"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Sumo Squats w/ 30lb kettlebell": {
+      "standardName": "Sumo Squat",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Kettlebell",
+        "Barbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Sumo squat hops": {
+      "standardName": "Sumo Squat",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Kettlebell",
+        "Barbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Sumo squats": {
+      "standardName": "Sumo Squat",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Kettlebell",
+        "Barbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Sumo squats with 10lbkettlebell": {
+      "standardName": "Sumo Squat",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Kettlebell",
+        "Barbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Sumo squats with 30lb kettlebell": {
+      "standardName": "Sumo Squat",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Kettlebell",
+        "Barbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Sumo squats with front DB raised": {
+      "standardName": "Sumo Squat",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Kettlebell",
+        "Barbell",
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Sumosquats with woodchops": {
+      "standardName": "Woodchop",
+      "body": [
+        "Core",
+        "Legs"
+      ],
+      "equipment": [
+        "Cable",
+        "Med ball"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Sykos — BOSU": {
+      "standardName": null,
+      "body": [
+        "Cardio"
+      ],
+      "equipment": [
+        "BOSU",
+        "Bodyweight"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "T-bar Deadlifts into curls w/ overhead presses": {
+      "standardName": "Deadlift",
+      "body": [
+        "Legs",
+        "Back",
+        "Arms",
+        "Shoulders"
+      ],
+      "equipment": [
+        "Barbell",
+        "Kettlebell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "T-bar squats into overhead presses": {
+      "standardName": "Overhead Press",
+      "body": [
+        "Shoulders",
+        "Legs"
+      ],
+      "equipment": [
+        "Barbell",
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "T-bar squats w/ alt. overhead presses": {
+      "standardName": "Overhead Press",
+      "body": [
+        "Shoulders",
+        "Legs"
+      ],
+      "equipment": [
+        "Barbell",
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "TBar squats into overhead presses": {
+      "standardName": "Overhead Press",
+      "body": [
+        "Shoulders",
+        "Legs",
+        "Back"
+      ],
+      "equipment": [
+        "Barbell",
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "TRX Push-Ups": {
+      "standardName": "Push Up",
+      "body": [
+        "Chest",
+        "Arms"
+      ],
+      "equipment": [
+        "Bodyweight",
+        "TRX"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "TRX Push-ups": {
+      "standardName": "Push Up",
+      "body": [
+        "Chest",
+        "Arms"
+      ],
+      "equipment": [
+        "Bodyweight",
+        "TRX"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "TRX Pushups": {
+      "standardName": null,
+      "body": [
+        "Chest"
+      ],
+      "equipment": [
+        "TRX",
+        "Bodyweight"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "TRX Rows into Archer Presses": {
+      "standardName": "Archer Press",
+      "body": [
+        "Shoulders",
+        "Back"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "TRX"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "TRX Rows w/ Archer Presses": {
+      "standardName": "Archer Press",
+      "body": [
+        "Shoulders",
+        "Back"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "TRX"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "TRX Rows w/ squats": {
+      "standardName": "Trx Row",
+      "body": [
+        "Back",
+        "Legs"
+      ],
+      "equipment": [
+        "TRX"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "TRX Single Armed Rows": {
+      "standardName": null,
+      "body": [
+        "Back"
+      ],
+      "equipment": [
+        "TRX"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "TRX archer rows": {
+      "standardName": null,
+      "body": [
+        "Back",
+        "Shoulders"
+      ],
+      "equipment": [
+        "TRX"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "TRX rows": {
+      "standardName": "Trx Row",
+      "body": [
+        "Back"
+      ],
+      "equipment": [
+        "TRX"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "TRX rows w/ archer presses": {
+      "standardName": "Archer Press",
+      "body": [
+        "Shoulders",
+        "Back"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "TRX"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "TRX single Armed Rows": {
+      "standardName": null,
+      "body": [
+        "Back"
+      ],
+      "equipment": [
+        "TRX"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "TRX single armed rows w/ twist reaches": {
+      "standardName": null,
+      "body": [
+        "Back",
+        "Core"
+      ],
+      "equipment": [
+        "TRX"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Tricep dips with pointed toe kicks": {
+      "standardName": null,
+      "body": [
+        "Arms"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Triep press downs": {
+      "standardName": null,
+      "body": [
+        "Arms"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "Trx rows with archer presses": {
+      "standardName": "Archer Press",
+      "body": [
+        "Shoulders",
+        "Back"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "TRX"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Uneven stair climb w/ lateral leg swings": {
+      "standardName": "Stair Climb",
+      "body": [
+        "Cardio",
+        "Legs"
+      ],
+      "equipment": [
+        "Stairs"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Vent over single armed reverse DB fly": {
+      "standardName": "Reverse Fly",
+      "body": [
+        "Back",
+        "Shoulders",
+        "Chest"
+      ],
+      "equipment": [
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.9
+    },
+    "Walking Lunges": {
+      "standardName": "Walking Lunge",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Walking Lunges w/ 12lb ball slams": {
+      "standardName": "Walking Lunge",
+      "body": [
+        "Legs",
+        "Cardio"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Bodyweight",
+        "Med ball"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Walking lunges": {
+      "standardName": "Walking Lunge",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Walking lunges w/ 10lb dumbbells": {
+      "standardName": "Walking Lunge",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "Wall sit": {
+      "standardName": "Wall Sit",
+      "body": [
+        "Legs",
+        "Core"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 1
+    },
+    "Wood chops": {
+      "standardName": null,
+      "body": [
+        "Core"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "archer TRX pushups": {
+      "standardName": null,
+      "body": [
+        "Chest",
+        "Shoulders"
+      ],
+      "equipment": [
+        "TRX",
+        "Bodyweight"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "backward lunges": {
+      "standardName": null,
+      "body": [
+        "Legs"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "bentover dumbbell flys": {
+      "standardName": null,
+      "body": [
+        "Chest"
+      ],
+      "equipment": [
+        "Dumbbell"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "bentover dumbbell rows": {
+      "standardName": null,
+      "body": [
+        "Back"
+      ],
+      "equipment": [
+        "Dumbbell"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "bentover rows": {
+      "standardName": null,
+      "body": [
+        "Back"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "burpees": {
+      "standardName": "Burpee",
+      "body": [
+        "Cardio",
+        "Legs"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "cable chest flys": {
+      "standardName": "Chest Fly",
+      "body": [
+        "Chest"
+      ],
+      "equipment": [
+        "Cable",
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "cable chest press": {
+      "standardName": "Chest Press",
+      "body": [
+        "Chest"
+      ],
+      "equipment": [
+        "Machine",
+        "Dumbbell",
+        "Cable"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "cable decline flys": {
+      "standardName": null,
+      "body": [
+        "Chest"
+      ],
+      "equipment": [
+        "Cable"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "caterpillars": {
+      "standardName": "Caterpillar",
+      "body": [
+        "Core",
+        "Arms",
+        "Cardio"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "caterpillars w/ pushups": {
+      "standardName": "Caterpillar",
+      "body": [
+        "Core",
+        "Arms",
+        "Chest",
+        "Cardio"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "decline cable flys": {
+      "standardName": null,
+      "body": [
+        "Chest"
+      ],
+      "equipment": [
+        "Cable"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "decline reachups": {
+      "standardName": null,
+      "body": [
+        "Core"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "double down ice skaters": {
+      "standardName": "Ice Skater",
+      "body": [
+        "Legs",
+        "Cardio"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "dual rope slams": {
+      "standardName": null,
+      "body": [
+        "Cardio"
+      ],
+      "equipment": [
+        "Rope"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "elf jacks": {
+      "standardName": null,
+      "body": [
+        "Cardio"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "every other step stair climbs": {
+      "standardName": "Stair Climb",
+      "body": [
+        "Cardio",
+        "Legs"
+      ],
+      "equipment": [
+        "Stairs"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "facepulls": {
+      "standardName": "Face Pull",
+      "body": [
+        "Shoulders",
+        "Back"
+      ],
+      "equipment": [
+        "Cable"
+      ],
+      "match": "manual",
+      "score": 1
+    },
+    "farmer squats": {
+      "standardName": null,
+      "body": [
+        "Legs"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "goblet squats": {
+      "standardName": "Goblet Squat",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Kettlebell",
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "ice skaters w/ 30 lbs": {
+      "standardName": "Ice Skater",
+      "body": [
+        "Legs",
+        "Cardio"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "in and out squat hops": {
+      "standardName": null,
+      "body": [
+        "Legs"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "incline cable flys": {
+      "standardName": null,
+      "body": [
+        "Chest"
+      ],
+      "equipment": [
+        "Cable"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "jumping jacks": {
+      "standardName": "Jumping Jack",
+      "body": [
+        "Cardio"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "kettlebell swings": {
+      "standardName": "Kettlebell Swing",
+      "body": [
+        "Legs",
+        "Core"
+      ],
+      "equipment": [
+        "Kettlebell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "lateral lunged cable torso twists": {
+      "standardName": null,
+      "body": [
+        "Legs",
+        "Core"
+      ],
+      "equipment": [
+        "Cable"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "lateral walking sumo squats": {
+      "standardName": "Sumo Squat",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Kettlebell",
+        "Barbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "leg press": {
+      "standardName": "Leg Press",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Machine"
+      ],
+      "match": "exactish",
+      "score": 1
+    },
+    "lunged cable chest flys": {
+      "standardName": "Chest Fly",
+      "body": [
+        "Chest",
+        "Legs"
+      ],
+      "equipment": [
+        "Cable",
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "lunges cable chest flys": {
+      "standardName": "Chest Fly",
+      "body": [
+        "Chest",
+        "Legs"
+      ],
+      "equipment": [
+        "Cable",
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "narrow grip pulldowns": {
+      "standardName": "Pulldown",
+      "body": [
+        "Back"
+      ],
+      "equipment": [
+        "Cable",
+        "Machine"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "paloff presses": {
+      "standardName": null,
+      "body": [
+        "Chest"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "plank": {
+      "standardName": "Plank",
+      "body": [
+        "Core"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 1
+    },
+    "plank overhead reaches": {
+      "standardName": "Plank",
+      "body": [
+        "Core",
+        "Shoulders"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "plank scissor kicks": {
+      "standardName": "Plank",
+      "body": [
+        "Core"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "plank scissors": {
+      "standardName": "Plank",
+      "body": [
+        "Core"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "pull-downs": {
+      "standardName": null,
+      "body": [
+        "Back"
+      ],
+      "equipment": [
+        "Machine"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "pull-overs": {
+      "standardName": "Pullover",
+      "body": [
+        "Back",
+        "Chest"
+      ],
+      "equipment": [
+        "Dumbbell"
+      ],
+      "match": "manual",
+      "score": 1
+    },
+    "pulldowns": {
+      "standardName": "Pulldown",
+      "body": [
+        "Back"
+      ],
+      "equipment": [
+        "Cable",
+        "Machine"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "pulldowns — reverse grip": {
+      "standardName": "Pulldown",
+      "body": [
+        "Back"
+      ],
+      "equipment": [
+        "Cable",
+        "Machine"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "pulldwns": {
+      "standardName": "Lat Pulldown",
+      "body": [
+        "Back"
+      ],
+      "equipment": [
+        "Cable",
+        "Machine"
+      ],
+      "match": "manual",
+      "score": 1
+    },
+    "pullovers": {
+      "standardName": "Pullover",
+      "body": [
+        "Back",
+        "Chest"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Barbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "pullups into burpees": {
+      "standardName": "Burpee",
+      "body": [
+        "Cardio",
+        "Legs",
+        "Back"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "pullups into pushups": {
+      "standardName": null,
+      "body": [
+        "Back",
+        "Chest"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "pushups": {
+      "standardName": null,
+      "body": [
+        "Chest"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "renegade rows": {
+      "standardName": "Renegade Row",
+      "body": [
+        "Back",
+        "Core"
+      ],
+      "equipment": [
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "reverse flys — LF machine": {
+      "standardName": "Reverse Fly",
+      "body": [
+        "Back",
+        "Shoulders",
+        "Chest"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Machine"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "reverse grip pulldowns": {
+      "standardName": "Pulldown",
+      "body": [
+        "Back"
+      ],
+      "equipment": [
+        "Cable",
+        "Machine"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "roller knee tucks": {
+      "standardName": null,
+      "body": [
+        "Core"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "rope fluttered squats": {
+      "standardName": null,
+      "body": [
+        "Legs",
+        "Cardio"
+      ],
+      "equipment": [
+        "Rope"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "side plank weaves": {
+      "standardName": "Plank",
+      "body": [
+        "Core"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "single armed cable chest press punches": {
+      "standardName": "Chest Press",
+      "body": [
+        "Chest"
+      ],
+      "equipment": [
+        "Machine",
+        "Dumbbell",
+        "Cable"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "single armed cable rows w/ twists": {
+      "standardName": null,
+      "body": [
+        "Back",
+        "Core"
+      ],
+      "equipment": [
+        "Cable"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "single legged deadlifts": {
+      "standardName": "Deadlift",
+      "body": [
+        "Legs",
+        "Back"
+      ],
+      "equipment": [
+        "Barbell",
+        "Kettlebell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "smith machine hanging rows": {
+      "standardName": null,
+      "body": [
+        "Back"
+      ],
+      "equipment": [
+        "Machine"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "squat hops": {
+      "standardName": null,
+      "body": [
+        "Legs"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "squats into arnold presses": {
+      "standardName": null,
+      "body": [
+        "Legs",
+        "Chest"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "squats thrusts": {
+      "standardName": null,
+      "body": [
+        "Legs"
+      ],
+      "equipment": [],
+      "match": "heuristic",
+      "score": 0
+    },
+    "stair climbs": {
+      "standardName": "Stair Climb",
+      "body": [
+        "Cardio",
+        "Legs"
+      ],
+      "equipment": [
+        "Stairs"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "stair pushups": {
+      "standardName": null,
+      "body": [
+        "Legs",
+        "Chest",
+        "Cardio"
+      ],
+      "equipment": [
+        "Stairs",
+        "Bodyweight"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "stair sprints": {
+      "standardName": null,
+      "body": [
+        "Legs",
+        "Cardio"
+      ],
+      "equipment": [
+        "Stairs"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "stair tricep pushups": {
+      "standardName": null,
+      "body": [
+        "Arms",
+        "Legs",
+        "Chest",
+        "Cardio"
+      ],
+      "equipment": [
+        "Stairs",
+        "Bodyweight"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "suicides": {
+      "standardName": null,
+      "body": [
+        "Cardio",
+        "Legs"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "manual",
+      "score": 1
+    },
+    "sumo squats": {
+      "standardName": "Sumo Squat",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Kettlebell",
+        "Barbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "t-plank": {
+      "standardName": "Plank",
+      "body": [
+        "Core"
+      ],
+      "equipment": [
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "upward cable torso twists": {
+      "standardName": null,
+      "body": [
+        "Core"
+      ],
+      "equipment": [
+        "Cable"
+      ],
+      "match": "heuristic",
+      "score": 0
+    },
+    "walking forward/backward/forward lunges": {
+      "standardName": "Forward Lunge",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "walking lunges": {
+      "standardName": "Walking Lunge",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "walking lunges w/ 50 lbs": {
+      "standardName": "Walking Lunge",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "walking lunges w/ alt ball slams": {
+      "standardName": "Walking Lunge",
+      "body": [
+        "Legs",
+        "Cardio"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Bodyweight",
+        "Med ball"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "walking lunges — w/ weaves": {
+      "standardName": "Walking Lunge",
+      "body": [
+        "Legs"
+      ],
+      "equipment": [
+        "Dumbbell",
+        "Bodyweight"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    },
+    "wall balls": {
+      "standardName": "Wall Ball",
+      "body": [
+        "Legs",
+        "Shoulders"
+      ],
+      "equipment": [
+        "Med ball"
+      ],
+      "match": "exactish",
+      "score": 0.85
+    }
+  }
+}

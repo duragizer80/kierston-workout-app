@@ -1,13 +1,21 @@
-import { useMemo, useState, type MouseEvent } from 'react'
+import { useEffect, useMemo, useState, type MouseEvent } from 'react'
 import { Link } from 'react-router-dom'
 import { BodyMap } from '../components/BodyMap'
 import { StarRating } from '../components/StarRating'
 import {
+  getExcludedBodyTags,
   getRating,
   isFavorite,
+  setExcludedBodyTags,
   toggleFavorite,
   type WorkoutRating,
 } from '../lib/storage'
+import {
+  displaySubtitle,
+  displayTitle,
+  isRoutineId,
+  listRoutineWorkouts,
+} from '../lib/routines'
 import {
   BODY_TAGS,
   EQUIPMENT_TAGS,
@@ -15,8 +23,6 @@ import {
   bodyChipLabel,
   bodyTags,
   buildTagCounts,
-  cardSubtitle,
-  cardTitle,
   equipmentSignature,
   equipmentTags,
   formatCardDate,
@@ -29,6 +35,7 @@ import { workouts } from '../lib/workouts'
 import type { Workout } from '../types'
 
 type SortMode = 'date' | 'rating' | 'name'
+type BodyMode = 'include' | 'exclude'
 
 function matchesSearch(w: Workout, needle: string): boolean {
   if (!needle) return true
@@ -48,13 +55,27 @@ function hasAll<T extends string>(have: T[], need: T[]): boolean {
   return need.every((t) => set.has(t))
 }
 
+function hasNone<T extends string>(have: T[], banned: T[]): boolean {
+  if (!banned.length) return true
+  const set = new Set(have)
+  return banned.every((t) => !set.has(t))
+}
+
 function sortWorkouts(list: Workout[], mode: SortMode): Workout[] {
   const copy = [...list]
   if (mode === 'date') return copy.sort(sortByDateDesc)
   if (mode === 'name') {
     return copy.sort((a, b) => {
-      const sa = (equipmentSignature(a) || cardTitle(a)).toLowerCase()
-      const sb = (equipmentSignature(b) || cardTitle(b)).toLowerCase()
+      const sa = (
+        isRoutineId(a.id)
+          ? a.name
+          : equipmentSignature(a) || displayTitle(a)
+      ).toLowerCase()
+      const sb = (
+        isRoutineId(b.id)
+          ? b.name
+          : equipmentSignature(b) || displayTitle(b)
+      ).toLowerCase()
       const cmp = sa.localeCompare(sb)
       return cmp || sortByDateDesc(a, b)
     })
@@ -74,10 +95,18 @@ function toggleIn<T>(prev: T[], tag: T): T[] {
 export function Library() {
   const [q, setQ] = useState('')
   const [bodySelected, setBodySelected] = useState<BodyTag[]>([])
+  const [bodyExcluded, setBodyExcluded] = useState<BodyTag[]>(() =>
+    getExcludedBodyTags(),
+  )
+  const [bodyMode, setBodyMode] = useState<BodyMode>('include')
   const [equipSelected, setEquipSelected] = useState<EquipmentTag[]>([])
   const [favoritesOnly, setFavoritesOnly] = useState(false)
   const [sort, setSort] = useState<SortMode>('date')
   const [tick, setTick] = useState(0)
+
+  useEffect(() => {
+    setExcludedBodyTags(bodyExcluded)
+  }, [bodyExcluded])
 
   const libraryCounts = useMemo(() => buildTagCounts(workouts), [])
 
@@ -90,6 +119,11 @@ export function Library() {
     [libraryCounts],
   )
 
+  const savedRoutines = useMemo(() => {
+    void tick
+    return listRoutineWorkouts()
+  }, [tick])
+
   const filtered = useMemo(() => {
     void tick
     const needle = q.trim().toLowerCase()
@@ -97,11 +131,12 @@ export function Library() {
       if (favoritesOnly && !isFavorite(w.id)) return false
       if (!matchesSearch(w, needle)) return false
       if (!hasAll(bodyTags(w), bodySelected)) return false
+      if (!hasNone(bodyTags(w), bodyExcluded)) return false
       if (!hasAll(equipmentTags(w), equipSelected)) return false
       return true
     })
     return sortWorkouts(base, sort)
-  }, [q, bodySelected, equipSelected, favoritesOnly, sort, tick])
+  }, [q, bodySelected, bodyExcluded, equipSelected, favoritesOnly, sort, tick])
 
   const byEra = useMemo(() => {
     const map = new Map<string, Workout[]>()
@@ -126,15 +161,77 @@ export function Library() {
     setTick((n) => n + 1)
   }
 
-  const hasFilters =
+  function onBodyToggle(tag: BodyTag) {
+    if (bodyMode === 'exclude') {
+      setBodyExcluded((p) => toggleIn(p, tag))
+      // Drop from include if excluding
+      setBodySelected((p) => p.filter((t) => t !== tag))
+    } else {
+      setBodySelected((p) => toggleIn(p, tag))
+      // Drop from exclude if including
+      setBodyExcluded((p) => p.filter((t) => t !== tag))
+    }
+  }
+
+  const hasIncludeFilters =
     bodySelected.length > 0 || equipSelected.length > 0 || favoritesOnly
+  const hasExcludes = bodyExcluded.length > 0
+  const hasFilters = hasIncludeFilters || hasExcludes
 
   return (
     <main>
       <h1 className="page-title">Library</h1>
       <p className="lede">
-        Tap the body map or chips to narrow — rate, heart favorites, sort by rating.
+        Tap the body map or chips to narrow — exclude strained muscles, rate,
+        heart favorites.
       </p>
+
+      <div className="library-actions">
+        <Link className="btn btn-secondary" to="/routine/new">
+          + New routine
+        </Link>
+      </div>
+
+      {savedRoutines.length > 0 ? (
+        <section className="era-section routines-section">
+          <header className="era-header">
+            <h2>Your routines</h2>
+            <span className="era-count">{savedRoutines.length}</span>
+          </header>
+          <p className="era-blurb">Named by you · saved on this device</p>
+          <div className="workout-list">
+            {savedRoutines.map((w, i) => {
+              const fav = isFavorite(w.id)
+              const rating = getRating(w.id)
+              return (
+                <Link
+                  key={w.id}
+                  to={`/workout/${w.id}`}
+                  className="workout-row"
+                  style={{ animationDelay: `${Math.min(i, 8) * 30}ms` }}
+                >
+                  <div className="row-top">
+                    <h3>{displayTitle(w)}</h3>
+                    <button
+                      type="button"
+                      className={`fav-btn${fav ? ' on' : ''}`}
+                      aria-label={fav ? 'Remove favorite' : 'Add favorite'}
+                      aria-pressed={fav}
+                      onClick={(e) => onFavorite(e, w.id)}
+                    >
+                      {fav ? '♥' : '♡'}
+                    </button>
+                  </div>
+                  <p>
+                    {displaySubtitle(w)}
+                    {rating ? ` · ${rating}/5` : ''}
+                  </p>
+                </Link>
+              )
+            })}
+          </div>
+        </section>
+      ) : null}
 
       <div className="search-row">
         <input
@@ -175,27 +272,89 @@ export function Library() {
         </div>
 
         <div className="filter-block">
-          <div className="filter-heading">Body map</div>
+          <div className="filter-heading-row">
+            <div className="filter-heading">Body map</div>
+            <div
+              className="mode-toggle"
+              role="group"
+              aria-label="Include or exclude muscles"
+            >
+              <button
+                type="button"
+                className={`mode-btn${bodyMode === 'include' ? ' on' : ''}`}
+                aria-pressed={bodyMode === 'include'}
+                onClick={() => setBodyMode('include')}
+              >
+                Include
+              </button>
+              <button
+                type="button"
+                className={`mode-btn mode-btn-exclude${bodyMode === 'exclude' ? ' on' : ''}`}
+                aria-pressed={bodyMode === 'exclude'}
+                onClick={() => setBodyMode('exclude')}
+              >
+                Exclude
+              </button>
+            </div>
+          </div>
           <BodyMap
             selected={bodySelected}
-            onToggle={(tag) => setBodySelected((p) => toggleIn(p, tag))}
+            excluded={bodyExcluded}
+            mode={bodyMode}
+            onToggle={onBodyToggle}
             available={bodyChips.filter((t) => t !== 'Cardio')}
           />
         </div>
 
+        {hasExcludes ? (
+          <div className="exclude-banner" role="status">
+            <div className="exclude-banner-text">
+              <span className="exclude-label">Excluding:</span>{' '}
+              {bodyExcluded.map(bodyChipLabel).join(', ')}
+            </div>
+            <button
+              type="button"
+              className="exclude-clear"
+              onClick={() => setBodyExcluded([])}
+            >
+              Clear excludes
+            </button>
+          </div>
+        ) : null}
+
         <div className="filter-block">
-          <div className="filter-heading">Body</div>
-          <div className="filters filters-lg" role="group" aria-label="Body part filters">
+          <div className="filter-heading">
+            Body · {bodyMode === 'include' ? 'include' : 'exclude'}
+          </div>
+          <div
+            className="filters filters-lg"
+            role="group"
+            aria-label={
+              bodyMode === 'include'
+                ? 'Body part include filters'
+                : 'Body part exclude filters'
+            }
+          >
             {bodyChips.map((tag) => {
               const count = libraryCounts.body[tag] ?? 0
-              const on = bodySelected.includes(tag)
+              const included = bodySelected.includes(tag)
+              const excluded = bodyExcluded.includes(tag)
+              const on = bodyMode === 'exclude' ? excluded : included
+              const cls = [
+                'chip',
+                'chip-lg',
+                on ? (bodyMode === 'exclude' ? 'excluded' : 'on') : '',
+                bodyMode === 'include' && excluded ? 'excluded soft' : '',
+              ]
+                .filter(Boolean)
+                .join(' ')
               return (
                 <button
                   key={tag}
                   type="button"
-                  className={`chip chip-lg${on ? ' on' : ''}`}
+                  className={cls}
                   aria-pressed={on}
-                  onClick={() => setBodySelected((p) => toggleIn(p, tag))}
+                  onClick={() => onBodyToggle(tag)}
                 >
                   {bodyChipLabel(tag)}
                   <span className="chip-count">{count}</span>
@@ -233,6 +392,7 @@ export function Library() {
             className="clear-filters"
             onClick={() => {
               setBodySelected([])
+              setBodyExcluded([])
               setEquipSelected([])
               setFavoritesOnly(false)
             }}
@@ -244,11 +404,12 @@ export function Library() {
 
       <p className="match-count" aria-live="polite">
         {filtered.length} match{filtered.length === 1 ? '' : 'es'}
-        {hasFilters ? ' · filters on' : ''}
+        {hasIncludeFilters ? ' · filters on' : ''}
+        {hasExcludes ? ` · excluding ${bodyExcluded.length}` : ''}
       </p>
 
       {filtered.length === 0 ? (
-        <p className="empty">No workouts match — clear a chip or search.</p>
+        <p className="empty">No workouts match — clear a chip, exclude, or search.</p>
       ) : (
         ERA_SECTIONS.map((section) => {
           const list = byEra.get(section.id) ?? []
@@ -272,7 +433,7 @@ export function Library() {
                       style={{ animationDelay: `${Math.min(i, 12) * 30}ms` }}
                     >
                       <div className="row-top">
-                        <h3>{cardTitle(w)}</h3>
+                        <h3>{displayTitle(w)}</h3>
                         <button
                           type="button"
                           className={`fav-btn${fav ? ' on' : ''}`}
@@ -284,7 +445,7 @@ export function Library() {
                         </button>
                       </div>
                       <p>
-                        {cardSubtitle(w)}
+                        {displaySubtitle(w)}
                         {rating ? ` · ${rating}/5` : ''}
                       </p>
                       <div className="row-meta">

@@ -1,4 +1,10 @@
-import type { ExerciseLog, LastPerf, SessionRecord } from '../types'
+import type {
+  ExerciseLog,
+  LastPerf,
+  SavedRoutine,
+  SessionRecord,
+} from '../types'
+import { BODY_TAGS, type BodyTag } from './tags'
 
 const HISTORY_KEY = 'kierston.history.v1'
 const LAST_PERF_KEY = 'kierston.lastPerf.v1'
@@ -6,6 +12,8 @@ const FAVORITES_KEY = 'kierston.favorites.v1'
 const RATINGS_KEY = 'kierston.ratings.v1'
 const LAST_STARTED_KEY = 'kierston.lastStarted.v1'
 const ACTIVE_KEY = 'kierston.activeSession.v1'
+const EXCLUDES_KEY = 'kierston.excludes.v1'
+const ROUTINES_KEY = 'kierston.routines.v1'
 
 /** User rating 1–5; 0 means unrated. */
 export type WorkoutRating = 0 | 1 | 2 | 3 | 4 | 5
@@ -113,4 +121,52 @@ export function saveActiveSession(session: ActiveSession): void {
 
 export function clearActiveSession(): void {
   localStorage.removeItem(ACTIVE_KEY)
+}
+
+const VALID_BODY = new Set<string>(BODY_TAGS)
+
+/** Muscle groups the user wants hidden from library results. */
+export function getExcludedBodyTags(): BodyTag[] {
+  const raw = readJson<string[]>(EXCLUDES_KEY, [])
+  return raw.filter((t): t is BodyTag => VALID_BODY.has(t))
+}
+
+export function setExcludedBodyTags(tags: BodyTag[]): void {
+  localStorage.setItem(EXCLUDES_KEY, JSON.stringify(tags))
+}
+
+export function getRoutines(): SavedRoutine[] {
+  return readJson<SavedRoutine[]>(ROUTINES_KEY, [])
+}
+
+export function getRoutine(id: string): SavedRoutine | undefined {
+  return getRoutines().find((r) => r.id === id)
+}
+
+export function saveRoutine(routine: SavedRoutine): void {
+  const list = getRoutines().filter((r) => r.id !== routine.id)
+  list.unshift(routine)
+  localStorage.setItem(ROUTINES_KEY, JSON.stringify(list))
+}
+
+export function deleteRoutine(id: string): void {
+  const next = getRoutines().filter((r) => r.id !== id)
+  localStorage.setItem(ROUTINES_KEY, JSON.stringify(next))
+  // Drop favorite/rating keys for this routine
+  const favs = getFavorites().filter((fid) => fid !== id)
+  localStorage.setItem(FAVORITES_KEY, JSON.stringify(favs))
+  const ratings = getRatings()
+  if (id in ratings) {
+    delete ratings[id]
+    localStorage.setItem(RATINGS_KEY, JSON.stringify(ratings))
+  }
+  if (getLastStartedId() === id) {
+    localStorage.removeItem(LAST_STARTED_KEY)
+  }
+  const active = getActiveSession()
+  if (active?.workoutId === id) clearActiveSession()
+}
+
+export function newRoutineId(): string {
+  return `routine-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 7)}`
 }

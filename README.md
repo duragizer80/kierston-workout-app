@@ -8,6 +8,8 @@ Phone-first workout companion for Kierston’s trainer email library.
 
 - **Home** — continue active session, last started, favorites
 - **Library** — era sections (2020–21 / Gmail / iCloud peak / undated), interactive **body map**, equipment chips, search by exercise
+- **Exclude muscles** — Include / Exclude mode on the body map; hide workouts that touch strained groups (persisted)
+- **Custom routines** — build, name, save, edit, delete, and favorite routines from the exercise catalogue; run in the guided session
 - **1–5 star ratings** + **♥ favorites** (localStorage); sort by rating, date, or name/signature
 - Workout detail with blocks, prescriptions, unclear markers, and catalogue hints (standard name / body parts)
 - Guided session with **ghost last-weight prefill**, auto **rest timer** after sets, resume

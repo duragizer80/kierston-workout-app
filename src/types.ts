@@ -46,3 +46,21 @@ export type LastPerf = {
   reps: string
   completedAt: string
 }
+
+/** One exercise slot inside a user-built routine. */
+export type RoutineExercise = {
+  name: string
+  sets: string | null
+  reps: string | null
+  rest: string | null
+  load_notes: string | null
+}
+
+/** User-named routine saved on-device (not a trainer program). */
+export type SavedRoutine = {
+  id: string
+  name: string
+  createdAt: string
+  updatedAt: string
+  exercises: RoutineExercise[]
+}

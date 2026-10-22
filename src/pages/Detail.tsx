@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import { StarRating } from '../components/StarRating'
 import {
+  deleteRoutine,
   getRating,
   isFavorite,
   setLastStarted,
@@ -13,13 +14,17 @@ import {
   exerciseStandardName,
 } from '../lib/exerciseMap'
 import {
+  displaySubtitle,
+  displayTitle,
+  getAnyWorkout,
+  isRoutineId,
+} from '../lib/routines'
+import {
   bodyChipLabel,
   bodyTags,
-  cardSubtitle,
-  cardTitle,
   equipmentTags,
 } from '../lib/tags'
-import { formatWorkoutDate, getWorkout } from '../lib/workouts'
+import { formatWorkoutDate } from '../lib/workouts'
 import type { Exercise } from '../types'
 
 function rxLine(e: Exercise) {
@@ -44,7 +49,9 @@ function groupByBlock(exercises: Exercise[]) {
 
 export function Detail() {
   const { id = '' } = useParams()
-  const workout = getWorkout(id)
+  const navigate = useNavigate()
+  const workout = getAnyWorkout(id)
+  const custom = Boolean(id && isRoutineId(id))
   const [fav, setFav] = useState(() => (id ? isFavorite(id) : false))
   const [rating, setRatingValue] = useState<WorkoutRating>(() =>
     id ? getRating(id) : 0,
@@ -65,15 +72,28 @@ export function Detail() {
   const body = bodyTags(workout)
   const equip = equipmentTags(workout)
 
+  function onDelete() {
+    if (!custom || !id) return
+    if (!window.confirm(`Delete “${workout!.name}”? This cannot be undone.`)) {
+      return
+    }
+    deleteRoutine(id)
+    navigate('/library')
+  }
+
   return (
     <main>
       <Link to="/library" className="back-link">
         ← Library
       </Link>
-      <h1 className="page-title">{cardTitle(workout)}</h1>
+      <h1 className="page-title">{displayTitle(workout)}</h1>
       <div className="detail-meta">
-        <span>{formatWorkoutDate(workout)}</span>
-        <span>{cardSubtitle(workout)}</span>
+        {custom ? (
+          <span>Custom routine</span>
+        ) : (
+          <span>{formatWorkoutDate(workout)}</span>
+        )}
+        <span>{displaySubtitle(workout)}</span>
       </div>
       {body.length || equip.length ? (
         <div className="tag-row" aria-label="Tags">
@@ -165,6 +185,16 @@ export function Detail() {
         >
           {fav ? '♥ Favorited' : '♡ Favorite'}
         </button>
+        {custom ? (
+          <>
+            <Link className="btn btn-secondary" to={`/routine/${workout.id}/edit`}>
+              Edit routine
+            </Link>
+            <button type="button" className="btn btn-danger" onClick={onDelete}>
+              Delete routine
+            </button>
+          </>
+        ) : null}
       </div>
     </main>
   )

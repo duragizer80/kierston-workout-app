@@ -13,6 +13,7 @@ const RATINGS_KEY = 'kierston.ratings.v1'
 const LAST_STARTED_KEY = 'kierston.lastStarted.v1'
 const ACTIVE_KEY = 'kierston.activeSession.v1'
 const EXCLUDES_KEY = 'kierston.excludes.v1'
+const EXCLUDE_STRICT_KEY = 'kierston.excludeStrict.v1'
 const ROUTINES_KEY = 'kierston.routines.v1'
 
 /** User rating 1–5; 0 means unrated. */
@@ -133,6 +134,18 @@ export function getExcludedBodyTags(): BodyTag[] {
 
 export function setExcludedBodyTags(tags: BodyTag[]): void {
   localStorage.setItem(EXCLUDES_KEY, JSON.stringify(tags))
+}
+
+/**
+ * When true, Exclude matches any involvement (primary + secondary tags).
+ * Default false: Exclude only matches primary-focus muscles.
+ */
+export function getExcludeStrict(): boolean {
+  return readJson<boolean>(EXCLUDE_STRICT_KEY, false)
+}
+
+export function setExcludeStrict(strict: boolean): void {
+  localStorage.setItem(EXCLUDE_STRICT_KEY, JSON.stringify(strict))
 }
 
 export function getRoutines(): SavedRoutine[] {

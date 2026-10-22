@@ -10,9 +10,11 @@ export function About() {
       </p>
       <p className="note">
         Library groups sessions by trainer era (2020–21 return, 2017–18 Gmail, 2017 iCloud
-        peak, undated). Body map + chips share the same filters. Tags come from exercise
-        names, load notes, and a derived catalogue map (text metadata only — no third-party
-        exercise animations).
+        peak, undated). Body map + chips share the same filters. Include matches primary and
+        secondary muscle tags; Exclude defaults to primary focus only (toggle “Any
+        involvement” for the old strict behavior). Tags come from exercise names, load
+        notes, and a derived catalogue map (text metadata only — no third-party exercise
+        animations).
       </p>
       <p className="note">
         In a session, checking a set starts a rest timer (skip / +15s / +30s). Weight and

@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom'
 import { BodyMap } from '../components/BodyMap'
 import { StarRating } from '../components/StarRating'
 import {
+  getExcludeStrict,
   getExcludedBodyTags,
   getRating,
   isFavorite,
+  setExcludeStrict,
   setExcludedBodyTags,
   toggleFavorite,
   type WorkoutRating,
@@ -21,6 +23,7 @@ import {
   EQUIPMENT_TAGS,
   ERA_SECTIONS,
   bodyChipLabel,
+  bodyPrimaryTags,
   bodyTags,
   buildTagCounts,
   equipmentSignature,
@@ -98,6 +101,9 @@ export function Library() {
   const [bodyExcluded, setBodyExcluded] = useState<BodyTag[]>(() =>
     getExcludedBodyTags(),
   )
+  const [excludeStrict, setExcludeStrictState] = useState(() =>
+    getExcludeStrict(),
+  )
   const [bodyMode, setBodyMode] = useState<BodyMode>('include')
   const [equipSelected, setEquipSelected] = useState<EquipmentTag[]>([])
   const [favoritesOnly, setFavoritesOnly] = useState(false)
@@ -107,6 +113,10 @@ export function Library() {
   useEffect(() => {
     setExcludedBodyTags(bodyExcluded)
   }, [bodyExcluded])
+
+  useEffect(() => {
+    setExcludeStrict(excludeStrict)
+  }, [excludeStrict])
 
   const libraryCounts = useMemo(() => buildTagCounts(workouts), [])
 
@@ -131,12 +141,22 @@ export function Library() {
       if (favoritesOnly && !isFavorite(w.id)) return false
       if (!matchesSearch(w, needle)) return false
       if (!hasAll(bodyTags(w), bodySelected)) return false
-      if (!hasNone(bodyTags(w), bodyExcluded)) return false
+      const excludeAgainst = excludeStrict ? bodyTags(w) : bodyPrimaryTags(w)
+      if (!hasNone(excludeAgainst, bodyExcluded)) return false
       if (!hasAll(equipmentTags(w), equipSelected)) return false
       return true
     })
     return sortWorkouts(base, sort)
-  }, [q, bodySelected, bodyExcluded, equipSelected, favoritesOnly, sort, tick])
+  }, [
+    q,
+    bodySelected,
+    bodyExcluded,
+    excludeStrict,
+    equipSelected,
+    favoritesOnly,
+    sort,
+    tick,
+  ])
 
   const byEra = useMemo(() => {
     const map = new Map<string, Workout[]>()
@@ -182,8 +202,8 @@ export function Library() {
     <main>
       <h1 className="page-title">Library</h1>
       <p className="lede">
-        Tap the body map or chips to narrow — exclude strained muscles, rate,
-        heart favorites.
+        Tap the body map or chips to narrow — exclude strained muscles
+        (primary focus by default), rate, heart favorites.
       </p>
 
       <div className="library-actions">
@@ -306,19 +326,54 @@ export function Library() {
           />
         </div>
 
-        {hasExcludes ? (
+        {hasExcludes || bodyMode === 'exclude' ? (
           <div className="exclude-banner" role="status">
-            <div className="exclude-banner-text">
-              <span className="exclude-label">Excluding:</span>{' '}
-              {bodyExcluded.map(bodyChipLabel).join(', ')}
+            <div className="exclude-banner-main">
+              {hasExcludes ? (
+                <div className="exclude-banner-text">
+                  <span className="exclude-label">Excluding:</span>{' '}
+                  {bodyExcluded.map(bodyChipLabel).join(', ')}
+                </div>
+              ) : (
+                <div className="exclude-banner-text">
+                  <span className="exclude-label">Exclude</span>{' '}
+                  Tap muscles to hide
+                </div>
+              )}
+              <div
+                className="exclude-scope"
+                role="group"
+                aria-label="Exclude matching scope"
+              >
+                <button
+                  type="button"
+                  className={`exclude-scope-btn${!excludeStrict ? ' on' : ''}`}
+                  aria-pressed={!excludeStrict}
+                  onClick={() => setExcludeStrictState(false)}
+                  title="Hide workouts where this muscle is a primary focus"
+                >
+                  Primary focus
+                </button>
+                <button
+                  type="button"
+                  className={`exclude-scope-btn${excludeStrict ? ' on' : ''}`}
+                  aria-pressed={excludeStrict}
+                  onClick={() => setExcludeStrictState(true)}
+                  title="Hide workouts that involve this muscle at all, including secondary"
+                >
+                  Any involvement
+                </button>
+              </div>
             </div>
-            <button
-              type="button"
-              className="exclude-clear"
-              onClick={() => setBodyExcluded([])}
-            >
-              Clear excludes
-            </button>
+            {hasExcludes ? (
+              <button
+                type="button"
+                className="exclude-clear"
+                onClick={() => setBodyExcluded([])}
+              >
+                Clear excludes
+              </button>
+            ) : null}
           </div>
         ) : null}
 

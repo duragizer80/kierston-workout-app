@@ -1,6 +1,7 @@
 import {
   exerciseBodyTags,
   exerciseEquipmentTags,
+  exercisePrimaryBodyTags,
 } from './exerciseMap'
 import type { Workout } from '../types'
 
@@ -278,6 +279,18 @@ export function bodyTags(w: Workout): BodyTag[] {
     for (const t of exerciseBodyTags(e.name)) fromMap.add(t)
   }
   return Array.from(new Set([...fromRules, ...fromMap]))
+}
+
+/**
+ * Primary-focus body tags only (per exercise). Used by Exclude in default mode so
+ * secondary compound tags (Glutes on squats, Biceps on rows) do not wipe the library.
+ */
+export function bodyPrimaryTags(w: Workout): BodyTag[] {
+  const tags = new Set<BodyTag>()
+  for (const e of w.exercises) {
+    for (const t of exercisePrimaryBodyTags(e.name)) tags.add(t)
+  }
+  return Array.from(tags)
 }
 
 /** Equipment tags from exercise names + load_notes (+ workout name) and catalogue map. */

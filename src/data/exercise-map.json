@@ -2,9 +2,9 @@
   "_meta": {
     "source": "Derived mapping for Kierston trainer exercise strings. Seed names/body/equipment inspired by public ExerciseDB-style catalogue metadata (text only). Not a wholesale ExerciseDB dump. No openGym / Gym visual media. Fine muscle tags are best-effort from exercise names.",
     "licenseNote": "This file is original derived data for this app. Seed labels are common exercise vocabulary; do not treat as a copy of AGPL openGym catalogue JSON or licensed animations.",
-    "generatedAt": "2026-10-19",
+    "generatedAt": "2026-10-22",
     "uniqueNames": 299,
-    "seedMatched": 184
+    "seedMatched": 185
   },
   "exercises": {
     "10lb ball slams": {
@@ -28,6 +28,7 @@
         "Triceps",
         "Quads",
         "Chest",
+        "Shoulders",
         "Cardio"
       ],
       "equipment": [
@@ -41,6 +42,9 @@
     "10x stair sprints": {
       "standardName": null,
       "body": [
+        "Quads",
+        "Glutes",
+        "Calves",
         "Cardio"
       ],
       "equipment": [
@@ -54,7 +58,8 @@
       "body": [
         "Cardio",
         "Quads",
-        "Chest"
+        "Chest",
+        "Glutes"
       ],
       "equipment": [
         "Bodyweight"
@@ -90,7 +95,8 @@
     "18\" powerups": {
       "standardName": null,
       "body": [
-        "Quads"
+        "Quads",
+        "Glutes"
       ],
       "equipment": [],
       "match": "heuristic",
@@ -100,7 +106,8 @@
       "standardName": "Step Up",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Dumbbell",
@@ -113,7 +120,8 @@
       "standardName": "Reverse Lunge",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Dumbbell",
@@ -127,7 +135,8 @@
       "body": [
         "Cardio",
         "Quads",
-        "Chest"
+        "Chest",
+        "Glutes"
       ],
       "equipment": [
         "Bodyweight"
@@ -150,7 +159,9 @@
     "24\" stepups": {
       "standardName": null,
       "body": [
-        "Quads"
+        "Quads",
+        "Hamstrings",
+        "Glutes"
       ],
       "equipment": [],
       "match": "heuristic",
@@ -161,7 +172,8 @@
       "body": [
         "Cardio",
         "Quads",
-        "Chest"
+        "Chest",
+        "Glutes"
       ],
       "equipment": [
         "Bodyweight",
@@ -173,7 +185,9 @@
     "30 second squat hold": {
       "standardName": null,
       "body": [
-        "Quads"
+        "Quads",
+        "Hamstrings",
+        "Glutes"
       ],
       "equipment": [],
       "match": "heuristic",
@@ -193,6 +207,9 @@
     "5 stair sprints": {
       "standardName": null,
       "body": [
+        "Quads",
+        "Glutes",
+        "Calves",
         "Cardio"
       ],
       "equipment": [
@@ -204,6 +221,9 @@
     "5x stair sprints": {
       "standardName": null,
       "body": [
+        "Quads",
+        "Glutes",
+        "Calves",
         "Cardio"
       ],
       "equipment": [
@@ -273,7 +293,8 @@
       "standardName": "Bulgarian Split Squat",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Dumbbell",
@@ -309,6 +330,7 @@
       "standardName": "Plank",
       "body": [
         "Core",
+        "Hamstrings",
         "Glutes"
       ],
       "equipment": [
@@ -396,6 +418,7 @@
         "Lower back",
         "Glutes",
         "Biceps",
+        "Triceps",
         "Shoulders"
       ],
       "equipment": [
@@ -421,7 +444,8 @@
       "standardName": "Push Up",
       "body": [
         "Chest",
-        "Triceps"
+        "Triceps",
+        "Shoulders"
       ],
       "equipment": [
         "Bodyweight"
@@ -432,7 +456,8 @@
     "Bent over dumbbell rows w elbows out": {
       "standardName": "Bent Over Row",
       "body": [
-        "Upper back"
+        "Upper back",
+        "Biceps"
       ],
       "equipment": [
         "Dumbbell"
@@ -443,7 +468,8 @@
     "Bent over single armed TBar rows": {
       "standardName": "Bent Over Row",
       "body": [
-        "Upper back"
+        "Upper back",
+        "Biceps"
       ],
       "equipment": [],
       "match": "fuzzy",
@@ -453,8 +479,7 @@
       "standardName": "Reverse Fly",
       "body": [
         "Upper back",
-        "Shoulders",
-        "Chest"
+        "Shoulders"
       ],
       "equipment": [
         "Dumbbell"
@@ -479,7 +504,8 @@
       "standardName": "Bulgarian Split Squat",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Dumbbell"
@@ -492,7 +518,8 @@
       "body": [
         "Cardio",
         "Quads",
-        "Chest"
+        "Chest",
+        "Glutes"
       ],
       "equipment": [
         "Bodyweight"
@@ -515,6 +542,7 @@
     "Cable Rows": {
       "standardName": null,
       "body": [
+        "Biceps",
         "Upper back"
       ],
       "equipment": [
@@ -551,7 +579,10 @@
       "body": [
         "Chest",
         "Triceps",
-        "Quads"
+        "Shoulders",
+        "Quads",
+        "Hamstrings",
+        "Glutes"
       ],
       "equipment": [
         "Machine",
@@ -564,6 +595,7 @@
     "Cable shotgun rows": {
       "standardName": null,
       "body": [
+        "Biceps",
         "Upper back"
       ],
       "equipment": [
@@ -665,7 +697,8 @@
       "standardName": "Goblet Squat",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Kettlebell",
@@ -678,6 +711,9 @@
       "standardName": null,
       "body": [
         "Quads",
+        "Hamstrings",
+        "Glutes",
+        "Calves",
         "Cardio"
       ],
       "equipment": [
@@ -702,7 +738,8 @@
       "body": [
         "Cardio",
         "Quads",
-        "Chest"
+        "Chest",
+        "Glutes"
       ],
       "equipment": [
         "Bodyweight",
@@ -737,7 +774,9 @@
       "standardName": "Leg Extension",
       "body": [
         "Quads",
-        "Chest"
+        "Triceps",
+        "Chest",
+        "Shoulders"
       ],
       "equipment": [
         "Machine",
@@ -773,6 +812,7 @@
       "body": [
         "Cardio",
         "Quads",
+        "Glutes",
         "Calves"
       ],
       "equipment": [
@@ -796,7 +836,9 @@
     "Farmer Squats": {
       "standardName": null,
       "body": [
-        "Quads"
+        "Quads",
+        "Hamstrings",
+        "Glutes"
       ],
       "equipment": [],
       "match": "heuristic",
@@ -807,8 +849,10 @@
       "body": [
         "Quads",
         "Glutes",
+        "Triceps",
         "Upper back",
-        "Chest"
+        "Chest",
+        "Shoulders"
       ],
       "equipment": [
         "Machine"
@@ -821,7 +865,8 @@
       "body": [
         "Quads",
         "Glutes",
-        "Biceps"
+        "Biceps",
+        "Hamstrings"
       ],
       "equipment": [
         "Dumbbell",
@@ -834,7 +879,8 @@
       "standardName": "Forward Lunge",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Dumbbell",
@@ -846,7 +892,9 @@
     "Forward backward lunges": {
       "standardName": null,
       "body": [
-        "Quads"
+        "Quads",
+        "Hamstrings",
+        "Glutes"
       ],
       "equipment": [],
       "match": "heuristic",
@@ -856,7 +904,8 @@
       "standardName": "Forward Lunge",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Dumbbell",
@@ -869,7 +918,8 @@
       "standardName": "Forward Lunge",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Dumbbell",
@@ -882,7 +932,8 @@
       "standardName": "Forward Lunge",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Dumbbell",
@@ -895,7 +946,8 @@
       "standardName": "Goblet Squat",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Kettlebell",
@@ -908,7 +960,8 @@
       "standardName": "Goblet Squat",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Kettlebell",
@@ -921,7 +974,8 @@
       "standardName": "Goblet Squat",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Kettlebell",
@@ -933,7 +987,9 @@
     "Granny lunges": {
       "standardName": null,
       "body": [
-        "Quads"
+        "Quads",
+        "Hamstrings",
+        "Glutes"
       ],
       "equipment": [],
       "match": "heuristic",
@@ -956,6 +1012,7 @@
     "HS high rows": {
       "standardName": null,
       "body": [
+        "Biceps",
         "Upper back"
       ],
       "equipment": [
@@ -969,7 +1026,8 @@
       "standardName": "Chest Press",
       "body": [
         "Chest",
-        "Triceps"
+        "Triceps",
+        "Shoulders"
       ],
       "equipment": [
         "Machine",
@@ -982,7 +1040,8 @@
     "HS single armed side pulldowns": {
       "standardName": "Pulldown",
       "body": [
-        "Upper back"
+        "Upper back",
+        "Biceps"
       ],
       "equipment": [
         "Cable",
@@ -1029,7 +1088,9 @@
     "INcline HS press iso 12s": {
       "standardName": null,
       "body": [
-        "Chest"
+        "Triceps",
+        "Chest",
+        "Shoulders"
       ],
       "equipment": [
         "Dumbbell",
@@ -1043,7 +1104,8 @@
       "body": [
         "Quads",
         "Glutes",
-        "Cardio"
+        "Cardio",
+        "Hamstrings"
       ],
       "equipment": [
         "Bodyweight"
@@ -1054,7 +1116,9 @@
     "In and out squat hops": {
       "standardName": null,
       "body": [
-        "Quads"
+        "Quads",
+        "Hamstrings",
+        "Glutes"
       ],
       "equipment": [],
       "match": "heuristic",
@@ -1064,7 +1128,8 @@
       "standardName": null,
       "body": [
         "Triceps",
-        "Chest"
+        "Chest",
+        "Shoulders"
       ],
       "equipment": [
         "Bodyweight"
@@ -1076,7 +1141,8 @@
       "standardName": "Push Up",
       "body": [
         "Chest",
-        "Triceps"
+        "Triceps",
+        "Shoulders"
       ],
       "equipment": [
         "Bodyweight"
@@ -1088,7 +1154,8 @@
       "standardName": null,
       "body": [
         "Triceps",
-        "Chest"
+        "Chest",
+        "Shoulders"
       ],
       "equipment": [
         "Bodyweight"
@@ -1124,7 +1191,8 @@
       "standardName": "Sumo Squat",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Kettlebell",
@@ -1164,6 +1232,7 @@
     "KS swings": {
       "standardName": null,
       "body": [
+        "Hamstrings",
         "Glutes"
       ],
       "equipment": [
@@ -1190,7 +1259,9 @@
       "body": [
         "Cardio",
         "Quads",
-        "Chest"
+        "Chest",
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Bodyweight",
@@ -1237,8 +1308,7 @@
       "standardName": "Reverse Fly",
       "body": [
         "Upper back",
-        "Shoulders",
-        "Chest"
+        "Shoulders"
       ],
       "equipment": [
         "Dumbbell"
@@ -1249,6 +1319,9 @@
     "Laps around the gym w/ stairs": {
       "standardName": null,
       "body": [
+        "Quads",
+        "Glutes",
+        "Calves",
         "Cardio"
       ],
       "equipment": [
@@ -1262,7 +1335,9 @@
       "body": [
         "Cardio",
         "Core",
-        "Quads"
+        "Quads",
+        "Hamstrings",
+        "Glutes"
       ],
       "equipment": [
         "Med ball"
@@ -1274,6 +1349,8 @@
       "standardName": null,
       "body": [
         "Quads",
+        "Hamstrings",
+        "Glutes",
         "Core"
       ],
       "equipment": [
@@ -1286,6 +1363,8 @@
       "standardName": null,
       "body": [
         "Quads",
+        "Hamstrings",
+        "Glutes",
         "Cardio"
       ],
       "equipment": [
@@ -1321,7 +1400,9 @@
       "standardName": "Chest Fly",
       "body": [
         "Chest",
-        "Quads"
+        "Quads",
+        "Hamstrings",
+        "Glutes"
       ],
       "equipment": [
         "Cable",
@@ -1335,7 +1416,10 @@
       "body": [
         "Chest",
         "Triceps",
-        "Quads"
+        "Shoulders",
+        "Quads",
+        "Hamstrings",
+        "Glutes"
       ],
       "equipment": [
         "Machine",
@@ -1348,7 +1432,9 @@
     "Lunges": {
       "standardName": null,
       "body": [
-        "Quads"
+        "Quads",
+        "Hamstrings",
+        "Glutes"
       ],
       "equipment": [],
       "match": "heuristic",
@@ -1485,6 +1571,7 @@
     "Pull downs": {
       "standardName": null,
       "body": [
+        "Biceps",
         "Upper back"
       ],
       "equipment": [
@@ -1496,6 +1583,7 @@
     "Pull-Downs": {
       "standardName": null,
       "body": [
+        "Biceps",
         "Upper back"
       ],
       "equipment": [
@@ -1507,7 +1595,8 @@
     "Pulldowns": {
       "standardName": "Pulldown",
       "body": [
-        "Upper back"
+        "Upper back",
+        "Biceps"
       ],
       "equipment": [
         "Cable",
@@ -1532,8 +1621,11 @@
     "Pullups into Pushups": {
       "standardName": null,
       "body": [
+        "Biceps",
+        "Triceps",
         "Upper back",
-        "Chest"
+        "Chest",
+        "Shoulders"
       ],
       "equipment": [
         "Bodyweight"
@@ -1544,7 +1636,10 @@
     "Pullups into squat thrusts": {
       "standardName": null,
       "body": [
+        "Biceps",
         "Quads",
+        "Hamstrings",
+        "Glutes",
         "Upper back"
       ],
       "equipment": [
@@ -1557,7 +1652,8 @@
       "standardName": "Push Up",
       "body": [
         "Chest",
-        "Triceps"
+        "Triceps",
+        "Shoulders"
       ],
       "equipment": [
         "Bodyweight"
@@ -1569,7 +1665,8 @@
       "standardName": null,
       "body": [
         "Triceps",
-        "Chest"
+        "Chest",
+        "Shoulders"
       ],
       "equipment": [
         "Bodyweight"
@@ -1581,6 +1678,7 @@
       "standardName": "Renegade Row",
       "body": [
         "Upper back",
+        "Biceps",
         "Core"
       ],
       "equipment": [
@@ -1593,6 +1691,8 @@
       "standardName": "Plank",
       "body": [
         "Core",
+        "Biceps",
+        "Triceps",
         "Upper back",
         "Chest"
       ],
@@ -1606,6 +1706,8 @@
       "standardName": "Plank",
       "body": [
         "Core",
+        "Biceps",
+        "Triceps",
         "Upper back",
         "Chest"
       ],
@@ -1619,6 +1721,8 @@
       "standardName": "Plank",
       "body": [
         "Core",
+        "Biceps",
+        "Triceps",
         "Upper back",
         "Chest"
       ],
@@ -1632,6 +1736,8 @@
       "standardName": "Plank",
       "body": [
         "Core",
+        "Biceps",
+        "Triceps",
         "Upper back",
         "Chest"
       ],
@@ -1645,6 +1751,8 @@
       "standardName": "Plank",
       "body": [
         "Core",
+        "Biceps",
+        "Triceps",
         "Upper back",
         "Chest"
       ],
@@ -1668,7 +1776,9 @@
       "body": [
         "Quads",
         "Glutes",
-        "Chest",
+        "Triceps",
+        "Hamstrings",
+        "Shoulders",
         "Cardio"
       ],
       "equipment": [
@@ -1683,6 +1793,7 @@
       "body": [
         "Quads",
         "Glutes",
+        "Hamstrings",
         "Cardio"
       ],
       "equipment": [
@@ -1696,7 +1807,9 @@
     "Reverse double down lunges": {
       "standardName": null,
       "body": [
-        "Quads"
+        "Quads",
+        "Hamstrings",
+        "Glutes"
       ],
       "equipment": [],
       "match": "heuristic",
@@ -1714,7 +1827,9 @@
     "Reverse standing lunges": {
       "standardName": null,
       "body": [
-        "Quads"
+        "Quads",
+        "Hamstrings",
+        "Glutes"
       ],
       "equipment": [],
       "match": "heuristic",
@@ -1738,6 +1853,7 @@
       "body": [
         "Triceps",
         "Chest",
+        "Shoulders",
         "Core"
       ],
       "equipment": [
@@ -1792,6 +1908,8 @@
       "standardName": null,
       "body": [
         "Quads",
+        "Hamstrings",
+        "Glutes",
         "Cardio"
       ],
       "equipment": [
@@ -1868,6 +1986,8 @@
       "standardName": null,
       "body": [
         "Quads",
+        "Hamstrings",
+        "Glutes",
         "Cardio"
       ],
       "equipment": [
@@ -1888,15 +2008,18 @@
       "score": 0
     },
     "Rowing": {
-      "standardName": null,
+      "standardName": "Rower",
       "body": [
-        "Cardio"
+        "Cardio",
+        "Upper back",
+        "Biceps",
+        "Quads"
       ],
       "equipment": [
         "Rowing"
       ],
-      "match": "heuristic",
-      "score": 0
+      "match": "manual",
+      "score": 1
     },
     "Russian Twists": {
       "standardName": "Russian Twist",
@@ -1926,6 +2049,7 @@
     "Seated cable rows — narrow": {
       "standardName": null,
       "body": [
+        "Biceps",
         "Upper back"
       ],
       "equipment": [
@@ -1937,7 +2061,8 @@
     "Seated rows": {
       "standardName": "Seated Row",
       "body": [
-        "Upper back"
+        "Upper back",
+        "Biceps"
       ],
       "equipment": [
         "Cable",
@@ -1961,7 +2086,8 @@
       "standardName": "Sumo Squat",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Kettlebell",
@@ -1986,6 +2112,7 @@
       "body": [
         "Quads",
         "Glutes",
+        "Hamstrings",
         "Core"
       ],
       "equipment": [
@@ -2010,7 +2137,8 @@
     "Single Armed TRX Rows": {
       "standardName": "Trx Row",
       "body": [
-        "Upper back"
+        "Upper back",
+        "Biceps"
       ],
       "equipment": [
         "TRX"
@@ -2049,7 +2177,8 @@
       "standardName": "Walking Lunge",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Dumbbell",
@@ -2064,6 +2193,7 @@
         "Cardio",
         "Quads",
         "Chest",
+        "Glutes",
         "Shoulders"
       ],
       "equipment": [
@@ -2090,7 +2220,9 @@
     "Split Squats": {
       "standardName": null,
       "body": [
-        "Quads"
+        "Quads",
+        "Hamstrings",
+        "Glutes"
       ],
       "equipment": [],
       "match": "heuristic",
@@ -2099,7 +2231,9 @@
     "Squat Hop 180's": {
       "standardName": null,
       "body": [
-        "Quads"
+        "Quads",
+        "Hamstrings",
+        "Glutes"
       ],
       "equipment": [],
       "match": "heuristic",
@@ -2108,7 +2242,9 @@
     "Squat Hops": {
       "standardName": null,
       "body": [
-        "Quads"
+        "Quads",
+        "Hamstrings",
+        "Glutes"
       ],
       "equipment": [],
       "match": "heuristic",
@@ -2117,7 +2253,9 @@
     "Squat thrusts": {
       "standardName": null,
       "body": [
-        "Quads"
+        "Quads",
+        "Hamstrings",
+        "Glutes"
       ],
       "equipment": [],
       "match": "heuristic",
@@ -2127,7 +2265,9 @@
       "standardName": "Snatch",
       "body": [
         "Quads",
-        "Shoulders"
+        "Glutes",
+        "Shoulders",
+        "Hamstrings"
       ],
       "equipment": [
         "Kettlebell",
@@ -2140,7 +2280,9 @@
       "standardName": "Wall Ball",
       "body": [
         "Quads",
-        "Shoulders"
+        "Glutes",
+        "Shoulders",
+        "Hamstrings"
       ],
       "equipment": [
         "Med ball"
@@ -2152,7 +2294,9 @@
       "standardName": "Front Raise",
       "body": [
         "Shoulders",
-        "Quads"
+        "Quads",
+        "Hamstrings",
+        "Glutes"
       ],
       "equipment": [
         "Dumbbell"
@@ -2163,7 +2307,9 @@
     "Squatted Cable Rows": {
       "standardName": null,
       "body": [
+        "Biceps",
         "Quads",
+        "Glutes",
         "Upper back"
       ],
       "equipment": [
@@ -2177,6 +2323,7 @@
       "body": [
         "Cardio",
         "Quads",
+        "Glutes",
         "Calves"
       ],
       "equipment": [
@@ -2190,6 +2337,10 @@
       "body": [
         "Chest",
         "Triceps",
+        "Shoulders",
+        "Quads",
+        "Glutes",
+        "Calves",
         "Cardio"
       ],
       "equipment": [
@@ -2203,6 +2354,9 @@
       "standardName": null,
       "body": [
         "Quads",
+        "Hamstrings",
+        "Glutes",
+        "Calves",
         "Cardio"
       ],
       "equipment": [
@@ -2214,7 +2368,9 @@
     "Stair hop ups into thrust backs": {
       "standardName": null,
       "body": [
+        "Quads",
         "Glutes",
+        "Calves",
         "Cardio"
       ],
       "equipment": [
@@ -2226,6 +2382,9 @@
     "Stair sprints": {
       "standardName": null,
       "body": [
+        "Quads",
+        "Glutes",
+        "Calves",
         "Cardio"
       ],
       "equipment": [
@@ -2238,6 +2397,9 @@
       "standardName": null,
       "body": [
         "Quads",
+        "Hamstrings",
+        "Glutes",
+        "Calves",
         "Cardio"
       ],
       "equipment": [
@@ -2251,7 +2413,11 @@
       "body": [
         "Triceps",
         "Quads",
+        "Hamstrings",
+        "Glutes",
+        "Calves",
         "Chest",
+        "Shoulders",
         "Cardio"
       ],
       "equipment": [
@@ -2264,6 +2430,9 @@
     "Stairs": {
       "standardName": null,
       "body": [
+        "Quads",
+        "Glutes",
+        "Calves",
         "Cardio"
       ],
       "equipment": [
@@ -2276,7 +2445,8 @@
       "standardName": "Reverse Lunge",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Dumbbell",
@@ -2290,6 +2460,8 @@
       "body": [
         "Quads",
         "Glutes",
+        "Triceps",
+        "Hamstrings",
         "Shoulders"
       ],
       "equipment": [
@@ -2303,7 +2475,8 @@
       "standardName": "Reverse Lunge",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Dumbbell",
@@ -2316,7 +2489,8 @@
       "standardName": "Suicide",
       "body": [
         "Cardio",
-        "Quads"
+        "Quads",
+        "Glutes"
       ],
       "equipment": [
         "Bodyweight"
@@ -2328,7 +2502,8 @@
       "standardName": "Sumo Squat",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Kettlebell",
@@ -2341,7 +2516,8 @@
       "standardName": "Sumo Squat",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Kettlebell",
@@ -2354,7 +2530,8 @@
       "standardName": "Sumo Squat",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Kettlebell",
@@ -2367,7 +2544,8 @@
       "standardName": "Sumo Squat",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Kettlebell",
@@ -2380,7 +2558,8 @@
       "standardName": "Sumo Squat",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Kettlebell",
@@ -2393,7 +2572,8 @@
       "standardName": "Sumo Squat",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Kettlebell",
@@ -2408,6 +2588,7 @@
       "body": [
         "Core",
         "Quads",
+        "Hamstrings",
         "Glutes"
       ],
       "equipment": [
@@ -2436,6 +2617,7 @@
         "Lower back",
         "Glutes",
         "Biceps",
+        "Triceps",
         "Upper back",
         "Shoulders"
       ],
@@ -2452,6 +2634,8 @@
         "Shoulders",
         "Triceps",
         "Quads",
+        "Hamstrings",
+        "Glutes",
         "Upper back"
       ],
       "equipment": [
@@ -2467,6 +2651,8 @@
         "Shoulders",
         "Triceps",
         "Quads",
+        "Hamstrings",
+        "Glutes",
         "Upper back"
       ],
       "equipment": [
@@ -2482,6 +2668,8 @@
         "Shoulders",
         "Triceps",
         "Quads",
+        "Hamstrings",
+        "Glutes",
         "Upper back"
       ],
       "equipment": [
@@ -2495,7 +2683,8 @@
       "standardName": "Push Up",
       "body": [
         "Chest",
-        "Triceps"
+        "Triceps",
+        "Shoulders"
       ],
       "equipment": [
         "Bodyweight",
@@ -2508,7 +2697,8 @@
       "standardName": "Push Up",
       "body": [
         "Chest",
-        "Triceps"
+        "Triceps",
+        "Shoulders"
       ],
       "equipment": [
         "Bodyweight",
@@ -2521,7 +2711,8 @@
       "standardName": null,
       "body": [
         "Triceps",
-        "Chest"
+        "Chest",
+        "Shoulders"
       ],
       "equipment": [
         "TRX",
@@ -2534,6 +2725,8 @@
       "standardName": "Archer Press",
       "body": [
         "Shoulders",
+        "Triceps",
+        "Biceps",
         "Upper back"
       ],
       "equipment": [
@@ -2547,6 +2740,8 @@
       "standardName": "Archer Press",
       "body": [
         "Shoulders",
+        "Triceps",
+        "Biceps",
         "Upper back"
       ],
       "equipment": [
@@ -2560,7 +2755,10 @@
       "standardName": "Trx Row",
       "body": [
         "Upper back",
-        "Quads"
+        "Biceps",
+        "Quads",
+        "Hamstrings",
+        "Glutes"
       ],
       "equipment": [
         "TRX"
@@ -2571,6 +2769,7 @@
     "TRX Single Armed Rows": {
       "standardName": null,
       "body": [
+        "Biceps",
         "Upper back"
       ],
       "equipment": [
@@ -2582,6 +2781,7 @@
     "TRX archer rows": {
       "standardName": null,
       "body": [
+        "Biceps",
         "Upper back",
         "Shoulders"
       ],
@@ -2594,7 +2794,8 @@
     "TRX rows": {
       "standardName": "Trx Row",
       "body": [
-        "Upper back"
+        "Upper back",
+        "Biceps"
       ],
       "equipment": [
         "TRX"
@@ -2606,6 +2807,8 @@
       "standardName": "Archer Press",
       "body": [
         "Shoulders",
+        "Triceps",
+        "Biceps",
         "Upper back"
       ],
       "equipment": [
@@ -2618,6 +2821,7 @@
     "TRX single Armed Rows": {
       "standardName": null,
       "body": [
+        "Biceps",
         "Upper back"
       ],
       "equipment": [
@@ -2629,6 +2833,7 @@
     "TRX single armed rows w/ twist reaches": {
       "standardName": null,
       "body": [
+        "Biceps",
         "Upper back",
         "Core"
       ],
@@ -2662,6 +2867,8 @@
       "standardName": "Archer Press",
       "body": [
         "Shoulders",
+        "Triceps",
+        "Biceps",
         "Upper back"
       ],
       "equipment": [
@@ -2676,8 +2883,9 @@
       "body": [
         "Cardio",
         "Quads",
+        "Glutes",
         "Calves",
-        "Glutes"
+        "Hamstrings"
       ],
       "equipment": [
         "Stairs"
@@ -2702,7 +2910,8 @@
       "standardName": "Walking Lunge",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Dumbbell",
@@ -2716,6 +2925,7 @@
       "body": [
         "Quads",
         "Glutes",
+        "Hamstrings",
         "Cardio"
       ],
       "equipment": [
@@ -2730,7 +2940,8 @@
       "standardName": "Walking Lunge",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Dumbbell",
@@ -2743,7 +2954,8 @@
       "standardName": "Walking Lunge",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Dumbbell",
@@ -2790,7 +3002,9 @@
     "backward lunges": {
       "standardName": null,
       "body": [
-        "Quads"
+        "Quads",
+        "Hamstrings",
+        "Glutes"
       ],
       "equipment": [],
       "match": "heuristic",
@@ -2810,6 +3024,7 @@
     "bentover dumbbell rows": {
       "standardName": null,
       "body": [
+        "Biceps",
         "Upper back"
       ],
       "equipment": [
@@ -2821,6 +3036,7 @@
     "bentover rows": {
       "standardName": null,
       "body": [
+        "Biceps",
         "Upper back"
       ],
       "equipment": [],
@@ -2832,7 +3048,8 @@
       "body": [
         "Cardio",
         "Quads",
-        "Chest"
+        "Chest",
+        "Glutes"
       ],
       "equipment": [
         "Bodyweight"
@@ -2856,7 +3073,8 @@
       "standardName": "Chest Press",
       "body": [
         "Chest",
-        "Triceps"
+        "Triceps",
+        "Shoulders"
       ],
       "equipment": [
         "Machine",
@@ -2965,6 +3183,7 @@
       "body": [
         "Cardio",
         "Quads",
+        "Glutes",
         "Calves"
       ],
       "equipment": [
@@ -2988,7 +3207,9 @@
     "farmer squats": {
       "standardName": null,
       "body": [
-        "Quads"
+        "Quads",
+        "Hamstrings",
+        "Glutes"
       ],
       "equipment": [],
       "match": "heuristic",
@@ -2998,7 +3219,8 @@
       "standardName": "Goblet Squat",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Kettlebell",
@@ -3023,7 +3245,9 @@
     "in and out squat hops": {
       "standardName": null,
       "body": [
-        "Quads"
+        "Quads",
+        "Hamstrings",
+        "Glutes"
       ],
       "equipment": [],
       "match": "heuristic",
@@ -3068,6 +3292,8 @@
       "standardName": null,
       "body": [
         "Quads",
+        "Hamstrings",
+        "Glutes",
         "Core"
       ],
       "equipment": [
@@ -3080,7 +3306,8 @@
       "standardName": "Sumo Squat",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Kettlebell",
@@ -3105,7 +3332,9 @@
       "standardName": "Chest Fly",
       "body": [
         "Chest",
-        "Quads"
+        "Quads",
+        "Hamstrings",
+        "Glutes"
       ],
       "equipment": [
         "Cable",
@@ -3118,7 +3347,9 @@
       "standardName": "Chest Fly",
       "body": [
         "Chest",
-        "Quads"
+        "Quads",
+        "Hamstrings",
+        "Glutes"
       ],
       "equipment": [
         "Cable",
@@ -3130,7 +3361,8 @@
     "narrow grip pulldowns": {
       "standardName": "Pulldown",
       "body": [
-        "Upper back"
+        "Upper back",
+        "Biceps"
       ],
       "equipment": [
         "Cable",
@@ -3140,13 +3372,15 @@
       "score": 0.85
     },
     "paloff presses": {
-      "standardName": null,
+      "standardName": "Pallof Press",
       "body": [
-        "Chest"
+        "Core"
       ],
-      "equipment": [],
-      "match": "heuristic",
-      "score": 0
+      "equipment": [
+        "Cable"
+      ],
+      "match": "manual",
+      "score": 1
     },
     "plank": {
       "standardName": "Plank",
@@ -3196,6 +3430,7 @@
     "pull-downs": {
       "standardName": null,
       "body": [
+        "Biceps",
         "Upper back"
       ],
       "equipment": [
@@ -3219,7 +3454,8 @@
     "pulldowns": {
       "standardName": "Pulldown",
       "body": [
-        "Upper back"
+        "Upper back",
+        "Biceps"
       ],
       "equipment": [
         "Cable",
@@ -3231,7 +3467,8 @@
     "pulldowns — reverse grip": {
       "standardName": "Pulldown",
       "body": [
-        "Upper back"
+        "Upper back",
+        "Biceps"
       ],
       "equipment": [
         "Cable",
@@ -3243,7 +3480,8 @@
     "pulldwns": {
       "standardName": "Lat Pulldown",
       "body": [
-        "Upper back"
+        "Upper back",
+        "Biceps"
       ],
       "equipment": [
         "Cable",
@@ -3271,6 +3509,8 @@
         "Cardio",
         "Quads",
         "Chest",
+        "Glutes",
+        "Biceps",
         "Upper back"
       ],
       "equipment": [
@@ -3282,8 +3522,11 @@
     "pullups into pushups": {
       "standardName": null,
       "body": [
+        "Biceps",
+        "Triceps",
         "Upper back",
-        "Chest"
+        "Chest",
+        "Shoulders"
       ],
       "equipment": [
         "Bodyweight"
@@ -3295,7 +3538,8 @@
       "standardName": null,
       "body": [
         "Triceps",
-        "Chest"
+        "Chest",
+        "Shoulders"
       ],
       "equipment": [
         "Bodyweight"
@@ -3307,6 +3551,7 @@
       "standardName": "Renegade Row",
       "body": [
         "Upper back",
+        "Biceps",
         "Core"
       ],
       "equipment": [
@@ -3319,8 +3564,7 @@
       "standardName": "Reverse Fly",
       "body": [
         "Upper back",
-        "Shoulders",
-        "Chest"
+        "Shoulders"
       ],
       "equipment": [
         "Dumbbell",
@@ -3332,7 +3576,8 @@
     "reverse grip pulldowns": {
       "standardName": "Pulldown",
       "body": [
-        "Upper back"
+        "Upper back",
+        "Biceps"
       ],
       "equipment": [
         "Cable",
@@ -3354,6 +3599,8 @@
       "standardName": null,
       "body": [
         "Quads",
+        "Hamstrings",
+        "Glutes",
         "Cardio"
       ],
       "equipment": [
@@ -3377,7 +3624,8 @@
       "standardName": "Chest Press",
       "body": [
         "Chest",
-        "Triceps"
+        "Triceps",
+        "Shoulders"
       ],
       "equipment": [
         "Machine",
@@ -3390,6 +3638,7 @@
     "single armed cable rows w/ twists": {
       "standardName": null,
       "body": [
+        "Biceps",
         "Upper back",
         "Core"
       ],
@@ -3416,6 +3665,7 @@
     "smith machine hanging rows": {
       "standardName": null,
       "body": [
+        "Biceps",
         "Upper back"
       ],
       "equipment": [
@@ -3427,26 +3677,35 @@
     "squat hops": {
       "standardName": null,
       "body": [
-        "Quads"
+        "Quads",
+        "Hamstrings",
+        "Glutes"
       ],
       "equipment": [],
       "match": "heuristic",
       "score": 0
     },
     "squats into arnold presses": {
-      "standardName": null,
+      "standardName": "Arnold Press",
       "body": [
+        "Shoulders",
+        "Triceps",
         "Quads",
-        "Chest"
+        "Hamstrings",
+        "Glutes"
       ],
-      "equipment": [],
-      "match": "heuristic",
-      "score": 0
+      "equipment": [
+        "Dumbbell"
+      ],
+      "match": "exactish",
+      "score": 0.85
     },
     "squats thrusts": {
       "standardName": null,
       "body": [
-        "Quads"
+        "Quads",
+        "Hamstrings",
+        "Glutes"
       ],
       "equipment": [],
       "match": "heuristic",
@@ -3457,6 +3716,7 @@
       "body": [
         "Cardio",
         "Quads",
+        "Glutes",
         "Calves"
       ],
       "equipment": [
@@ -3469,7 +3729,11 @@
       "standardName": null,
       "body": [
         "Triceps",
+        "Quads",
+        "Glutes",
+        "Calves",
         "Chest",
+        "Shoulders",
         "Cardio"
       ],
       "equipment": [
@@ -3482,6 +3746,9 @@
     "stair sprints": {
       "standardName": null,
       "body": [
+        "Quads",
+        "Glutes",
+        "Calves",
         "Cardio"
       ],
       "equipment": [
@@ -3494,7 +3761,11 @@
       "standardName": null,
       "body": [
         "Triceps",
+        "Quads",
+        "Glutes",
+        "Calves",
         "Chest",
+        "Shoulders",
         "Cardio"
       ],
       "equipment": [
@@ -3508,7 +3779,8 @@
       "standardName": null,
       "body": [
         "Cardio",
-        "Quads"
+        "Quads",
+        "Glutes"
       ],
       "equipment": [
         "Bodyweight"
@@ -3520,7 +3792,8 @@
       "standardName": "Sumo Squat",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Kettlebell",
@@ -3555,7 +3828,8 @@
       "standardName": "Forward Lunge",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Dumbbell",
@@ -3568,7 +3842,8 @@
       "standardName": "Walking Lunge",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Dumbbell",
@@ -3581,7 +3856,8 @@
       "standardName": "Walking Lunge",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Dumbbell",
@@ -3595,6 +3871,7 @@
       "body": [
         "Quads",
         "Glutes",
+        "Hamstrings",
         "Cardio"
       ],
       "equipment": [
@@ -3609,7 +3886,8 @@
       "standardName": "Walking Lunge",
       "body": [
         "Quads",
-        "Glutes"
+        "Glutes",
+        "Hamstrings"
       ],
       "equipment": [
         "Dumbbell",
@@ -3622,6 +3900,7 @@
       "standardName": "Wall Ball",
       "body": [
         "Quads",
+        "Glutes",
         "Shoulders"
       ],
       "equipment": [

@@ -987,7 +987,7 @@ button {
 
 .exclude-banner {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 10px;
   padding: 10px 12px;
@@ -995,6 +995,14 @@ button {
   border: 1px solid #c47a6a55;
   background: #c47a6a1f;
   animation: rise 0.35s both;
+}
+
+.exclude-banner-main {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  flex: 1;
 }
 
 .exclude-banner-text {
@@ -1011,6 +1019,29 @@ button {
   font-weight: 700;
 }
 
+.exclude-scope {
+  display: inline-flex;
+  gap: 4px;
+  padding: 3px;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--bg) 70%, transparent);
+  border: 1px solid #c47a6a44;
+  width: fit-content;
+}
+
+.exclude-scope-btn {
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--ink-muted);
+}
+
+.exclude-scope-btn.on {
+  background: var(--danger);
+  color: #1a1c1a;
+}
+
 .exclude-clear {
   flex: none;
   padding: 6px 10px;
@@ -1019,6 +1050,7 @@ button {
   color: var(--danger);
   font-size: 0.78rem;
   font-weight: 700;
+  align-self: center;
 }
 
 .library-actions {

@@ -389,8 +389,8 @@ export function BodyMap({
       </div>
       <p className="body-map-hint">
         {excludeMode
-          ? 'Exclude mode — hide workouts that touch these muscles'
-          : 'Include mode — multi-select OK · same filters as body chips'}
+          ? 'Exclude mode — default hides primary focus only (not secondary on compounds)'
+          : 'Include mode — multi-select OK · matches primary + secondary tags'}
       </p>
     </div>
   )

@@ -4,6 +4,10 @@ type Props = {
   selected: BodyTag[]
   onToggle: (tag: BodyTag) => void
   available?: BodyTag[]
+  /** Tags currently excluded (shown with exclude styling). */
+  excluded?: BodyTag[]
+  /** Include = gold select; Exclude = danger select. */
+  mode?: 'include' | 'exclude'
 }
 
 type Hit = {
@@ -262,11 +266,48 @@ const HITS: Hit[] = [
   { key: 'calf-b-r', id: 'Calves', label: 'Calves', d: calfB(B, 1) },
 ]
 
-export function BodyMap({ selected, onToggle, available }: Props) {
+export function BodyMap({
+  selected,
+  onToggle,
+  available,
+  excluded = [],
+  mode = 'include',
+}: Props) {
   const allowed = available ? new Set(available) : null
+  const excludeMode = mode === 'exclude'
+
+  function regionClass(id: BodyTag): string {
+    const isExcluded = excluded.includes(id)
+    const isIncluded = selected.includes(id)
+    if (excludeMode) {
+      return `body-map-region${isExcluded ? ' excluded' : ''}`
+    }
+    if (isExcluded) return 'body-map-region excluded soft'
+    return `body-map-region${isIncluded ? ' on' : ''}`
+  }
+
+  function chipClass(id: BodyTag): string {
+    const isExcluded = excluded.includes(id)
+    const isIncluded = selected.includes(id)
+    if (excludeMode) {
+      return `body-map-chip${isExcluded ? ' excluded' : ''}`
+    }
+    if (isExcluded) return 'body-map-chip excluded soft'
+    return `body-map-chip${isIncluded ? ' on' : ''}`
+  }
+
+  function pressed(id: BodyTag): boolean {
+    return excludeMode ? excluded.includes(id) : selected.includes(id)
+  }
 
   return (
-    <div className="body-map" role="group" aria-label="Body map filters">
+    <div
+      className={`body-map${excludeMode ? ' body-map-exclude' : ''}`}
+      role="group"
+      aria-label={
+        excludeMode ? 'Body map exclude filters' : 'Body map include filters'
+      }
+    >
       <svg
         className="body-map-svg"
         viewBox="0 0 280 250"
@@ -274,7 +315,11 @@ export function BodyMap({ selected, onToggle, available }: Props) {
         height="auto"
         aria-labelledby="body-map-title"
       >
-        <title id="body-map-title">Tap a muscle to filter workouts</title>
+        <title id="body-map-title">
+          {excludeMode
+            ? 'Tap a muscle to exclude workouts that use it'
+            : 'Tap a muscle to filter workouts'}
+        </title>
 
         <path className="body-map-silhouette" d={SIL_FRONT} />
         <path className="body-map-silhouette" d={SIL_BACK} />
@@ -294,15 +339,17 @@ export function BodyMap({ selected, onToggle, available }: Props) {
 
         {HITS.map((hit) => {
           if (allowed && !allowed.has(hit.id)) return null
-          const on = selected.includes(hit.id)
+          const on = pressed(hit.id)
           return (
             <path
               key={hit.key}
               d={hit.d}
-              className={`body-map-region${on ? ' on' : ''}`}
+              className={regionClass(hit.id)}
               role="button"
               tabIndex={0}
-              aria-label={`Filter ${hit.label}`}
+              aria-label={
+                excludeMode ? `Exclude ${hit.label}` : `Include ${hit.label}`
+              }
               aria-pressed={on}
               onClick={() => onToggle(hit.id)}
               onKeyDown={(e) => {
@@ -324,27 +371,26 @@ export function BodyMap({ selected, onToggle, available }: Props) {
             <div key={group.label} className="body-map-legend-group">
               <span className="body-map-legend-label">{group.label}</span>
               <div className="body-map-legend-chips">
-                {chips.map((id) => {
-                  const on = selected.includes(id)
-                  return (
-                    <button
-                      key={id}
-                      type="button"
-                      className={`body-map-chip${on ? ' on' : ''}`}
-                      aria-pressed={on}
-                      onClick={() => onToggle(id)}
-                    >
-                      {id}
-                    </button>
-                  )
-                })}
+                {chips.map((id) => (
+                  <button
+                    key={id}
+                    type="button"
+                    className={chipClass(id)}
+                    aria-pressed={pressed(id)}
+                    onClick={() => onToggle(id)}
+                  >
+                    {id}
+                  </button>
+                ))}
               </div>
             </div>
           )
         })}
       </div>
       <p className="body-map-hint">
-        Tap muscles — multi-select OK · same filters as body chips
+        {excludeMode
+          ? 'Exclude mode — hide workouts that touch these muscles'
+          : 'Include mode — multi-select OK · same filters as body chips'}
       </p>
     </div>
   )

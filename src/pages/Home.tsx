@@ -4,8 +4,15 @@ import {
   getActiveSession,
   getFavorites,
   getLastStartedId,
+  getRoutines,
 } from '../lib/storage'
-import { cardSubtitle, cardTitle, getWorkout, workouts } from '../lib/workouts'
+import {
+  displaySubtitle,
+  displayTitle,
+  getAnyWorkout,
+  listRoutineWorkouts,
+} from '../lib/routines'
+import { workouts } from '../lib/workouts'
 
 export function Home() {
   const [tick, setTick] = useState(0)
@@ -25,11 +32,12 @@ export function Home() {
 
   const active = getActiveSession()
   const lastId = getLastStartedId()
-  const last = lastId ? getWorkout(lastId) : undefined
+  const last = lastId ? getAnyWorkout(lastId) : undefined
   const favoriteIds = getFavorites()
   const favorites = favoriteIds
-    .map((id) => getWorkout(id))
+    .map((id) => getAnyWorkout(id))
     .filter((w): w is NonNullable<typeof w> => Boolean(w))
+  const routines = listRoutineWorkouts()
 
   return (
     <main>
@@ -56,11 +64,35 @@ export function Home() {
         <h2 className="section-label">Last started</h2>
         {last ? (
           <Link className="home-card" to={`/workout/${last.id}`}>
-            <h3>{cardTitle(last)}</h3>
-            <p>{cardSubtitle(last)}</p>
+            <h3>{displayTitle(last)}</h3>
+            <p>{displaySubtitle(last)}</p>
           </Link>
         ) : (
           <p className="empty soft">No sessions started yet.</p>
+        )}
+      </section>
+
+      <section className="home-section">
+        <div className="section-label-row">
+          <h2 className="section-label">Your routines</h2>
+          <Link className="section-link" to="/routine/new">
+            + New
+          </Link>
+        </div>
+        {routines.length === 0 ? (
+          <p className="empty soft">
+            Build a named routine from the exercise catalogue — saved on this
+            device.
+          </p>
+        ) : (
+          <div className="workout-list">
+            {routines.map((w) => (
+              <Link key={w.id} to={`/workout/${w.id}`} className="workout-row">
+                <h3>{displayTitle(w)}</h3>
+                <p>{displaySubtitle(w)}</p>
+              </Link>
+            ))}
+          </div>
         )}
       </section>
 
@@ -74,8 +106,8 @@ export function Home() {
           <div className="workout-list">
             {favorites.map((w) => (
               <Link key={w.id} to={`/workout/${w.id}`} className="workout-row">
-                <h3>{cardTitle(w)}</h3>
-                <p>{cardSubtitle(w)}</p>
+                <h3>{displayTitle(w)}</h3>
+                <p>{displaySubtitle(w)}</p>
               </Link>
             ))}
           </div>
@@ -84,7 +116,11 @@ export function Home() {
 
       <div className="actions">
         <Link className="btn btn-secondary" to="/library">
-          Browse library ({workouts.length})
+          Browse library ({workouts.length}
+          {getRoutines().length ? ` + ${getRoutines().length} routines` : ''})
+        </Link>
+        <Link className="btn btn-secondary" to="/routine/new">
+          Create routine
         </Link>
       </div>
     </main>

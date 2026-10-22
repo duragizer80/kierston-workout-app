@@ -15,11 +15,8 @@ import {
   type ActiveSession,
 } from '../lib/storage'
 import { bodyChipLabel } from '../lib/tags'
-import {
-  getWorkout,
-  parseRestSeconds,
-  parseSetCount,
-} from '../lib/workouts'
+import { getAnyWorkout } from '../lib/routines'
+import { parseRestSeconds, parseSetCount } from '../lib/workouts'
 import type { ExerciseLog, SetLog, Workout } from '../types'
 
 type Prefill = { weight: string; reps: string; source: 'history' | 'prescription' }
@@ -78,7 +75,7 @@ function loadSessionState(workout: Workout): {
 export function Session() {
   const { id = '' } = useParams()
   const navigate = useNavigate()
-  const workout = getWorkout(id)
+  const workout = getAnyWorkout(id)
 
   const [step, setStep] = useState(0)
   const [logs, setLogs] = useState<ExerciseLog[]>([])

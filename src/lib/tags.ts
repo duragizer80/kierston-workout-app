@@ -64,50 +64,84 @@ export type EquipmentTag = (typeof EQUIPMENT_TAGS)[number]
 
 /**
  * Best-effort cues from exercise name / load_notes.
- * Gaps: few explicit hamstring/glute/calf/lower-back strings in the library;
- * compounds often under-tag secondary muscles.
+ * Compounds get primary + secondary muscles (e.g. rows → Biceps, presses → Triceps).
  */
+
+/** Pulling compounds — biceps as secondary (exclude face-pull / pullover / shrug / fly). */
+function isPullCompound(hay: string): boolean {
+  if (
+    /face\s*pull|facepull|pullover|pull[- ]?over|shrug|\bflys?\b|\bflies\b/i.test(
+      hay,
+    )
+  )
+    return false
+  if (/rowing|rower/i.test(hay)) return true
+  return (
+    (/\brows?\b/i.test(hay) && !/throw/i.test(hay)) ||
+    /pulldown|pull[- ]?downs?|pull[- ]?ups?|chin[- ]?ups?|renegade|\blat\b|shotgun/i.test(
+      hay,
+    )
+  )
+}
+
+/** Horizontal/vertical presses — not pallof / leg press / fly. */
+function isPressCompound(hay: string): boolean {
+  if (
+    /pallof|paloff|leg press|press[- ]?down|pushdown|\bflys?\b|\bflies\b/i.test(
+      hay,
+    )
+  )
+    return false
+  return (
+    /\bpress(es|ing)?\b/i.test(hay) ||
+    /push[- ]?ups?/i.test(hay) ||
+    /\bdips?\b/i.test(hay)
+  )
+}
+
 const BODY_RULES: { tag: BodyTag; test: (hay: string) => boolean }[] = [
   {
     tag: 'Biceps',
     test: (hay) =>
-      (/bicep|hammer curl|\bcurls?\b/i.test(hay) && !/leg curl/i.test(hay)),
+      (/bicep|hammer curl|\bcurls?\b/i.test(hay) && !/leg curl/i.test(hay)) ||
+      isPullCompound(hay),
   },
   {
     tag: 'Triceps',
     test: (hay) =>
       /tricep|triep|skull\s*crush|press[- ]?down|pushdown|\bdips?\b/i.test(hay) ||
-      (/push[- ]?ups?/i.test(hay) && !/pull[- ]?ups?/i.test(hay)),
+      /push[- ]?ups?/i.test(hay) ||
+      isPressCompound(hay),
   },
   {
     tag: 'Quads',
     test: (hay) =>
-      /squat|lunge|leg press|leg extension|step[- ]?up|wall sit|bulgarian|powerup|granny lunge|farmer squat|prisoner squat/i.test(
+      /squat|lunge|leg press|leg extension|step[- ]?up|wall sit|bulgarian|powerup|granny lunge|farmer squat|prisoner squat|stair/i.test(
         hay,
       ),
   },
   {
     tag: 'Hamstrings',
     test: (hay) =>
-      /hamstring|rdl|romanian|deadlift|good morning|leg curl|nordic|single[- ]?leg(?:ged)?\s*dead/i.test(
+      /hamstring|rdl|romanian|deadlift|good morning|leg curl|nordic|single[- ]?leg(?:ged)?\s*dead|\bswings?\b|lunge|step[- ]?up|bulgarian|\bsquats?\b|sumo/i.test(
         hay,
       ),
   },
   {
     tag: 'Glutes',
     test: (hay) =>
-      /glute|hip thrust|bridge|kickback|abduction|sumo|\bswings?\b|thrust back/i.test(
+      /glute|hip thrust|bridge|kickback|abduction|sumo|\bswings?\b|thrust back|squat|lunge|step[- ]?up|bulgarian|powerup|granny lunge|leg press|stair|deadlift|rdl|romanian/i.test(
         hay,
       ),
   },
   {
     tag: 'Calves',
-    test: (hay) => /calf|calves/i.test(hay),
+    test: (hay) => /calf|calves|stair/i.test(hay),
   },
   {
     tag: 'Upper back',
     test: (hay) =>
-      /\brows?\b|pulldown|pull[- ]?downs?|pull[- ]?ups?|chin[- ]?ups?|lat\b|renegade|face\s*pull|pullover|t[- ]?bar|shotgun|shrug/i.test(
+      /\brows?\b|pulldown|pull[- ]?downs?|pull[- ]?ups?|chin[- ]?ups?|lat\b|renegade|face\s*pull|pullover|t[- ]?bar|shotgun|shrug|rowing|rower/i.test(
         hay,
       ),
   },
@@ -121,13 +155,14 @@ const BODY_RULES: { tag: BodyTag; test: (hay: string) => boolean }[] = [
   {
     tag: 'Chest',
     test: (hay) => {
+      if (/reverse\s*fly|reverse\s*flies|rear\s*delt/i.test(hay)) return false
       if (
         /push[- ]?ups?|chest|\bbench\b|\bflys?\b|\bflies\b|\bpecs?\b/i.test(hay)
       )
         return true
       return (
         /\bpress(es|ing)?\b/i.test(hay) &&
-        !/overhead|shoulder|military|\bohp\b|leg press|press[- ]?down|archer|tricep/i.test(
+        !/overhead|shoulder|military|\bohp\b|leg press|press[- ]?down|archer|tricep|pallof|paloff|arnold/i.test(
           hay,
         )
       )
@@ -136,14 +171,18 @@ const BODY_RULES: { tag: BodyTag; test: (hay: string) => boolean }[] = [
   {
     tag: 'Shoulders',
     test: (hay) =>
-      /overhead|lateral raise|front raise|archer|shoulder|military press|\bohp\b|delt|y[- ]raise|snatch|clean/i.test(
+      /overhead|lateral raise|front raise|archer|shoulder|military press|\bohp\b|delt|y[- ]raise|snatch|clean|arnold/i.test(
         hay,
-      ),
+      ) ||
+      (isPressCompound(hay) &&
+        /chest|bench|push[- ]?ups?|incline|decline|dumbbell press|hs\s+\w*\s*press/i.test(
+          hay,
+        )),
   },
   {
     tag: 'Core',
     test: (hay) =>
-      /plank|twist|tuck|crunch|\bab\b|abs\b|core|hollow|dead bug|pallof|v[- ]up|sit[- ]?up|wood\s*chops?|torso|reach[- ]?up|wall sit|leg raise/i.test(
+      /plank|twist|tuck|crunch|\bab\b|abs\b|core|hollow|dead bug|pallof|paloff|v[- ]up|sit[- ]?up|wood\s*chops?|torso|reach[- ]?up|wall sit|leg raise/i.test(
         hay,
       ),
   },

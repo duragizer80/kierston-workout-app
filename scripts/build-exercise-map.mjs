@@ -40,25 +40,26 @@ const SEED = [
   { name: 'leg extension', body: ['Quads'], equip: ['Machine'] },
   { name: 'caterpillar', body: ['Core', 'Shoulders'], equip: ['Bodyweight'] },
   { name: 'ice skater', body: ['Quads', 'Glutes', 'Cardio'], equip: ['Bodyweight'] },
-  { name: 'push up', body: ['Chest', 'Triceps'], equip: ['Bodyweight'] },
-  { name: 'bench press', body: ['Chest', 'Triceps'], equip: ['Barbell', 'Dumbbell'] },
+  { name: 'push up', body: ['Chest', 'Triceps', 'Shoulders'], equip: ['Bodyweight'] },
+  { name: 'bench press', body: ['Chest', 'Triceps', 'Shoulders'], equip: ['Barbell', 'Dumbbell'] },
   { name: 'chest fly', body: ['Chest'], equip: ['Cable', 'Dumbbell'] },
-  { name: 'chest press', body: ['Chest', 'Triceps'], equip: ['Machine', 'Dumbbell', 'Cable'] },
+  { name: 'chest press', body: ['Chest', 'Triceps', 'Shoulders'], equip: ['Machine', 'Dumbbell', 'Cable'] },
   { name: 'pull up', body: ['Upper back', 'Biceps'], equip: ['Bodyweight'] },
   { name: 'chin up', body: ['Upper back', 'Biceps'], equip: ['Bodyweight'] },
-  { name: 'lat pulldown', body: ['Upper back'], equip: ['Cable', 'Machine'] },
-  { name: 'seated row', body: ['Upper back'], equip: ['Cable', 'Machine'] },
-  { name: 'bent over row', body: ['Upper back'], equip: ['Dumbbell', 'Barbell'] },
+  { name: 'lat pulldown', body: ['Upper back', 'Biceps'], equip: ['Cable', 'Machine'] },
+  { name: 'seated row', body: ['Upper back', 'Biceps'], equip: ['Cable', 'Machine'] },
+  { name: 'bent over row', body: ['Upper back', 'Biceps'], equip: ['Dumbbell', 'Barbell'] },
   { name: 'face pull', body: ['Shoulders', 'Upper back'], equip: ['Cable'] },
   { name: 'facepull', body: ['Shoulders', 'Upper back'], equip: ['Cable'] },
   { name: 'pullover', body: ['Upper back', 'Chest'], equip: ['Dumbbell', 'Barbell'] },
-  { name: 'pulldown', body: ['Upper back'], equip: ['Cable', 'Machine'] },
-  { name: 'suicide', body: ['Cardio', 'Quads'], equip: ['Bodyweight'] },
+  { name: 'pulldown', body: ['Upper back', 'Biceps'], equip: ['Cable', 'Machine'] },
+  { name: 'suicide', body: ['Cardio', 'Quads', 'Glutes'], equip: ['Bodyweight'] },
   { name: 'ball throw', body: ['Shoulders', 'Core'], equip: ['Med ball'] },
   { name: 'overhead press', body: ['Shoulders', 'Triceps'], equip: ['Barbell', 'Dumbbell'] },
   { name: 'lateral raise', body: ['Shoulders'], equip: ['Dumbbell'] },
   { name: 'front raise', body: ['Shoulders'], equip: ['Dumbbell'] },
-  { name: 'archer press', body: ['Shoulders'], equip: ['Dumbbell', 'TRX'] },
+  { name: 'archer press', body: ['Shoulders', 'Triceps'], equip: ['Dumbbell', 'TRX'] },
+  { name: 'arnold press', body: ['Shoulders', 'Triceps'], equip: ['Dumbbell'] },
   { name: 'bicep curl', body: ['Biceps'], equip: ['Dumbbell', 'Barbell', 'Cable'] },
   { name: 'hammer curl', body: ['Biceps'], equip: ['Dumbbell'] },
   { name: 'tricep extension', body: ['Triceps'], equip: ['Dumbbell', 'Cable'] },
@@ -70,74 +71,103 @@ const SEED = [
   { name: 'pallof press', body: ['Core'], equip: ['Cable'] },
   { name: 'sit up', body: ['Core'], equip: ['Bodyweight'] },
   { name: 'crunch', body: ['Core'], equip: ['Bodyweight'] },
-  { name: 'burpee', body: ['Cardio', 'Quads', 'Chest'], equip: ['Bodyweight'] },
+  { name: 'burpee', body: ['Cardio', 'Quads', 'Chest', 'Glutes'], equip: ['Bodyweight'] },
   { name: 'jumping jack', body: ['Cardio'], equip: ['Bodyweight'] },
   { name: 'ball slam', body: ['Cardio', 'Core'], equip: ['Med ball'] },
   { name: 'battle rope', body: ['Cardio', 'Shoulders'], equip: ['Rope'] },
-  { name: 'stair climb', body: ['Cardio', 'Quads', 'Calves'], equip: ['Stairs'] },
-  { name: 'rower', body: ['Cardio', 'Upper back'], equip: ['Rowing'] },
-  { name: 'trx row', body: ['Upper back'], equip: ['TRX'] },
-  { name: 'trx push up', body: ['Chest', 'Triceps'], equip: ['TRX'] },
+  { name: 'stair climb', body: ['Cardio', 'Quads', 'Glutes', 'Calves'], equip: ['Stairs'] },
+  { name: 'rower', body: ['Cardio', 'Upper back', 'Biceps', 'Quads'], equip: ['Rowing'] },
+  { name: 'trx row', body: ['Upper back', 'Biceps'], equip: ['TRX'] },
+  { name: 'trx push up', body: ['Chest', 'Triceps', 'Shoulders'], equip: ['TRX'] },
   { name: 'farmer walk', body: ['Core', 'Shoulders'], equip: ['Dumbbell', 'Kettlebell'] },
-  { name: 'wall ball', body: ['Quads', 'Shoulders'], equip: ['Med ball'] },
-  { name: 'box jump', body: ['Quads', 'Cardio'], equip: ['Bodyweight'] },
+  { name: 'wall ball', body: ['Quads', 'Glutes', 'Shoulders'], equip: ['Med ball'] },
+  { name: 'box jump', body: ['Quads', 'Glutes', 'Cardio'], equip: ['Bodyweight'] },
   { name: 'mountain climber', body: ['Core', 'Cardio'], equip: ['Bodyweight'] },
-  { name: 'renegade row', body: ['Upper back', 'Core'], equip: ['Dumbbell'] },
+  { name: 'renegade row', body: ['Upper back', 'Biceps', 'Core'], equip: ['Dumbbell'] },
   { name: 'reverse fly', body: ['Upper back', 'Shoulders'], equip: ['Dumbbell'] },
   { name: 'shrug', body: ['Shoulders', 'Upper back'], equip: ['Dumbbell', 'Barbell'] },
-  { name: 'good morning', body: ['Hamstrings', 'Lower back'], equip: ['Barbell'] },
-  { name: 'sumo squat', body: ['Quads', 'Glutes'], equip: ['Kettlebell', 'Barbell'] },
-  { name: 'thruster', body: ['Quads', 'Shoulders'], equip: ['Barbell', 'Dumbbell'] },
-  { name: 'clean', body: ['Quads', 'Shoulders'], equip: ['Barbell', 'Kettlebell'] },
-  { name: 'snatch', body: ['Quads', 'Shoulders'], equip: ['Kettlebell', 'Barbell'] },
+  { name: 'good morning', body: ['Hamstrings', 'Lower back', 'Glutes'], equip: ['Barbell'] },
+  { name: 'sumo squat', body: ['Quads', 'Glutes', 'Hamstrings'], equip: ['Kettlebell', 'Barbell'] },
+  { name: 'thruster', body: ['Quads', 'Glutes', 'Shoulders', 'Triceps'], equip: ['Barbell', 'Dumbbell'] },
+  { name: 'clean', body: ['Quads', 'Glutes', 'Shoulders'], equip: ['Barbell', 'Kettlebell'] },
+  { name: 'snatch', body: ['Quads', 'Glutes', 'Shoulders'], equip: ['Kettlebell', 'Barbell'] },
   { name: 'turkish get up', body: ['Core', 'Shoulders'], equip: ['Kettlebell'] },
-  { name: 'bosu squat', body: ['Quads', 'Core'], equip: ['BOSU'] },
+  { name: 'bosu squat', body: ['Quads', 'Glutes', 'Core'], equip: ['BOSU'] },
   { name: 'bosu plank', body: ['Core'], equip: ['BOSU'] },
   { name: 'glute bridge', body: ['Glutes', 'Hamstrings'], equip: ['Bodyweight'] },
   { name: 'leg raise', body: ['Core'], equip: ['Bodyweight'] },
   { name: 'tricep dip', body: ['Triceps'], equip: ['Bodyweight'] },
 ]
 
+/** Pulling compounds — biceps as secondary (exclude face-pull / pullover / shrug / fly). */
+function isPullCompound(h) {
+  if (/face\s*pull|facepull|pullover|pull[- ]?over|shrug|\bflys?\b|\bflies\b/i.test(h))
+    return false
+  if (/rowing|rower/i.test(h)) return true // erg: back + biceps
+  return (
+    (/\brows?\b/i.test(h) && !/throw/i.test(h)) ||
+    /pulldown|pull[- ]?downs?|pull[- ]?ups?|chin[- ]?ups?|renegade|\blat\b|shotgun/i.test(
+      h,
+    )
+  )
+}
+
+/** Horizontal/vertical presses — triceps (+ often shoulders); not pallof / leg press / fly. */
+function isPressCompound(h) {
+  if (
+    /pallof|paloff|leg press|press[- ]?down|pushdown|\bflys?\b|\bflies\b/i.test(h)
+  )
+    return false
+  return (
+    /\bpress(es|ing)?\b/i.test(h) ||
+    /push[- ]?ups?/i.test(h) ||
+    /\bdips?\b/i.test(h)
+  )
+}
+
 const BODY_RULES = [
   {
     tag: 'Biceps',
-    test: (h) => /bicep|hammer curl|\bcurls?\b/i.test(h) && !/leg curl/i.test(h),
+    test: (h) =>
+      (/bicep|hammer curl|\bcurls?\b/i.test(h) && !/leg curl/i.test(h)) ||
+      isPullCompound(h),
   },
   {
     tag: 'Triceps',
     test: (h) =>
       /tricep|triep|skull\s*crush|press[- ]?down|pushdown|\bdips?\b/i.test(h) ||
-      (/push[- ]?ups?/i.test(h) && !/pull[- ]?ups?/i.test(h)),
+      /push[- ]?ups?/i.test(h) ||
+      isPressCompound(h),
   },
   {
     tag: 'Quads',
     test: (h) =>
-      /squat|lunge|leg press|leg extension|step[- ]?up|wall sit|bulgarian|powerup|granny lunge|farmer squat|prisoner squat/i.test(
+      /squat|lunge|leg press|leg extension|step[- ]?up|wall sit|bulgarian|powerup|granny lunge|farmer squat|prisoner squat|stair/i.test(
         h,
       ),
   },
   {
     tag: 'Hamstrings',
     test: (h) =>
-      /hamstring|rdl|romanian|deadlift|good morning|leg curl|nordic|single[- ]?leg(?:ged)?\s*dead/i.test(
+      /hamstring|rdl|romanian|deadlift|good morning|leg curl|nordic|single[- ]?leg(?:ged)?\s*dead|\bswings?\b|lunge|step[- ]?up|bulgarian|\bsquats?\b|sumo/i.test(
         h,
       ),
   },
   {
     tag: 'Glutes',
     test: (h) =>
-      /glute|hip thrust|bridge|kickback|abduction|sumo|\bswings?\b|thrust back/i.test(
+      /glute|hip thrust|bridge|kickback|abduction|sumo|\bswings?\b|thrust back|squat|lunge|step[- ]?up|bulgarian|powerup|granny lunge|leg press|stair|deadlift|rdl|romanian/i.test(
         h,
       ),
   },
   {
     tag: 'Calves',
-    test: (h) => /calf|calves/i.test(h),
+    test: (h) => /calf|calves|stair/i.test(h),
   },
   {
     tag: 'Upper back',
     test: (h) =>
-      /\brows?\b|pulldown|pull[- ]?downs?|pull[- ]?ups?|chin[- ]?ups?|lat\b|renegade|face\s*pull|pullover|t[- ]?bar|shotgun|shrug/i.test(
+      /\brows?\b|pulldown|pull[- ]?downs?|pull[- ]?ups?|chin[- ]?ups?|lat\b|renegade|face\s*pull|pullover|t[- ]?bar|shotgun|shrug|rowing|rower/i.test(
         h,
       ),
   },
@@ -151,13 +181,15 @@ const BODY_RULES = [
   {
     tag: 'Chest',
     test: (h) => {
+      // Reverse / rear flies are upper-back / rear-delt, not chest.
+      if (/reverse\s*fly|reverse\s*flies|rear\s*delt/i.test(h)) return false
       if (
         /push[- ]?ups?|chest|\bbench\b|\bflys?\b|\bflies\b|\bpecs?\b/i.test(h)
       )
         return true
       return (
         /\bpress(es|ing)?\b/i.test(h) &&
-        !/overhead|shoulder|military|\bohp\b|leg press|press[- ]?down|archer|tricep/i.test(
+        !/overhead|shoulder|military|\bohp\b|leg press|press[- ]?down|archer|tricep|pallof|paloff|arnold/i.test(
           h,
         )
       )
@@ -166,14 +198,19 @@ const BODY_RULES = [
   {
     tag: 'Shoulders',
     test: (h) =>
-      /overhead|lateral raise|front raise|archer|shoulder|military press|\bohp\b|delt|y[- ]raise|snatch|clean/i.test(
+      /overhead|lateral raise|front raise|archer|shoulder|military press|\bohp\b|delt|y[- ]raise|snatch|clean|arnold/i.test(
         h,
-      ),
+      ) ||
+      // chest / bench / push-up pressing uses anterior delts
+      (isPressCompound(h) &&
+        /chest|bench|push[- ]?ups?|incline|decline|dumbbell press|hs\s+\w*\s*press/i.test(
+          h,
+        )),
   },
   {
     tag: 'Core',
     test: (h) =>
-      /plank|twist|tuck|crunch|\bab\b|abs\b|core|hollow|dead bug|pallof|v[- ]up|sit[- ]?up|torso|reach[- ]?up|wood\s*chops?|side to side|wall sit|leg raise/i.test(
+      /plank|twist|tuck|crunch|\bab\b|abs\b|core|hollow|dead bug|pallof|paloff|v[- ]up|sit[- ]?up|torso|reach[- ]?up|wood\s*chops?|side to side|wall sit|leg raise/i.test(
         h,
       ),
   },
@@ -343,12 +380,12 @@ for (const name of [...names].sort()) {
     },
     pulldwns: {
       standardName: 'Lat Pulldown',
-      body: ['Upper back'],
+      body: ['Upper back', 'Biceps'],
       equipment: ['Cable', 'Machine'],
     },
     suicides: {
       standardName: null,
-      body: ['Cardio', 'Quads'],
+      body: ['Cardio', 'Quads', 'Glutes'],
       equipment: ['Bodyweight'],
     },
     'Roman chair leg raises': {
@@ -360,6 +397,16 @@ for (const name of [...names].sort()) {
       standardName: 'Glute Bridge',
       body: ['Glutes', 'Hamstrings', 'Core'],
       equipment: ['Bodyweight'],
+    },
+    'paloff presses': {
+      standardName: 'Pallof Press',
+      body: ['Core'],
+      equipment: ['Cable'],
+    },
+    Rowing: {
+      standardName: 'Rower',
+      body: ['Cardio', 'Upper back', 'Biceps', 'Quads'],
+      equipment: ['Rowing'],
     },
   }
 
